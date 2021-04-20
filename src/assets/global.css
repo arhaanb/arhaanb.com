@@ -1,0 +1,169 @@
+body {
+	font-family: 'Inter var', sans-serif;
+	background: linear-gradient(99deg, #c5f3ff80, #ffffff, #f0d3ff75, #ffffff);
+	background-size: 800% 800%;
+	-webkit-animation: gradAnim 8s ease infinite;
+	-moz-animation: gradAnim 8s ease infinite;
+	-o-animation: gradAnim 8s ease infinite;
+	animation: gradAnim 8s ease infinite;
+}
+
+/* #nprogress {
+	pointer-events: none;
+}
+
+#nprogress .bar {
+	background-color: rgb(12, 117, 82);
+	opacity: 75%;
+	position: fixed;
+	z-index: 1031;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+} */
+
+.zero {
+	margin: 0;
+}
+
+@supports (font-variation-settings: normal) {
+	body {
+		font-family: 'Inter var', sans-serif;
+	}
+}
+
+@-webkit-keyframes gradAnim {
+	0% {
+		background-position: 0% 99%
+	}
+	50% {
+		background-position: 100% 2%
+	}
+	100% {
+		background-position: 0% 99%
+	}
+}
+
+@-moz-keyframes gradAnim {
+	0% {
+		background-position: 0% 99%
+	}
+	50% {
+		background-position: 100% 2%
+	}
+	100% {
+		background-position: 0% 99%
+	}
+}
+
+@-o-keyframes gradAnim {
+	0% {
+		background-position: 0% 99%
+	}
+	50% {
+		background-position: 100% 2%
+	}
+	100% {
+		background-position: 0% 99%
+	}
+}
+
+@keyframes gradAnim {
+	0% {
+		background-position: 0% 99%
+	}
+	50% {
+		background-position: 100% 2%
+	}
+	100% {
+		background-position: 0% 99%
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 39em;
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	margin: 0;
+	font-size: 2.5em;
+}
+
+.socials {
+	display: flex;
+}
+
+a {
+	color: #222;
+	text-decoration: none;
+	border-bottom: solid 1px #222;
+	opacity: 70%;
+	transition: 0.3s;
+}
+
+a:hover {
+	opacity: 100%;
+}
+
+::selection {
+	color: #222;
+	background: rgba(119, 179, 247, 0.212);
+}
+
+strong {
+	font-weight: 550;
+}
+
+.yo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-center;
+	flex-wrap: wrap;
+	margin-top: 1.5em;
+}
+
+.yo a {
+	margin-right: 1em;
+	border: none;
+	color: rgb(8, 75, 119);
+	margin-bottom: 0.8em;
+}
+
+.yo a:hover {
+	color: #222;
+	opacity: 90%;
+}
+
+@media (max-width: 750px) {
+	#app {
+		height: auto;
+		margin: 16.5vh 0;
+	}
+	.none {
+		display: none;
+	}
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
