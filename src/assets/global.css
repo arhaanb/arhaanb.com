@@ -1,3 +1,9 @@
+:root {
+	--c-bg: #fff;
+	--c-scrollbar: #eee;
+	--c-scrollbar-hover: #bbb
+}
+
 body {
 	font-family: 'Inter var', sans-serif;
 	background: linear-gradient(99deg, #c5f3ff80, #ffffff, #f0d3ff75, #ffffff);
@@ -177,4 +183,30 @@ p {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+* {
+	scrollbar-color: var(--c-scrollbar) var(--c-bg)
+}
+
+::-webkit-scrollbar {
+	width: 6px
+}
+
+::-webkit-scrollbar:horizontal {
+	height: 6px
+}
+
+::-webkit-scrollbar-track {
+	background: var(--c-bg);
+	border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--c-scrollbar);
+	border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--c-scrollbar-hover)
 }
