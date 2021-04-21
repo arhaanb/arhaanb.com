@@ -8,6 +8,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^4.8.4",
     "vue": "^3.0.11",
     "vue-router": "^4.0.6"
   },

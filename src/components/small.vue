@@ -1,10 +1,13 @@
 <template>
 	<a :href="link || '//github.com/arhaanb'" target="_blank">
 		<div class="project">
-			<div v-if="hover" class="pop">
-				<div class="flexj">
+			<div v-if="mobileLarger && hover" class="pop">
+				<div>
 					<img src="/img/cura.png" alt="Cura" />
 				</div>
+			</div>
+			<div v-if="!mobileLarger" class="popmobile">
+				<img src="/img/cura.png" alt="Cura" />
 			</div>
 			<div @mouseover="hover = true" @mouseleave="hover = false" class="info">
 				<h4 class="name" v-html="name"></h4>
@@ -18,6 +21,9 @@
 </template>
 
 <script>
+import { useBreakpoints, breakpointsTailwind } from '@vueuse/core'
+const breakpoints = useBreakpoints(breakpointsTailwind)
+
 export default {
 	props: { title: String, desc: String, link: String },
 	data() {
@@ -25,12 +31,16 @@ export default {
 			name: this.$props.title,
 			description: this.$props.desc,
 			hover: false,
+			mobileLarger: breakpoints.greater('md'),
 		}
+	},
+	methods: {
+		getHover() {},
 	},
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .name {
 	margin: 0;
 	font-weight: 700;
@@ -43,24 +53,30 @@ export default {
 }
 
 .project {
-	padding: 0 1em 1em 0;
 	position: relative;
 }
 .pop {
 	position: absolute;
 	top: -8.5em;
-	/* background-color: #fff; */
 	border-radius: 0.5em;
 	width: 100%;
 }
 .pop img {
 	width: 90%;
-	/* margin: 0.5em 0.5em; */
 	border-radius: 0.5em;
 }
 
 a {
 	border: none;
 	opacity: 1;
+}
+
+.popmobile {
+	img {
+		width: 100%;
+		border-radius: 0.5em;
+		margin-bottom: 0.4em;
+	}
+	margin-top: 1em;
 }
 </style>

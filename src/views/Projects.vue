@@ -119,9 +119,11 @@ export default {
 	margin-bottom: 0.2em;
 }
 
-.active {
-	opacity: 0.5;
-	transition: 0.2s;
+@media (min-width: 768px) {
+	.active {
+		opacity: 0.5;
+		transition: 0.2s;
+	}
 }
 
 .proj {
@@ -138,9 +140,10 @@ export default {
 
 .grid {
 	display: grid;
-	grid-gap: 1em;
+	grid-gap: 2em;
 	grid-template-columns: repeat(2, 1fr);
 	margin-top: 3em;
+	margin-bottom: 3em;
 }
 
 @media (max-width: 750px) {
