@@ -8,6 +8,17 @@ body {
 	animation: gradAnim 8s ease infinite;
 }
 
+.img {
+	width: 100%;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 /* #nprogress {
 	pointer-events: none;
 }

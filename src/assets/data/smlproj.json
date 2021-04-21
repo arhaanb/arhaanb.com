@@ -1,0 +1,43 @@
+{
+	"projects": [
+		{
+			"title": "SiteBlock",
+			"link": "//arhaanb.co/gh/siteblock",
+			"desc": "A simple chrome extension to block websites."
+		},
+		{
+			"title": "Kuizu",
+			"desc": "A trivia app based on Computer Science built with Flask.",
+			"link": "//arhaanb.co/kuizu"
+		},
+		{
+			"title": "X 2020 Quiz App",
+			"desc": "The application used to host the Quiz event at X 2020."
+		},
+		{
+			"title": "Ponder",
+			"desc": "A mobile app to help creative professionals focus, and think better."
+		},
+		{
+			"title": "Safar"
+		},
+		{
+			"title": "BROKEN: Movie"
+		},
+		{
+			"title": "Raghav Thakar"
+		},
+		{
+			"title": "MISMUN"
+		},
+		{
+			"title": "Shiksha"
+		},
+		{
+			"title": "Dhruva Goyal"
+		},
+		{
+			"title": "Sabre <i>from the TV Show &mdash; The Office</i>"
+		}
+	]
+}

@@ -36,7 +36,7 @@
 		</div>
 
 		<div class="others">
-			<h2><strong>Other small projects</strong></h2>
+			<h2>Other small projects</h2>
 			<p>
 				I made these projects mostly as a way to help me automate some of my
 				manual dumb work I didn't want to do. There's also some other small
@@ -49,17 +49,19 @@
 				organized.
 			</p>
 
-			<div class="proj">
-				<h5>SiteBlock</h5>
-				<h5>Kuizu</h5>
-				<h5>Mail Merge</h5>
-				<h5>X 2020 Quiz App</h5>
-				<h5>Ponder</h5>
-				<h5>Safar</h5>
-				<h5>BROKEN: Movie</h5>
-				<h5>Raghav Thakar</h5>
-				<h5>Dhruva Goyal</h5>
-				<h5>Sabre <i>from the TV Show &mdash; The Office</i></h5>
+			<div class="grid">
+				<div
+					v-for="p in smlProjects"
+					:key="p.title"
+					:class="{ active: hover, notactive: !hover, proj: true }"
+				>
+					<Small
+						@mouseover="hover = true"
+						@mouseleave="hover = false"
+						:title="p.title"
+						class="sml"
+					/>
+				</div>
 			</div>
 
 			<p>
@@ -73,9 +75,17 @@
 
 <script>
 import Project from '../components/project.vue'
+import Small from '../components/small.vue'
+import SmlProj from '../assets/data/smlproj.json'
 
 export default {
-	components: { Project },
+	components: { Project, Small },
+	data() {
+		return {
+			hover: false,
+			smlProjects: SmlProj.projects,
+		}
+	},
 }
 </script>
 
@@ -99,5 +109,48 @@ export default {
 
 .title {
 	margin-top: 2em;
+}
+
+.proj .sml {
+	font-weight: 300;
+	font-size: 1.2em;
+	margin-bottom: 0.2em;
+}
+
+.active {
+	opacity: 0.5;
+	transition: 0.2s;
+}
+/* 
+.active .sml:hover {
+	opacity: 1;
+	cursor: pointer;
+} */
+
+.proj {
+	transition: 0.3s;
+}
+
+.proj:hover {
+	opacity: 1 !important;
+}
+
+.proj * {
+	transition: 0.2s;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 3em;
+}
+
+@media (max-width: 750px) {
+	.grid {
+		display: grid;
+		grid-gap: 1.5em;
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 </style>
