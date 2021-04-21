@@ -36,18 +36,21 @@
 		</div>
 
 		<div class="others">
-			<h2>Other small projects</h2>
-			<p>
-				I made these projects mostly as a way to help me automate some of my
-				manual dumb work I didn't want to do. There's also some other small
-				websites I made as a <i>freelancer</i>, or some other little apps I made
-				just to test out a new technology or framework that I was interested in.
-			</p>
-			<p>
-				These small projects generally help me lay out the foundation for the
-				bigger projects I build for hackathons or the many events that I've
-				organized.
-			</p>
+			<div @mouseover="hover = false">
+				<h2>Other small projects</h2>
+				<p>
+					I made these projects mostly as a way to help me automate some of my
+					manual dumb work I didn't want to do. There's also some other small
+					websites I made as a <i>freelancer</i>, or some other little apps I
+					made just to test out a new technology or framework that I was
+					interested in.
+				</p>
+				<p>
+					These small projects generally help me lay out the foundation for the
+					bigger projects I build for hackathons or the many events that I've
+					organized.
+				</p>
+			</div>
 
 			<div class="grid">
 				<div
