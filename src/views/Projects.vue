@@ -59,6 +59,8 @@
 						@mouseover="hover = true"
 						@mouseleave="hover = false"
 						:title="p.title"
+						:desc="p.desc"
+						:link="p.link"
 						class="sml"
 					/>
 				</div>
@@ -121,11 +123,6 @@ export default {
 	opacity: 0.5;
 	transition: 0.2s;
 }
-/* 
-.active .sml:hover {
-	opacity: 1;
-	cursor: pointer;
-} */
 
 .proj {
 	transition: 0.3s;

@@ -1,16 +1,18 @@
 <template>
 	<a :href="link || '//github.com/arhaanb'" target="_blank">
-		<div @mouseover="hover = true" @mouseleave="hover = false" class="project">
+		<div class="project">
 			<div v-if="hover" class="pop">
 				<div class="flexj">
 					<img src="/img/cura.png" alt="Cura" />
 				</div>
 			</div>
-			<h4 class="name" v-html="name"></h4>
-			<h5 class="description">
-				<span v-if="desc">{{ desc }}</span>
-				<span v-else>This is a small description for the project above.</span>
-			</h5>
+			<div @mouseover="hover = true" @mouseleave="hover = false" class="info">
+				<h4 class="name" v-html="name"></h4>
+				<h5 class="description">
+					<span v-if="desc" v-html="description"></span>
+					<span v-else>This is a small description for the project above.</span>
+				</h5>
+			</div>
 		</div>
 	</a>
 </template>
@@ -21,6 +23,7 @@ export default {
 	data() {
 		return {
 			name: this.$props.title,
+			description: this.$props.desc,
 			hover: false,
 		}
 	},
