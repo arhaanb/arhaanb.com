@@ -45,11 +45,13 @@ export default {
 	margin: 0;
 	font-weight: 700;
 	margin-bottom: 0.2em;
+	font-size: 1.1em;
 }
 
 .description {
 	font-weight: 300;
 	margin: 0;
+	font-size: 0.9em;
 }
 
 .project {

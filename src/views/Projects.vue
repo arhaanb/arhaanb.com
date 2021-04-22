@@ -1,5 +1,5 @@
 <template>
-	<main class="container">
+	<div class="cont">
 		<router-link to="/" class="back">&larr;</router-link>
 		<h2 class="title">Projects</h2>
 		<p class="zero">
@@ -37,12 +37,16 @@
 
 		<div class="others">
 			<div @mouseover="hover = false">
-				<h2>Other small projects</h2>
+				<h2 class="othsmlproj">Other small projects</h2>
 				<p>
-					I made these projects mostly as a way to help me automate some of my
-					manual dumb work I didn't want to do. There's also some other small
+					<!-- I made these projects mostly as a way to help me automate some of my
+					manual work I didn't want to do. There's also some other small
 					websites I made as a <i>freelancer</i>, or some other little apps I
 					made just to test out a new technology or framework that I was
+					interested in. -->
+					I made most of these projects as a <i>freelancer</i>, or to help me
+					automate some of my manual tiring work. There's also some little apps
+					I made just to test out a new technology or framework that I was
 					interested in.
 				</p>
 				<p>
@@ -75,7 +79,7 @@
 				projects are open source.
 			</p>
 		</div>
-	</main>
+	</div>
 </template>
 
 <script>
@@ -95,6 +99,14 @@ export default {
 </script>
 
 <style scoped>
+.othsmlproj {
+	font-size: 1.75em;
+}
+.cont {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 41em;
+}
 .others {
 	margin-top: 3em;
 	margin-bottom: 5em;
@@ -102,14 +114,6 @@ export default {
 
 .bigproj {
 	margin-top: 2em;
-}
-
-.back {
-	position: absolute;
-	top: 2em;
-	left: 6em;
-	font-size: 1.25em;
-	border: none;
 }
 
 .title {

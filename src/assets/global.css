@@ -25,20 +25,9 @@ body {
 	flex-direction: column;
 }
 
-/* #nprogress {
-	pointer-events: none;
+p {
+	opacity: 0.75;
 }
-
-#nprogress .bar {
-	background-color: rgb(12, 117, 82);
-	opacity: 75%;
-	position: fixed;
-	z-index: 1031;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-} */
 
 .zero {
 	margin: 0;
@@ -96,12 +85,6 @@ body {
 	100% {
 		background-position: 0% 99%
 	}
-}
-
-.container {
-	margin: 0 auto;
-	padding: 0 2em;
-	max-width: 39em;
 }
 
 .home {
@@ -176,7 +159,7 @@ p {
 	line-height: 1.5em;
 }
 
-.noselect {
+.noselect, br, img {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -209,4 +192,12 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--c-scrollbar-hover)
+}
+
+.back {
+	position: absolute;
+	top: 2em;
+	left: 6em;
+	font-size: 1.25em;
+	border: none;
 }
