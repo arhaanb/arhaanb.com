@@ -1,6 +1,6 @@
 {
-	"redirects": [{ "source": "/(.*)", "destination": "/index.html" }],
-	"rewrites": [],
+	"redirects": [],
+	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
 	"github": {
 		"autoAlias": true,
 		"enabled": true,
