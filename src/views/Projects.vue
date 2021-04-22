@@ -1,5 +1,5 @@
 <template>
-	<div class="cont">
+	<div class="cont" @mouseleave="hover = false">
 		<router-link to="/" class="back">&larr;</router-link>
 		<h2 class="title">Projects</h2>
 		<p class="zero">
@@ -61,6 +61,7 @@
 					v-for="p in smlProjects"
 					:key="p.title"
 					:class="{ active: hover, notactive: !hover, proj: true }"
+					@mouseleave="hover = false"
 				>
 					<Small
 						@mouseover="hover = true"

@@ -1,5 +1,9 @@
 <template>
-	<a :href="link || '//github.com/arhaanb'" target="_blank">
+	<a
+		@mouseleave="hover = false"
+		:href="link || '//github.com/arhaanb'"
+		target="_blank"
+	>
 		<div class="project">
 			<div v-if="mobileLarger && hover" class="pop">
 				<div>
