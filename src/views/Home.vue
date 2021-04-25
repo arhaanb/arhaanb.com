@@ -1,21 +1,16 @@
 <template>
 	<div class="container">
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<h1>
-			<br />
-			Arhaan Bahadur
-		</h1>
-		<h3 class="subtitle">I'm a designer and developer. I build stuff.</h3>
-		<div class="nav">
-			<router-link to="/about">About me</router-link>
-			<router-link to="/projects">Projects</router-link>
-			<router-link to="/hi">Say Hi</router-link>
+		<div class="center main">
+			<h1>
+				<br />
+				Arhaan Bahadur
+			</h1>
+			<h3 class="subtitle">I'm a designer and developer. I build stuff.</h3>
+			<div class="nav">
+				<router-link to="/about">About me</router-link>
+				<router-link to="/projects">Projects</router-link>
+				<router-link to="/hi">Say Hi</router-link>
+			</div>
 		</div>
 	</div>
 </template>
@@ -38,6 +33,10 @@ h1 {
 	border: none;
 }
 
+.main {
+	margin-top: 12em;
+}
+
 img {
 	width: 10em;
 	border-radius: 0.5em;
@@ -56,7 +55,7 @@ img {
 
 .nav a {
 	border: none;
-	margin-right: 1.5em;
+	margin: 0 1em;
 	font-size: 1em;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
@@ -65,14 +64,4 @@ img {
 .nav {
 	margin-top: 1em;
 }
-
-/* footer.footer {
-	position: absolute;
-	bottom: 0;
-	padding: 1em 0;
-}
-
-.footer h5 {
-	font-weight: 500;
-} */
 </style>
