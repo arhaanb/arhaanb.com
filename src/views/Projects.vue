@@ -60,7 +60,7 @@
 				<div
 					v-for="p in smlProjects"
 					:key="p.title"
-					:class="{ active: hover, notactive: !hover, proj: true }"
+					:class="{ active: hover, proj: true }"
 					@mouseleave="hover = false"
 				>
 					<Small

@@ -2,29 +2,31 @@
 	"projects": [
 		{
 			"title": "SiteBlock",
-			"link": "//arhaanb.co/gh/siteblock",
-			"desc": "A simple chrome extension to block websites."
+			"desc": "A simple chrome extension to block websites.",
+			"link": "https://arhaanb.co/gh/siteblock"
 		},
 		{
 			"title": "Kuizu",
 			"desc": "A trivia app based on Computer Science built with Flask.",
-			"link": "//arhaanb.co/kuizu"
+			"link": "https://arhaanb.co/kuizu"
 		},
 		{
 			"title": "X 2020 Quiz App",
-			"desc": "The application used to host the Quiz event at X 2020."
+			"desc": "The application used to host the Quiz event at X 2020.",
+			"link": "https://github.com/arhaanb/QuizX2020"
 		},
 		{
 			"title": "Ponder",
-			"desc": "A mobile app to help creative professionals focus, and think better."
+			"desc": "A mobile app to help creative professionals focus, and think better.",
+			"link": "https://arhaanb.co/ponder"
 		},
 		{
 			"title": "Safar",
-			"link": "//arhaanb.co/safar"
+			"link": "https://arhaanb.co/safar"
 		},
 		{
 			"title": "BROKEN: Movie",
-			"link": "//brokenmovie.net"
+			"link": "https://brokenmovie.net"
 		},
 		{
 			"title": "Raghav Thakar",
