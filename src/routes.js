@@ -9,18 +9,18 @@ export const routes = [
 	{
 		path: '/projects',
 		meta: { title: 'Projects' },
-		component: Projects,
+		component: Projects
 	},
 	{
 		path: '/about',
 		meta: { title: 'About' },
-		component: About,
+		component: About
 		// component: () => import('./views/About.vue')
 	},
 	{
 		path: '/hi',
 		meta: { title: 'Contact' },
-		component: Contact,
+		component: Contact
 	},
-	{ path: '/:path(.*)', component: NotFound },
+	{ path: '/:path(.*)', component: NotFound }
 ]

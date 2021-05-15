@@ -8,7 +8,7 @@ export default async (_, res) => {
 		artist: track.artists.map((_artist) => _artist.name).join(', '),
 		songUrl: track.external_urls.spotify,
 		title: track.name,
-		albumArt: track.album.images[0].url,
+		albumArt: track.album.images[0].url
 	}))
 
 	// return res.status(200).json({ items });

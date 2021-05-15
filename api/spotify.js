@@ -21,6 +21,6 @@ export default async (_, res) => {
 		artist,
 		isPlaying,
 		songUrl,
-		title,
+		title
 	})
 }

@@ -11,7 +11,8 @@
 		"tabWidth": 2,
 		"useTabs": true,
 		"semi": false,
-		"singleQuote": true
+		"singleQuote": true,
+		"trailingComma": "none"
 	},
 	"dependencies": {
 		"@vueuse/core": "^4.8.4",

@@ -7,11 +7,19 @@
 		</p>
 		<div class="bigproj">
 			<Project
-				name="MINET X"
-				description="Interschool Tech Symposium."
-				link="https://minet.co"
-				img="https://res.cloudinary.com/arhaanb/image/upload/v1612204131/minet_ywuug5.png"
+				name="Sahay"
+				description="A collaborative experience for hospital management."
+				link="https://sahay.us"
+				img="/img/smlsahay.png"
 			/>
+
+			<Project
+				name="MINET X"
+				description="The Mother's International School's Interschool Tech Symposium."
+				link="https://minet.co"
+				img="//minet.co/assets/img/bhaif2.492faf76.gif"
+			/>
+			<!-- img="https://res.cloudinary.com/arhaanb/image/upload/v1612204131/minet_ywuug5.png" -->
 
 			<Project
 				name="Cura"
@@ -44,15 +52,15 @@
 					websites I made as a <i>freelancer</i>, or some other little apps I
 					made just to test out a new technology or framework that I was
 					interested in. -->
-					I made most of these projects as a <i>freelancer</i>, or to help me
-					automate some of my manual tiring work. There's also some little apps
-					I made just to test out a new technology or framework that I was
-					interested in.
+					I made some of these projects as a <i>freelancer</i>, or to help me
+					automate some of my manual tiring work. There's also some
+					<i>little apps</i> I made just to test out a new technology or
+					framework that I was interested in learning.
 				</p>
 				<p>
-					These small projects generally help me lay out the foundation for the
-					bigger projects I build for hackathons or the many events that I've
-					organized.
+					These small projects generally help me lay out the foundation for
+					bigger projects that I build at hackathons or for the many events that
+					I've organized.
 				</p>
 			</div>
 
@@ -86,7 +94,7 @@
 <script>
 import Project from '../components/project.vue'
 import Small from '../components/small.vue'
-import SmlProj from '../assets/data/smlproj.json'
+import SmlProj from '../assets/data/smlproj.js'
 
 export default {
 	components: { Project, Small },
@@ -103,11 +111,7 @@ export default {
 .othsmlproj {
 	font-size: 1.75em;
 }
-.cont {
-	margin: 0 auto;
-	padding: 0 2em;
-	max-width: 41em;
-}
+
 .others {
 	margin-top: 3em;
 	margin-bottom: 5em;

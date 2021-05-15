@@ -1,17 +1,18 @@
 :root {
 	--c-bg: #fff;
 	--c-scrollbar: #eee;
-	--c-scrollbar-hover: #bbb
+	--c-scrollbar-hover: #bbb;
 }
 
 body {
 	font-family: 'Inter var', sans-serif;
-	background: linear-gradient(99deg, #c5f3ff80, #ffffff, #f0d3ff75, #ffffff);
+	/* background: linear-gradient(99deg, #c5f3ff80, #ffffff, #f0d3ff75, #ffffff);
 	background-size: 800% 800%;
 	-webkit-animation: gradAnim 8s ease infinite;
 	-moz-animation: gradAnim 8s ease infinite;
 	-o-animation: gradAnim 8s ease infinite;
-	animation: gradAnim 8s ease infinite;
+	animation: gradAnim 8s ease infinite; */
+	background-color: #fff;
 }
 
 .img {
@@ -26,7 +27,7 @@ body {
 }
 
 p {
-	opacity: 0.75;
+	opacity: 0.9;
 }
 
 .zero {
@@ -41,49 +42,49 @@ p {
 
 @-webkit-keyframes gradAnim {
 	0% {
-		background-position: 0% 99%
+		background-position: 0% 99%;
 	}
 	50% {
-		background-position: 100% 2%
+		background-position: 100% 2%;
 	}
 	100% {
-		background-position: 0% 99%
+		background-position: 0% 99%;
 	}
 }
 
 @-moz-keyframes gradAnim {
 	0% {
-		background-position: 0% 99%
+		background-position: 0% 99%;
 	}
 	50% {
-		background-position: 100% 2%
+		background-position: 100% 2%;
 	}
 	100% {
-		background-position: 0% 99%
+		background-position: 0% 99%;
 	}
 }
 
 @-o-keyframes gradAnim {
 	0% {
-		background-position: 0% 99%
+		background-position: 0% 99%;
 	}
 	50% {
-		background-position: 100% 2%
+		background-position: 100% 2%;
 	}
 	100% {
-		background-position: 0% 99%
+		background-position: 0% 99%;
 	}
 }
 
 @keyframes gradAnim {
 	0% {
-		background-position: 0% 99%
+		background-position: 0% 99%;
 	}
 	50% {
-		background-position: 100% 2%
+		background-position: 100% 2%;
 	}
 	100% {
-		background-position: 0% 99%
+		background-position: 0% 99%;
 	}
 }
 
@@ -169,29 +170,29 @@ p {
 }
 
 * {
-	scrollbar-color: var(--c-scrollbar) var(--c-bg)
+	scrollbar-color: var(--c-scrollbar) var(--c-bg);
 }
 
 ::-webkit-scrollbar {
-	width: 6px
+	width: 6px;
 }
 
 ::-webkit-scrollbar:horizontal {
-	height: 6px
+	height: 6px;
 }
 
 ::-webkit-scrollbar-track {
 	background: var(--c-bg);
-	border-radius: 10px
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
 	background: var(--c-scrollbar);
-	border-radius: 10px
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--c-scrollbar-hover)
+	background: var(--c-scrollbar-hover);
 }
 
 .back {
@@ -219,4 +220,10 @@ p {
 
 .center {
 	text-align: center;
+}
+
+.cont {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 41em;
 }

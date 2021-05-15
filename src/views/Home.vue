@@ -1,6 +1,57 @@
 <template>
-	<div class="container">
-		<div class="center main">
+	<div class="cont">
+		<br /><br /><br /><br />
+		<img
+			src="https://arhaan.vercel.app/assets/img/arhaanb-min.jpg"
+			alt="Arhaan Bahadur"
+		/>
+		<br />
+		<h4 class="name">Arhaan Bahadur</h4>
+		<div class="yo noselect" style="margin-bottom: 1em">
+			<a
+				href="https://twitter.com/arhaan_bahadur"
+				rel="noopener noreferrer"
+				target="_blank"
+				>Twitter</a
+			>
+			<a
+				href="https://instagram.com/arhaan_bahadur"
+				rel="noopener noreferrer"
+				target="_blank"
+				>Instagram</a
+			>
+			<a
+				href="https://github.com/arhaanb"
+				rel="noopener noreferrer"
+				target="_blank"
+				>GitHub</a
+			>
+			<a
+				href="https://open.spotify.com/user/arhaanb"
+				rel="noopener noreferrer"
+				target="_blank"
+				>Spotify</a
+			>
+			<a href="mailto:hi@arhaanb.co" rel="noopener noreferrer" target="_blank"
+				>hi@arhaanb.co</a
+			>
+		</div>
+		<p>
+			I'm a {{ age || 17 }} year old student studying at The Mother's
+			International School. I like building cool stuff. I enjoy participating in
+			Hackathons and Design events, and I've won several of them over the last
+			few years. You can view some of the
+			<router-link to="/projects">projects</router-link> I built, or check out
+			<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
+		</p>
+
+		<p>
+			I'm also the President of my school's technology and entrepreneurship club
+			&mdash; <a href="//minet.co" target="_blank">MINET</a>. I make functional
+			and useful products with beautiful user experiences. If you want to say hi
+			or work with me, feel free to contact me on any of my socials.
+		</p>
+		<!-- <div class="center main">
 			<h1>
 				<br />
 				Arhaan Bahadur
@@ -11,11 +62,16 @@
 				<router-link to="/projects">Projects</router-link>
 				<router-link to="/hi">Say Hi</router-link>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </template>
 
 <style scoped>
+.yo,
+.name {
+	margin: 0;
+}
+
 h1 {
 	font-size: 5em;
 	margin: 0;
