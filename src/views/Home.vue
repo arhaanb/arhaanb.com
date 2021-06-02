@@ -37,19 +37,20 @@
 			>
 		</div>
 		<p>
-			I'm a {{ age || 17 }} year old student studying at The Mother's
-			International School. I like building cool stuff. I enjoy participating in
-			Hackathons and Design events, and I've won several of them over the last
-			few years. You can view some of the
+			I'm a {{ 17 }} year old student studying at The Mother's International
+			School. I like building cool stuff. I enjoy participating in Hackathons
+			and Design events, and I've won several of them over the last few years.
+			You can view some of the
 			<router-link to="/projects">projects</router-link> I built, or check out
 			<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
 		</p>
 
 		<p>
-			I'm also the President of my school's technology and entrepreneurship club
-			&mdash; <a href="//minet.co" target="_blank">MINET</a>. I make functional
-			and useful products with beautiful user experiences. If you want to say hi
-			or work with me, feel free to contact me on any of my socials.
+			I was the President of my school's technology and entrepreneurship club
+			&mdash;
+			<a href="//minet.co" target="_blank">MINET</a>. I make functional and
+			useful products with beautiful user experiences. If you want to say hi or
+			work with me, feel free to contact me on any of my socials.
 		</p>
 		<!-- <div class="center main">
 			<h1>
@@ -63,8 +64,21 @@
 				<router-link to="/hi">Say Hi</router-link>
 			</div>
 		</div> -->
+		<div class="row">
+			<div class="six columns">
+				<Spotify />
+			</div>
+		</div>
 	</div>
 </template>
+
+<script>
+import Spotify from '../components/spotify.vue'
+
+export default {
+	components: { Spotify }
+}
+</script>
 
 <style scoped>
 .yo,

@@ -43,6 +43,8 @@
 			/>
 		</div>
 
+		<hr />
+
 		<div class="others">
 			<div @mouseover="hover = false">
 				<h2 class="othsmlproj">Other small projects</h2>
@@ -101,9 +103,9 @@ export default {
 	data() {
 		return {
 			hover: false,
-			smlProjects: SmlProj.projects,
+			smlProjects: SmlProj.projects
 		}
-	},
+	}
 }
 </script>
 

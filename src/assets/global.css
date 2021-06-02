@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Inter var', sans-serif;
+	/* font-family: 'Inter var', sans-serif; */
 	/* background: linear-gradient(99deg, #c5f3ff80, #ffffff, #f0d3ff75, #ffffff);
 	background-size: 800% 800%;
 	-webkit-animation: gradAnim 8s ease infinite;
@@ -26,19 +26,19 @@ body {
 	flex-direction: column;
 }
 
-p {
+/* p {
 	opacity: 0.9;
-}
+} */
 
 .zero {
 	margin: 0;
 }
 
-@supports (font-variation-settings: normal) {
+/* @supports (font-variation-settings: normal) {
 	body {
 		font-family: 'Inter var', sans-serif;
 	}
-}
+} */
 
 @-webkit-keyframes gradAnim {
 	0% {
@@ -105,7 +105,7 @@ p {
 	display: flex;
 }
 
-a {
+/* a {
 	color: #222;
 	text-decoration: none;
 	border-bottom: solid 1px #222;
@@ -115,7 +115,7 @@ a {
 
 a:hover {
 	opacity: 100%;
-}
+} */
 
 ::selection {
 	color: #222;

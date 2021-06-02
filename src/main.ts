@@ -2,6 +2,7 @@ import App from './App.vue'
 import { routes } from './routes.js'
 import { ViteSSG } from 'vite-ssg'
 import NProgress from 'nprogress'
+import './assets/normal.css'
 import './assets/skeleton.css'
 import './assets/global.css'
 
