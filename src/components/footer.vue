@@ -70,7 +70,7 @@ export default {
 <style scoped>
 .arnh {
 	margin-top: 0.35em;
-  display: none;
+	display: none;
 }
 
 .spotify-component {
@@ -110,12 +110,12 @@ export default {
 		margin-right: 1em;
 		padding: 0.25em 0.25em 0.25em 0;
 	}
-  .socials {
-    margin-top: 1em;
-  }
-  .arnh {
-    display: none;
-  }
+	.socials {
+		margin-top: 1em;
+	}
+	.arnh {
+		display: none;
+	}
 }
 
 .socials a:hover {

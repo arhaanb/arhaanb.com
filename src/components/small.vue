@@ -7,11 +7,11 @@
 		<div class="project">
 			<div v-if="mobileLarger && hover" class="pop">
 				<div>
-					<img src="/img/cura.png" alt="Cura" />
+					<img loading="lazy" :src="img" :alt="title" />
 				</div>
 			</div>
 			<div v-if="!mobileLarger" class="popmobile">
-				<img src="/img/cura.png" alt="Cura" />
+				<img loading="lazy" :src="img" class="mobileimg" :alt="title" />
 			</div>
 			<div @mouseover="hover = true" @mouseleave="hover = false" class="info">
 				<h4 class="name" v-html="name"></h4>
@@ -29,18 +29,18 @@ import { useBreakpoints, breakpointsTailwind } from '@vueuse/core'
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
 export default {
-	props: { title: String, desc: String, link: String },
+	props: { title: String, desc: String, link: String, img: String },
 	data() {
 		return {
 			name: this.$props.title,
 			description: this.$props.desc,
 			hover: false,
-			mobileLarger: breakpoints.greater('md'),
+			mobileLarger: breakpoints.greater('md')
 		}
 	},
 	methods: {
-		getHover() {},
-	},
+		getHover() {}
+	}
 }
 </script>
 
@@ -83,5 +83,9 @@ a {
 		margin-bottom: 0.4em;
 	}
 	margin-top: 1em;
+}
+
+.mobileimg {
+	display: none;
 }
 </style>

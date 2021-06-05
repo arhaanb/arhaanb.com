@@ -1,45 +1,44 @@
 <template>
 	<div class="cont" @mouseleave="hover = false">
-		<router-link to="/" class="back">&larr;</router-link>
 		<h2 class="title">Projects</h2>
 		<p class="zero">
 			These are some of the projects I've built over the last couple of years.
 		</p>
 		<div class="bigproj">
 			<Project
+				name="Delhi Design Foundry"
+				description="A design collective based in New Delhi, India."
+				link="https://delhifoundry.co"
+				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907477/ddf_cdsojv.png"
+			/>
+
+			<Project
 				name="Sahay"
 				description="A collaborative experience for hospital management."
 				link="https://sahay.us"
-				img="/img/smlsahay.png"
+				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907478/smlsahay_rekpbv.png"
 			/>
 
 			<Project
 				name="MINET X"
-				description="The Mother's International School's Interschool Tech Symposium."
+				description="The Mother's International School's annual Interschool Tech Symposium."
 				link="https://minet.co"
-				img="//minet.co/assets/img/bhaif2.492faf76.gif"
+				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907776/minetx_n6omtg.gif"
 			/>
 			<!-- img="https://res.cloudinary.com/arhaanb/image/upload/v1612204131/minet_ywuug5.png" -->
+
+			<Project
+				name="BugBase"
+				description="A consolidated bug bounty platform for Indian startups and projects."
+				link="https://www.behance.net/gallery/112423317/BugBase-an-Indian-Bug-Bounty-Program"
+				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907478/bugbase_tqtrmj.png"
+			/>
 
 			<Project
 				name="Cura"
 				description="An app that helps you get vaccinated."
 				link="https://arhaanb.co/cura"
-				img="/img/cura.png"
-			/>
-
-			<Project
-				name="Sabre &mdash; <i>from The Office</i>"
-				description="A redesign for the printer company from the TV Show."
-				link="https://minet.co"
-				img="/img/sabre.png"
-			/>
-
-			<Project
-				name="Ponder"
-				description="An app to help creative professionals <i>think better</i>."
-				link="https://arhaanb.co/ponder"
-				img="/img/ponder.png"
+				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907479/cura_fhhiip.png"
 			/>
 		</div>
 
@@ -49,11 +48,6 @@
 			<div @mouseover="hover = false">
 				<h2 class="othsmlproj">Other small projects</h2>
 				<p>
-					<!-- I made these projects mostly as a way to help me automate some of my
-					manual work I didn't want to do. There's also some other small
-					websites I made as a <i>freelancer</i>, or some other little apps I
-					made just to test out a new technology or framework that I was
-					interested in. -->
 					I made some of these projects as a <i>freelancer</i>, or to help me
 					automate some of my manual tiring work. There's also some
 					<i>little apps</i> I made just to test out a new technology or
@@ -79,6 +73,7 @@
 						:title="p.title"
 						:desc="p.desc"
 						:link="p.link"
+						:img="p.img"
 						class="sml"
 					/>
 				</div>
@@ -121,10 +116,6 @@ export default {
 }
 
 .bigproj {
-	margin-top: 2em;
-}
-
-.title {
 	margin-top: 2em;
 }
 

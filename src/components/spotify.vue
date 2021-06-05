@@ -1,12 +1,4 @@
 <template>
-	<!-- <div class="spotify">
-		<div>
-			<h5 class="title">
-				<a :href="spotify.songUrl" target="_blank">{{ spotify.title }}</a>
-			</h5>
-			<h6 class="artist">{{ spotify.artist }}</h6>
-		</div>
-	</div> -->
 	<main class="spotflex">
 		<a target="_blank" class="logo" href="//arhn.us/spotify">
 			<img
@@ -14,16 +6,24 @@
 				alt="Spotify Icon"
 			/>
 		</a>
-		<div>
-			<h5 v-if="spotify.isPlaying" class="title">
+		<div id="spotifycontainer">
+			<h5 v-if="spotify.isPlaying" class="title spotifytitle">
 				<a class="green" :href="spotify.songUrl" target="_blank">
-					<span>{{ spotify.title }}</span>
+					<span :title="spotify.title">{{
+						spotify.title.length > 34
+							? `${spotify.title.slice(0, 34)}...`
+							: spotify.title
+					}}</span>
 				</a>
 			</h5>
 			<h5 class="title not" v-else>Not playing</h5>
-			<h5 class="artist">
-				<span v-if="spotify.isPlaying">
-					{{ spotify.artist }}
+			<h5 class="artist spotifytitle">
+				<span :title="spotify.artist" v-if="spotify.isPlaying">
+					{{
+						spotify.artist.length > 42
+							? `${spotify.artist.slice(0, 42)}...`
+							: spotify.artist
+					}}
 				</span>
 			</h5>
 		</div>
@@ -47,6 +47,7 @@ export default {
 		}
 	},
 	mounted() {
+		console.log('Lil Wayne, Wiz Khalifa, Imagine Dragons, X'.length)
 		this.getSpotifyData()
 		this.repeatSpotifyData()
 	},

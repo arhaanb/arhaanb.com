@@ -192,9 +192,9 @@ p {
 }
 
 .back {
-	position: absolute;
+	/* position: absolute;
 	top: 2em;
-	left: 6em;
+	left: 6em; */
 	font-size: 1.25em;
 	border: none;
 }
@@ -222,4 +222,16 @@ p {
 	margin: 0 auto;
 	padding: 0 2em;
 	max-width: 41em;
+}
+
+.navcont {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 80%;
+}
+
+@media (max-width: 750px) {
+	.navcont {
+		max-width: 41em;
+	}
 }

@@ -1,7 +1,7 @@
 <template>
 	<div class="cont">
 		<div class="anti"><br /><br /><br /><br /></div>
-		<img src="../assets/arhaanb.jpg" alt="Arhaan Bahadur" />
+		<img class="topimg" src="../assets/arhaanb.jpg" alt="Arhaan Bahadur" />
 		<br />
 		<h4 class="name">Arhaan Bahadur</h4>
 
@@ -105,5 +105,11 @@ img {
 
 .yo a:hover {
 	color: #69e;
+}
+
+@media (max-width: 750px) {
+.topimg {
+	margin-top: -5em;
+}
 }
 </style>

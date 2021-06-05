@@ -2,9 +2,9 @@
 	<div class="project noselect">
 		<a class="link" :href="link" target="_blank">
 			<div class="card">
-				<img loading="lazy" class="img" :src="img" />
+				<img loading="lazy" class="img" :alt="name" :src="img" />
 				<div class="info">
-					<h1 class="title" v-html="title"></h1>
+					<h1 class="title"><span v-html="title"></span></h1>
 					<p class="txt" v-html="desc"></p>
 				</div>
 			</div>
@@ -18,9 +18,9 @@ export default {
 	data() {
 		return {
 			title: this.$props.name,
-			desc: this.$props.description,
+			desc: this.$props.description
 		}
-	},
+	}
 }
 </script>
 
@@ -83,6 +83,31 @@ export default {
 	.txt {
 		margin: 0;
 		margin-bottom: 0.5em;
+	}
+}
+
+@media (max-width: 750px) {
+	.card {
+		height: 10em;
+		padding-top: 5em;
+		&:before {
+			opacity: 1;
+			// background: rgba(black, 0.25);
+			background: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0.75) 0%,
+				rgba(0, 0, 0, 0.6) 50%,
+				rgba(0, 0, 0, 0.3) 100%
+			);
+			// backdrop-filter: blur(1.25px);
+		}
+		.info {
+			opacity: 1;
+			transform: translateY(0px);
+			h1 {
+				font-size: 1.65em;
+			}
+		}
 	}
 }
 
