@@ -17,7 +17,7 @@
 				me if you think this is a mistake.
 			</p>
 			<div class="yo">
-				<a
+				<!-- <a
 					href="https://twitter.com/arhaan_bahadur"
 					rel="noopener noreferrer"
 					target="_blank"
@@ -43,7 +43,52 @@
 				>
 				<a href="mailto:hi@arhaanb.co" rel="noopener noreferrer" target="_blank"
 					>hi@arhaanb.co</a
+				> -->
+				<a
+					href="https://twitter.com/arhaan_bahadur"
+					rel="noopener noreferrer"
+					target="_blank"
 				>
+					<bx-bxl-twitter />
+				</a>
+				<a
+					href="https://instagram.com/arhaan_bahadur"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					<carbon-logo-instagram />
+				</a>
+				<a
+					href="https://github.com/arhaanb"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					<carbon-logo-github />
+				</a>
+				<a
+					href="https://open.spotify.com/user/arhaanb"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					<bx-bxl-spotify
+				/></a>
+
+				<a
+					href="//linkedin.com/in/arhaanb"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<carbon-logo-linkedin />
+				</a>
+
+				<a
+					href="mailto:hi@arhaanb.co"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+					<!-- hi@arhaanb.co -->
+					<bx-bx-mail-send />
+				</a>
 			</div>
 		</div>
 	</main>
@@ -77,5 +122,10 @@ p.btm {
 }
 p {
 	opacity: 1;
+}
+
+.yo a {
+	padding: 0.35em;
+	font-size: 1.1em;
 }
 </style>

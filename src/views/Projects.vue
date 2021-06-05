@@ -84,7 +84,7 @@
 				</div>
 			</div>
 
-			<p>
+			<p class="zero">
 				For more, you can check out my
 				<a href="//github.com/arhaanb">GitHub (@arhaanb)</a>. Most of my
 				projects are open source.
@@ -95,11 +95,12 @@
 
 <script>
 import Project from '../components/project.vue'
+import Footer from '../components/footer.vue'
 import Small from '../components/small.vue'
 import SmlProj from '../assets/data/smlproj.js'
 
 export default {
-	components: { Project, Small },
+	components: { Project, Small, Footer },
 	data() {
 		return {
 			hover: false,

@@ -7,14 +7,26 @@
 			<h6 class="artist">{{ spotify.artist }}</h6>
 		</div>
 	</div> -->
-	<main v-if="spotify.isPlaying">
-		<h5 class="title">
-			<a class="green" :href="spotify.songUrl" target="_blank">{{
-				spotify.title
-			}}</a>
-			&mdash;
-			{{ spotify.artist }}
-		</h5>
+	<main class="spotflex">
+		<a target="_blank" class="logo" href="//arhn.us/spotify">
+			<img
+				src="https://arhaan.vercel.app/assets/img/spotify.svg"
+				alt="Spotify Icon"
+			/>
+		</a>
+		<div>
+			<h5 v-if="spotify.isPlaying" class="title">
+				<a class="green" :href="spotify.songUrl" target="_blank">
+					<span>{{ spotify.title }}</span>
+				</a>
+			</h5>
+			<h5 class="title not" v-else>Not playing</h5>
+			<h5 class="artist">
+				<span v-if="spotify.isPlaying">
+					{{ spotify.artist }}
+				</span>
+			</h5>
+		</div>
 	</main>
 </template>
 
@@ -62,11 +74,11 @@ export default {
 }
 
 .title {
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 .green {
-	color: aquamarine;
+	color: rgb(6, 124, 85);
 }
 .artist {
 	font-size: 0.9em;
@@ -91,7 +103,30 @@ img {
 a {
 	transition: 0.3s;
 }
-a:hover {
-	background-color: antiquewhite;
+a.green:hover {
+	background-color: rgba(210, 255, 221, 0.562);
+}
+
+.spotflex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.spotflex img {
+	width: 1.25em;
+}
+
+.artist {
+	font-size: 0.85em;
+}
+
+.logo {
+	margin: 0;
+	margin-top: -1em;
+}
+
+.not {
+	font-size: 0.85em;
 }
 </style>

@@ -105,17 +105,13 @@ body {
 	display: flex;
 }
 
-/* a {
-	color: #222;
-	text-decoration: none;
-	border-bottom: solid 1px #222;
-	opacity: 70%;
+.back {
 	transition: 0.3s;
 }
 
-a:hover {
-	opacity: 100%;
-} */
+.back:hover {
+	opacity: 0.7;
+}
 
 ::selection {
 	color: #222;
@@ -151,7 +147,7 @@ strong {
 		height: auto;
 		margin: 16.5vh 0;
 	}
-	.none {
+	.none, .anti {
 		display: none;
 	}
 }

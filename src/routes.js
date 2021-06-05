@@ -5,7 +5,7 @@ import Contact from './views/Contact.vue'
 import NotFound from './views/NotFound.vue'
 
 export const routes = [
-	{ path: '/', component: Home, meta: { title: 'Home' } },
+	{ path: '/', component: Home, meta: { title: 'Home', footerclass: 'home' } },
 	{
 		path: '/projects',
 		meta: { title: 'Projects' },
@@ -22,5 +22,5 @@ export const routes = [
 		meta: { title: 'Contact' },
 		component: Contact
 	},
-	{ path: '/:path(.*)', component: NotFound }
+	{ path: '/:path(.*)', component: NotFound, meta: { title: 'notfound' } }
 ]

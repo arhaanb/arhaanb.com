@@ -1,82 +1,46 @@
 <template>
 	<div class="cont">
-		<br /><br /><br /><br />
-		<img
-			src="https://arhaan.vercel.app/assets/img/arhaanb-min.jpg"
-			alt="Arhaan Bahadur"
-		/>
+		<div class="anti"><br /><br /><br /><br /></div>
+		<img src="../assets/arhaanb.jpg" alt="Arhaan Bahadur" />
 		<br />
 		<h4 class="name">Arhaan Bahadur</h4>
+
 		<div class="yo noselect" style="margin-bottom: 1em">
-			<a
-				href="https://twitter.com/arhaan_bahadur"
-				rel="noopener noreferrer"
-				target="_blank"
-				>Twitter</a
-			>
-			<a
-				href="https://instagram.com/arhaan_bahadur"
-				rel="noopener noreferrer"
-				target="_blank"
-				>Instagram</a
-			>
-			<a
-				href="https://github.com/arhaanb"
-				rel="noopener noreferrer"
-				target="_blank"
-				>GitHub</a
-			>
-			<a
-				href="https://open.spotify.com/user/arhaanb"
-				rel="noopener noreferrer"
-				target="_blank"
-				>Spotify</a
-			>
-			<a href="mailto:hi@arhaanb.co" rel="noopener noreferrer" target="_blank"
-				>hi@arhaanb.co</a
-			>
+			<!-- <router-link to="/about">About</router-link> -->
+			<router-link to="/projects">Projects</router-link>
+			<router-link to="/hi">Say hi</router-link>
 		</div>
+
 		<p>
 			I'm a {{ 17 }} year old student studying at The Mother's International
-			School. I like building cool stuff. I enjoy participating in Hackathons
-			and Design events, and I've won several of them over the last few years.
-			You can view some of the
+			School. I enjoy participating in Hackathons and Design events, and I've
+			won several of them over the last few years. You can view some of the
 			<router-link to="/projects">projects</router-link> I built, or check out
 			<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
 		</p>
 
 		<p>
-			I was the President of my school's technology and entrepreneurship club
-			&mdash;
-			<a href="//minet.co" target="_blank">MINET</a>. I make functional and
-			useful products with beautiful user experiences. If you want to say hi or
-			work with me, feel free to contact me on any of my socials.
+			Recently, I co-founded
+			<a href="//delhifoundry.co" target="_blank">Delhi Design Foundry</a> with
+			a few of my friends, and I'm working there as a full-stack engineer and
+			designer. In 2020, I was the President of my school's technology and
+			entrepreneurship club &mdash;
+			<a href="//minet.co" target="_blank">MINET</a>.
 		</p>
-		<!-- <div class="center main">
-			<h1>
-				<br />
-				Arhaan Bahadur
-			</h1>
-			<h3 class="subtitle">I'm a designer and developer. I build stuff.</h3>
-			<div class="nav">
-				<router-link to="/about">About me</router-link>
-				<router-link to="/projects">Projects</router-link>
-				<router-link to="/hi">Say Hi</router-link>
-			</div>
-		</div> -->
-		<div class="row">
-			<div class="six columns">
-				<Spotify />
-			</div>
-		</div>
+		<p>
+			I make functional and useful products with beautiful user experiences. If
+			you want to say hi or work with me, feel free to
+			<router-link to="hi">contact me</router-link> on any of my socials.
+		</p>
 	</div>
 </template>
 
 <script>
 import Spotify from '../components/spotify.vue'
+import Footer from '../components/footer.vue'
 
 export default {
-	components: { Spotify }
+	components: { Spotify, Footer }
 }
 </script>
 
@@ -133,5 +97,13 @@ img {
 
 .nav {
 	margin-top: 1em;
+}
+
+.yo a {
+	transition: 0.3s;
+}
+
+.yo a:hover {
+	color: #69e;
 }
 </style>
