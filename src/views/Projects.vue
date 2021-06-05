@@ -2,7 +2,8 @@
 	<div class="cont" @mouseleave="hover = false">
 		<h2 class="title">Projects</h2>
 		<p class="zero">
-			These are some of the major projects I've built over the last couple of years.
+			These are some of the major projects I've built over the last couple of
+			years.
 		</p>
 		<div class="bigproj">
 			<Project
@@ -81,8 +82,8 @@
 
 			<p class="zero">
 				For more, you can check out my
-				<a href="//github.com/arhaanb">GitHub (@arhaanb)</a>. Most of my
-				projects are open source.
+				<a href="//github.com/arhaanb" target="_blank">GitHub (@arhaanb)</a>.
+				Most of my projects are open source.
 			</p>
 		</div>
 	</div>

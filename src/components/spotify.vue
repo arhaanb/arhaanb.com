@@ -1,10 +1,7 @@
 <template>
 	<main class="spotflex">
 		<a target="_blank" class="logo" href="//arhn.us/spotify">
-			<img
-				src="https://arhaan.vercel.app/assets/img/spotify.svg"
-				alt="Spotify Icon"
-			/>
+			<img src="@/assets/spotify.svg" alt="Spotify Icon" />
 		</a>
 		<div id="spotifycontainer">
 			<h5 v-if="spotify.isPlaying" class="title spotifytitle">
@@ -88,11 +85,8 @@ export default {
 	margin: 0;
 }
 
-img {
-	width: 30%;
-	margin-right: 1em;
-	border-radius: 0.5em;
-	margin-right: 1em !important;
+.spoticon {
+	margin-right: 2em;
 }
 
 .flex {
@@ -124,6 +118,7 @@ a.green:hover {
 .logo {
 	margin: 0;
 	margin-top: -1em;
+	margin-right: 0.25em;
 }
 
 .not {
