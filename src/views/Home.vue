@@ -1,18 +1,16 @@
 <template>
 	<div class="cont">
-		<div class="anti"><br /><br /><br /><br /></div>
 		<img class="topimg" src="../assets/arhaanb.jpg" alt="Arhaan Bahadur" />
 		<br />
 		<h4 class="name">Arhaan Bahadur</h4>
 
 		<div class="yo noselect" style="margin-bottom: 1em">
-			<!-- <router-link to="/about">About</router-link> -->
 			<router-link to="/projects">Projects</router-link>
 			<router-link to="/hi">Say hi</router-link>
 		</div>
 
 		<p>
-			I'm a {{ 17 }} year old student studying at The Mother's International
+			I'm a {{ age }} year old student studying at The Mother's International
 			School. I enjoy participating in Hackathons and Design events, and I've
 			won several of them over the last few years. You can view some of the
 			<router-link to="/projects">projects</router-link> I built, or check out
@@ -40,7 +38,29 @@ import Spotify from '../components/spotify.vue'
 import Footer from '../components/footer.vue'
 
 export default {
-	components: { Spotify, Footer }
+	components: { Spotify, Footer },
+	data() {
+		return {
+			age: 17
+		}
+	},
+	mounted() {
+		const age = this.getAge('7/23/2003')
+		this.age = age
+	},
+	methods: {
+		getAge(DOB) {
+			var today = new Date()
+			var birthDate = new Date(DOB)
+			var age = today.getFullYear() - birthDate.getFullYear()
+			var m = today.getMonth() - birthDate.getMonth()
+			if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+				age = age - 1
+			}
+
+			return age
+		}
+	}
 }
 </script>
 
@@ -107,9 +127,13 @@ img {
 	color: #69e;
 }
 
-@media (max-width: 750px) {
 .topimg {
-	margin-top: -5em;
+	margin-top: 2em;
 }
+
+@media (max-width: 750px) {
+	.topimg {
+		margin-top: 0;
+	}
 }
 </style>

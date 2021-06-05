@@ -1,5 +1,5 @@
 <template>
-	<main class="home">
+	<main>
 		<div class="container-sml">
 			<h1 class="title">
 				<router-link to="/" class="forofour">404</router-link>
@@ -17,33 +17,6 @@
 				me if you think this is a mistake.
 			</p>
 			<div class="yo">
-				<!-- <a
-					href="https://twitter.com/arhaan_bahadur"
-					rel="noopener noreferrer"
-					target="_blank"
-					>Twitter</a
-				>
-				<a
-					href="https://instagram.com/arhaan_bahadur"
-					rel="noopener noreferrer"
-					target="_blank"
-					>Instagram</a
-				>
-				<a
-					href="https://github.com/arhaanb"
-					rel="noopener noreferrer"
-					target="_blank"
-					>GitHub</a
-				>
-				<a
-					href="https://open.spotify.com/user/arhaanb"
-					rel="noopener noreferrer"
-					target="_blank"
-					>Spotify</a
-				>
-				<a href="mailto:hi@arhaanb.co" rel="noopener noreferrer" target="_blank"
-					>hi@arhaanb.co</a
-				> -->
 				<a
 					href="https://twitter.com/arhaan_bahadur"
 					rel="noopener noreferrer"
@@ -99,6 +72,7 @@
 	border: none;
 	opacity: 1;
 	color: rgb(8, 75, 119);
+	transition: 0.2s;
 }
 
 .forofour:hover {
@@ -127,5 +101,9 @@ p {
 .yo a {
 	padding: 0.35em;
 	font-size: 1.1em;
+}
+
+.title {
+	margin-top: 7em;
 }
 </style>

@@ -47,7 +47,6 @@ export default {
 		}
 	},
 	mounted() {
-		console.log('Lil Wayne, Wiz Khalifa, Imagine Dragons, X'.length)
 		this.getSpotifyData()
 		this.repeatSpotifyData()
 	},
@@ -129,5 +128,11 @@ a.green:hover {
 
 .not {
 	font-size: 0.85em;
+}
+
+@media (max-width: 750px) {
+	.not {
+		font-size: 0.95em;
+	}
 }
 </style>

@@ -1,8 +1,18 @@
 <template>
 	<main>
-		<nav v-if="$route.meta.title !== 'Home'" class="navbar">
+		<nav v-if="$route.meta.title !== 'notfound'" class="navbar">
 			<div class="navcont">
-				<router-link class="back" to="/">&larr;</router-link>
+				<router-link v-if="$route.meta.title !== 'Home'" class="back" to="/">
+					&larr;
+				</router-link>
+				<router-link v-else to="/">
+					<img
+						draggable="false"
+						class="logo"
+						src="/favicon.ico"
+						alt="Arhaan's logo"
+					/>
+				</router-link>
 
 				<div class="links">
 					<router-link to="/">Home</router-link>
@@ -51,7 +61,8 @@
 				<component :is="Component" />
 			</transition>
 		</router-view>
-		<div class="cont">
+
+		<div v-if="$route.meta.title !== 'notfound'" class="cont">
 			<Footer :class="`footer footer-${$route.meta.title}`" />
 		</div>
 	</main>
@@ -69,7 +80,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .fade-enter-active,
 .fade-leave-active {
 	transition: opacity 0.5s ease;
@@ -169,6 +180,7 @@ export default {
 	position: fixed;
 	top: 0;
 	z-index: 20;
+	overflow: hidden;
 }
 
 .navdata {
@@ -180,7 +192,7 @@ export default {
 	}
 	.btm {
 		position: absolute;
-		bottom: 2em;
+		bottom: 5em;
 	}
 	a {
 		font-size: 2em;
@@ -189,5 +201,9 @@ export default {
 	a.router-link-exact-active {
 		color: #69e;
 	}
+}
+
+.logo {
+	width: 1.75em;
 }
 </style>

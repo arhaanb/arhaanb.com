@@ -4,8 +4,11 @@
 	--c-scrollbar-hover: #bbb;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	/* font-family: 'Inter var', sans-serif; */
 	/* background: linear-gradient(99deg, #c5f3ff80, #ffffff, #f0d3ff75, #ffffff);
 	background-size: 800% 800%;
 	-webkit-animation: gradAnim 8s ease infinite;
@@ -26,19 +29,9 @@ body {
 	flex-direction: column;
 }
 
-/* p {
-	opacity: 0.9;
-} */
-
 .zero {
 	margin: 0;
 }
-
-/* @supports (font-variation-settings: normal) {
-	body {
-		font-family: 'Inter var', sans-serif;
-	}
-} */
 
 @-webkit-keyframes gradAnim {
 	0% {
@@ -192,9 +185,6 @@ p {
 }
 
 .back {
-	/* position: absolute;
-	top: 2em;
-	left: 6em; */
 	font-size: 1.25em;
 	border: none;
 }
@@ -204,7 +194,7 @@ p {
 }
 
 #nprogress .bar {
-	background-color: rgb(12, 117, 82);
+	background-color: rgb(39, 80, 151);
 	opacity: 75%;
 	position: fixed;
 	z-index: 1031;

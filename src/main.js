@@ -8,7 +8,12 @@ import './assets/global.css'
 
 export const createApp = ViteSSG(
 	App,
-	{ routes },
+	{
+		routes,
+		scrollBehavior(to, from, savedPosition) {
+			return { top: 0 }
+		}
+	},
 	({ app, router, isClient }) => {
 		if (isClient) {
 			router.beforeEach(() => {
