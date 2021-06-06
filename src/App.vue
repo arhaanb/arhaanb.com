@@ -98,7 +98,7 @@ export default {
 }
 
 .navcont .topsec {
-	margin-top: 1.8em;
+	margin-top: 1em;
 }
 
 .navbar .links {
@@ -151,24 +151,6 @@ export default {
 	width: 1.3em;
 }
 
-@media (max-width: 750px) {
-	.footer-Home {
-		margin-top: 0;
-	}
-	.footer {
-		margin-bottom: -4em;
-	}
-	.navbar .links {
-		display: none;
-	}
-	.ham {
-		display: block !important;
-	}
-	.navbar {
-		margin-top: -8em;
-	}
-}
-
 .footer-notfound {
 	display: none;
 }
@@ -204,6 +186,26 @@ export default {
 }
 
 .logo {
-	width: 1.75em;
+	width: 1.5em;
+}
+
+@media (max-height: 768px) {
+	.footer-Home {
+		margin-top: 3em;
+	}
+}
+@media (max-width: 750px) {
+	.footer-Home {
+		margin-top: 0;
+	}
+	.footer {
+		margin-bottom: -4em;
+	}
+	.navbar .links {
+		display: none;
+	}
+	.ham {
+		display: block !important;
+	}
 }
 </style>

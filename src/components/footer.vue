@@ -81,7 +81,7 @@ export default {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: -1em;
+	margin-bottom: -2.3em;
 }
 
 .flex-right {
@@ -141,6 +141,9 @@ export default {
 	}
 	.col.icon {
 		width: 65%;
+	}
+	.flexfoot {
+		margin-bottom: 4em;
 	}
 }
 </style>

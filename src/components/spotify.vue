@@ -6,21 +6,13 @@
 		<div id="spotifycontainer">
 			<h5 v-if="spotify.isPlaying" class="title spotifytitle">
 				<a class="green" :href="spotify.songUrl" target="_blank">
-					<span :title="spotify.title">{{
-						spotify.title.length > 34
-							? `${spotify.title.slice(0, 34)}...`
-							: spotify.title
-					}}</span>
+					<span :title="spotify.title">{{ spotify.title }}</span>
 				</a>
 			</h5>
 			<h5 class="title not" v-else>Not playing</h5>
 			<h5 class="artist spotifytitle">
 				<span :title="spotify.artist" v-if="spotify.isPlaying">
-					{{
-						spotify.artist.length > 42
-							? `${spotify.artist.slice(0, 42)}...`
-							: spotify.artist
-					}}
+					{{ spotify.artist }}
 				</span>
 			</h5>
 		</div>
@@ -46,6 +38,7 @@ export default {
 	mounted() {
 		this.getSpotifyData()
 		this.repeatSpotifyData()
+		console.log('PRESSURE / BOW WOW (feat. ssgkobe)'.length)
 	},
 	methods: {
 		repeatSpotifyData() {
@@ -113,21 +106,38 @@ a.green:hover {
 
 .artist {
 	font-size: 0.85em;
+	margin: 0;
 }
 
 .logo {
 	margin: 0;
-	margin-top: -1em;
-	margin-right: 0.25em;
+	margin-right: 0.5em;
 }
 
 .not {
 	font-size: 0.85em;
 }
 
+#spotifycontainer {
+	box-sizing: border-box;
+	max-width: 17em;
+}
+
+#spotifycontainer h5 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 @media (max-width: 750px) {
 	.not {
 		font-size: 0.95em;
+	}
+	#spotifycontainer {
+		max-width: 80%;
+	}
+	.spotflex {
+		margin-bottom: 0.5em;
 	}
 }
 </style>

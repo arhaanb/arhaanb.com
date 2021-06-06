@@ -11,7 +11,7 @@
 				</div>
 			</div>
 			<div v-if="!mobileLarger" class="popmobile">
-				<img loading="lazy" :src="img" class="mobileimg" :alt="title" />
+				<!-- <img loading="lazy" :src="img" class="mobileimg" :alt="title" /> -->
 			</div>
 			<div @mouseover="hover = true" @mouseleave="hover = false" class="info">
 				<h4 class="name" v-html="name"></h4>

@@ -1,7 +1,7 @@
 :root {
 	--c-bg: #fff;
-	--c-scrollbar: #eee;
-	--c-scrollbar-hover: #bbb;
+	--c-scrollbar: #bbb;
+	--c-scrollbar-hover: rgb(223, 223, 223);
 }
 
 html {
@@ -136,10 +136,6 @@ strong {
 }
 
 @media (max-width: 750px) {
-	#app {
-		height: auto;
-		margin: 16.5vh 0;
-	}
 	.none, .anti {
 		display: none;
 	}

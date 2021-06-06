@@ -4,9 +4,10 @@
 		<br />
 		<h4 class="name">Arhaan Bahadur</h4>
 
-		<div class="yo noselect" style="margin-bottom: 1em">
-			<router-link to="/projects">Projects</router-link>
-			<router-link to="/hi">Say hi</router-link>
+		<div class="yo" style="margin-bottom: 1em">
+			<!-- <router-link to="/projects">Projects</router-link>
+			<router-link to="/hi">Say hi</router-link> -->
+			<h6>designer &middot; developer</h6>
 		</div>
 
 		<p>
@@ -128,7 +129,7 @@ img {
 }
 
 .topimg {
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 @media (max-width: 750px) {
