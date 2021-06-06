@@ -4,14 +4,14 @@
 			<img src="@/assets/spotify.svg" alt="Spotify Icon" />
 		</a>
 		<div id="spotifycontainer">
-			<h5 v-if="spotify.isPlaying" class="title spotifytitle">
+			<h5 v-if="spotify && spotify.isPlaying" class="title spotifytitle">
 				<a class="green" :href="spotify.songUrl" target="_blank">
 					<span :title="spotify.title">{{ spotify.title }}</span>
 				</a>
 			</h5>
 			<h5 class="title not" v-else>Not playing</h5>
-			<h5 class="artist spotifytitle">
-				<span :title="spotify.artist" v-if="spotify.isPlaying">
+			<h5 v-if="spotify" class="artist spotifytitle">
+				<span v-if="spotify.isPlaying" :title="spotify.artist">
 					{{ spotify.artist }}
 				</span>
 			</h5>
@@ -20,7 +20,8 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
+import useSWRV from 'swrv'
 var url = ''
 
 if (process.env.NODE_ENV == 'development') {
@@ -35,23 +36,32 @@ export default {
 			spotify: false
 		}
 	},
+
+	setup() {
+		const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
+
+		return {
+			spotify: data,
+			error
+		}
+	},
+
 	mounted() {
-		this.getSpotifyData()
-		this.repeatSpotifyData()
-		console.log('PRESSURE / BOW WOW (feat. ssgkobe)'.length)
+		// this.getSpotifyData()
+		// this.repeatSpotifyData()
 	},
 	methods: {
-		repeatSpotifyData() {
-			axios.get(url).then((res) => {
-				this.spotify = res.data
-			})
-			setTimeout(this.repeatSpotifyData, 2000)
-		},
-		getSpotifyData() {
-			axios.get(url).then((res) => {
-				this.spotify = res.data
-			})
-		}
+		// repeatSpotifyData() {
+		// 	axios.get(url).then((res) => {
+		// 		this.spotify = res.data
+		// 	})
+		// 	setTimeout(this.repeatSpotifyData, 2000)
+		// },
+		// getSpotifyData() {
+		// 	axios.get(url).then((res) => {
+		// 		this.spotify = res.data
+		// 	})
+		// }
 	}
 }
 </script>

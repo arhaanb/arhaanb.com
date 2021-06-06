@@ -2,9 +2,12 @@
 	<main>
 		<nav v-if="$route.meta.title !== 'notfound'" class="navbar">
 			<div class="navcont">
-				<router-link v-if="$route.meta.title !== 'Home'" class="back" to="/">
-					&larr;
-				</router-link>
+				<div v-if="$route.meta.title !== 'Home'" class="flexbruh noselect">
+					<router-link class="back" to="/">
+						<span>&larr;</span>
+					</router-link>
+					<span>Arhaan Bahadur</span>
+				</div>
 				<router-link v-else to="/">
 					<img
 						draggable="false"
@@ -26,7 +29,7 @@
 			</div>
 		</nav>
 
-		<transition name="fade">
+		<transition class="nav" name="fade">
 			<div v-if="nav" class="fullnav">
 				<div class="navcont">
 					<div class="topsec">
@@ -56,11 +59,15 @@
 			</div>
 		</transition>
 
-		<router-view v-slot="{ Component }">
+		<router-view class="router" v-slot="{ Component }">
 			<transition name="fade" mode="out-in">
 				<component :is="Component" />
 			</transition>
 		</router-view>
+
+		<!-- <main>
+			<router-view></router-view>
+		</main> -->
 
 		<div v-if="$route.meta.title !== 'notfound'" class="cont">
 			<Footer :class="`footer footer-${$route.meta.title}`" />
@@ -76,20 +83,18 @@ export default {
 		return {
 			nav: false
 		}
+	},
+	watch: {
+		nav() {
+			document.querySelector('body').style.overflow = this.nav
+				? 'hidden'
+				: 'auto'
+		}
 	}
 }
 </script>
 
 <style lang="scss">
-.fade-enter-active,
-.fade-leave-active {
-	transition: opacity 0.5s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-	opacity: 0;
-}
-
 .navbar .navcont,
 .navcont .topsec {
 	display: flex;
@@ -207,5 +212,15 @@ export default {
 	.ham {
 		display: block !important;
 	}
+}
+
+.flexbruh {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flexbruh .back {
+	margin-right: 1em;
 }
 </style>
