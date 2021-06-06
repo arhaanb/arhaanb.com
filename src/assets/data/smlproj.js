@@ -25,6 +25,13 @@ const projects = {
 				'https://res.cloudinary.com/arhaanb/image/upload/v1622907479/mismun_dpd9uc.png'
 		},
 		{
+			title: 'arhn.us',
+			desc: 'A URL shoretener based on Vercel and Airtable.',
+			link: 'https://github.com/arhaanb/arhn.us',
+			img:
+				'https://res.cloudinary.com/arhaanb/image/upload/v1622960010/arhn.us.png'
+		},
+		{
 			title: 'Shiksha',
 			desc: 'A new way of online education. (Built for a creative event)',
 			link: 'https://arhaanb.co/shiksha',
@@ -50,7 +57,7 @@ const projects = {
 			desc: 'Portfolio website made for a Cybersecurity Enthusiast.',
 			link: 'https://dhruvagoyal.com',
 			img:
-				'https://res.cloudinary.com/arhaanb/image/upload/v1622907481/dhruva_edx75c.png'
+				'https://res.cloudinary.com/arhaanb/image/upload/v1622960008/dhruva_sx0uly.png'
 		},
 		{
 			title: 'Sabre <i>from The Office</i>',

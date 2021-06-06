@@ -98,7 +98,7 @@ export default {
 }
 
 .navcont .topsec {
-	margin-top: 1em;
+	margin-top: 0.8em;
 }
 
 .navbar .links {
