@@ -43,7 +43,7 @@ const projects = {
 			desc: "Website built to showcase a photographer's portfolio.",
 			link: 'https://raghavthakar.com',
 			img:
-				'https://res.cloudinary.com/arhaanb/image/upload/v1622907476/raghav_ythe9x.png'
+				'https://res.cloudinary.com/arhaanb/image/upload/v1622970215/raghav_azzeyo.png'
 		},
 		{
 			title: 'BROKEN: Movie',
