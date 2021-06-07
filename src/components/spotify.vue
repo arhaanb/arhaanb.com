@@ -1,6 +1,10 @@
 <template>
 	<main class="spotflex">
-		<a target="_blank" class="logo" href="//arhn.us/spotify">
+		<a
+			target="_blank"
+			class="logo"
+			href="https://open.spotify.com/user/arhaanb"
+		>
 			<img src="@/assets/spotify.svg" alt="Spotify Icon" />
 		</a>
 		<div id="spotifycontainer">
