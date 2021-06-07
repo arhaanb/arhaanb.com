@@ -10,9 +10,19 @@
 			<div class="six columns">
 				<h5 style="margin-bottom: 0.4em">Message me</h5>
 				<form v-if="!submitted" @submit.prevent="submitForm()">
-					<input type="text" required placeholder="Name" />
-					<input type="email" required placeholder="Email" />
-					<textarea type="text" required placeholder="Anything you wanna say" />
+					<input type="text" v-model="form.name" required placeholder="Name" />
+					<input
+						type="email"
+						v-model="form.email"
+						required
+						placeholder="Email"
+					/>
+					<textarea
+						type="text"
+						v-model="form.message"
+						required
+						placeholder="Anything you wanna say"
+					/>
 
 					<p v-if="error">{{ error }}</p>
 
