@@ -3,10 +3,10 @@ require('dotenv').config()
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 module.exports = (req, res) => {
-	const { name, email, content: message } = req.body
+	const { name, email, message } = req.body
 
 	const emailBody = `<strong>${name}</strong> sent you this message:
-${content}
+${message}
 
 Get back to them at <a href="mailto:${email}">${email}</a>`
 
