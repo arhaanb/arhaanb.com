@@ -16,15 +16,17 @@
 
 					<p v-if="error">{{ error }}</p>
 
-					<button
-						:style="loading ? 'padding: 0 3em;' : ''"
-						type="submit"
-						:disabled="loading"
-						class="cool u-pull-right"
-					>
-						<span v-if="!loading">Send</span>
-						<span v-if="loading"><div class="loader"></div></span>
-					</button>
+					<div class="flex-center">
+						<button
+							:style="loading ? 'padding: 0 3em;' : ''"
+							type="submit"
+							:disabled="loading"
+							class="cool u-pull-right"
+						>
+							<span v-if="!loading">Send</span>
+							<span v-if="loading"><div class="loader"></div></span>
+						</button>
+					</div>
 				</form>
 
 				<div v-if="submitted">
@@ -55,7 +57,7 @@
 		<div class="u-cf"></div>
 
 		<br /><br /><br />
-		<br v-if="!error" /><br v-if="!error" />
+		<div class="anti"><br v-if="!error" /><br v-if="!error" /></div>
 	</div>
 </template>
 
@@ -209,6 +211,21 @@ button.cool:disabled {
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
+	}
+}
+
+.flex-center {
+	align-items: flex-end;
+}
+
+@media (max-width: 750px) {
+	button.cool {
+		margin-bottom: 3em;
+		width: 60%;
+		margin-top: 0.75em;
+	}
+	.flex-center {
+		align-items: center;
 	}
 }
 </style>

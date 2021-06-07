@@ -1,7 +1,6 @@
 const sgMail = require('@sendgrid/mail')
 require('dotenv').config()
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-const axios = require('axios')
 
 module.exports = (req, res) => {
 	const { name, email, content: message } = req.body

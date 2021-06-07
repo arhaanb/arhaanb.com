@@ -16,6 +16,7 @@
 	},
 	"dependencies": {
 		"@iconify/json": "^1.1.353",
+		"@sendgrid/mail": "^7.4.4",
 		"@vueuse/core": "^4.8.4",
 		"@vueuse/head": "^0.5.1",
 		"airtable": "^0.11.0",
