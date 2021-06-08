@@ -26,7 +26,6 @@
 				link="https://minet.co"
 				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907776/minetx_n6omtg.gif"
 			/>
-			<!-- img="https://res.cloudinary.com/arhaanb/image/upload/v1612204131/minet_ywuug5.png" -->
 
 			<Project
 				name="BugBase"
@@ -80,11 +79,16 @@
 				</div>
 			</div>
 
-			<p class="zero">
-				For more, you can check out my
-				<a href="//github.com/arhaanb" target="_blank">GitHub (@arhaanb)</a>.
-				Most of my projects are open source.
-			</p>
+			<div class="row">
+				<div class="eight columns">
+					<p class="zero">
+						You can check out my
+						<a href="//github.com/arhaanb" target="_blank">GitHub (@arhaanb)</a>
+						for more. Most of my projects are open source.
+					</p>
+				</div>
+				<div class="u-cf"></div>
+			</div>
 		</div>
 	</div>
 </template>

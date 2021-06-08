@@ -10,7 +10,7 @@ const projects = {
 		},
 		{
 			title: 'Safar',
-			link: 'https://arhaanb.co/safar',
+			link: 'https://arhn.us/safar',
 			desc:
 				'A case study and mobile app to make travel safer during quarantine.',
 			img:
@@ -34,7 +34,7 @@ const projects = {
 		{
 			title: 'Shiksha',
 			desc: 'A new way of online education. (Built for a creative event)',
-			link: 'https://arhaanb.co/shiksha',
+			link: 'https://arhn.us/shiksha',
 			img:
 				'https://res.cloudinary.com/arhaanb/image/upload/v1622907479/shiksha_fctefu.png'
 		},
@@ -71,7 +71,7 @@ const projects = {
 		{
 			title: 'Kuizu',
 			desc: 'A trivia app based on Computer Science built with Flask.',
-			link: 'https://arhaanb.co/kuizu',
+			link: 'https://kuizu.arhaanb.co',
 			img:
 				'https://res.cloudinary.com/arhaanb/image/upload/v1622907479/kuizu_uror6s.png'
 		},
@@ -85,7 +85,7 @@ const projects = {
 		{
 			title: 'SiteBlock',
 			desc: 'A simple chrome extension to block websites.',
-			link: 'https://arhaanb.co/gh/siteblock',
+			link: 'https://github.com/arhaanb/siteblock',
 			img:
 				'https://res.cloudinary.com/arhaanb/image/upload/v1622907863/siteblock.png'
 		}

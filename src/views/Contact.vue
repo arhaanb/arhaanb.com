@@ -73,6 +73,8 @@
 
 <script>
 import axios from 'axios'
+const errormsg =
+	'An error occurred. Please try again, or message me on one of my socials instead.'
 
 export default {
 	data() {
@@ -90,21 +92,28 @@ export default {
 	methods: {
 		submitForm() {
 			this.loading = true
-			axios.post('/api/msg', this.form).then((res) => {
-				console.log(res.data)
-				if (res.data.error == false) {
-					this.form.name = ''
-					this.form.email = ''
-					this.form.message = ''
-					this.submitted = true
-					this.loading = false
-				} else {
-					this.error =
-						'An error occurred. Please try again, or message me on one of my socials instead.'
+			axios
+				.post('/api/msg', this.form)
+				.then((res) => {
+					console.log(res.data)
+					if (res.data.error == false) {
+						this.form.name = ''
+						this.form.email = ''
+						this.form.message = ''
+						this.submitted = true
+						this.loading = false
+					} else {
+						this.error = errormsg
+
+						this.loading = false
+						this.submitted = false
+					}
+				})
+				.catch((err) => {
+					this.error = errormsg
 					this.loading = false
 					this.submitted = false
-				}
-			})
+				})
 		}
 	}
 }

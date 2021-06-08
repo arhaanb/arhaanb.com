@@ -2,9 +2,9 @@ import App from './App.vue'
 import { routes } from './routes.js'
 import { ViteSSG } from 'vite-ssg'
 import NProgress from 'nprogress'
-import './assets/normal.css'
-import './assets/skeleton.css'
-import './assets/global.css'
+import './assets/css/normal.css'
+import './assets/css/skeleton.css'
+import './assets/css/global.css'
 
 export const createApp = ViteSSG(
 	App,
