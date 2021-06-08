@@ -6,7 +6,7 @@ const projects = {
 				'A mobile app to help creative professionals focus, and think better.',
 			link: 'https://arhaanb.co/ponder',
 			img:
-				'https://res.cloudinary.com/arhaanb/image/upload/v1622907475/ponder_n5ttup.png'
+				'https://res.cloudinary.com/arhaanb/image/upload/v1623136329/ponder_ln1gaj.png'
 		},
 		{
 			title: 'Safar',

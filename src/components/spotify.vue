@@ -4,6 +4,7 @@
 			target="_blank"
 			class="logo"
 			href="https://open.spotify.com/user/arhaanb"
+			title="Now listening"
 		>
 			<img src="@/assets/spotify.svg" alt="Spotify Icon" />
 		</a>
