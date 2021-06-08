@@ -1,9 +1,6 @@
 {
-	"routes": [
-		{ "handle": "filesystem" },
-		{ "src": "/.*", "dest": "/index.html" }
-	],
-	"rewrites": [],
+	"redirects": [],
+	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
 	"github": {
 		"autoAlias": true,
 		"enabled": true,

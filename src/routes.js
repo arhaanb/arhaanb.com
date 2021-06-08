@@ -10,7 +10,7 @@ export const routes = [
 		meta: { title: 'Projects' },
 		component: Projects
 	},
-	{ path: '/contact', redirect: '/hi' },
+	{ path: '/contact', component: Contact },
 	{
 		path: '/hi',
 		meta: { title: 'Contact' },
