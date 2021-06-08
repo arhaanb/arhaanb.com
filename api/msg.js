@@ -6,7 +6,7 @@ module.exports = (req, res) => {
 	const { name, email, message } = req.body
 
 	const emailBody = `<strong>${name}</strong> sent you this message:
-	<br />
+	<br /><br />
 	${message}
 	<br /><br />
 	Get back to them at <a href="mailto:${email}">${email}</a>`
