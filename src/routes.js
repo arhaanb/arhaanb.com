@@ -16,5 +16,6 @@ export const routes = [
 		meta: { title: 'Contact' },
 		component: Contact
 	},
-	{ path: '/:path(.*)', component: NotFound, meta: { title: 'notfound' } }
+	// { path: '/:path(.*)', component: NotFound, meta: { title: 'notfound' } }
+	{ path: '/404', component: NotFound, meta: { title: 'notfound' } }
 ]
