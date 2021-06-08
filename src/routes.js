@@ -16,5 +16,5 @@ export const routes = [
 		meta: { title: 'Contact' },
 		component: Contact
 	},
-	{ path: '/:path(.*)', component: NotFound, meta: { title: 'notfound' } }
+	{ path: '/:pathMatch(.*)', component: NotFound, meta: { title: 'notfound' } }
 ]
