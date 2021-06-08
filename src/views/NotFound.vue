@@ -13,8 +13,9 @@
 				>.
 			</p>
 			<p class="btm">
-				Or you can go back <router-link to="/">home</router-link>, and contact
-				me if you think this is a mistake.
+				Or you can <router-link to="/">go back home</router-link>, and
+				<router-link to="/hi">contact me</router-link> if you think this is a
+				mistake.
 			</p>
 			<div class="yo">
 				<a

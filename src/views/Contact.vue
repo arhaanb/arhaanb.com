@@ -1,6 +1,6 @@
 <template>
 	<div class="cont">
-		<h2 class="title">Hey &mdash; Let's talk.</h2>
+		<h2 class="title">Let's talk.</h2>
 		<p class="sub">
 			Let me know what you think about this website! Or let's work on a project
 			together! I'll try to get back to you as soon as possible.
