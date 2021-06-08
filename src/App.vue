@@ -24,7 +24,7 @@
 				</div>
 
 				<div class="ham" @click="nav = !nav">
-					<img src="@/assets/ham.svg" alt="" />
+					<img src="@/assets/img/ham.svg" alt="" />
 				</div>
 			</div>
 		</nav>
@@ -36,7 +36,7 @@
 						<h1>&nbsp;</h1>
 
 						<div class="ham" @click="nav = !nav">
-							<img src="@/assets/close.svg" alt="" />
+							<img src="@/assets/img/close.svg" alt="" />
 						</div>
 					</div>
 
@@ -139,15 +139,6 @@ export default {
 	opacity: 0;
 }
 
-.footer-Home {
-	margin-top: 3em;
-}
-
-.footer-Projects {
-	margin-bottom: 2em;
-	margin-top: -3em;
-}
-
 .ham {
 	display: none !important;
 }
@@ -192,6 +183,15 @@ export default {
 
 .logo {
 	width: 1.5em;
+}
+
+.footer-Home {
+	margin-top: 2em;
+}
+
+.footer-Projects {
+	margin-bottom: 2em;
+	margin-top: -3em;
 }
 
 @media (max-width: 750px) {

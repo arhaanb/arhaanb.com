@@ -1,6 +1,6 @@
 <template>
 	<div class="cont">
-		<img class="topimg" src="../assets/arhaanb.jpg" alt="Arhaan Bahadur" />
+		<img class="topimg" src="../assets/img/arhaanb.jpg" alt="Arhaan Bahadur" />
 		<br />
 		<h4 class="name">Arhaan Bahadur</h4>
 

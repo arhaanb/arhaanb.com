@@ -1,6 +1,16 @@
 {
 	"redirects": [],
-	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+	"rewrites": [
+		{
+			"source": "/mailmerge/:match*",
+			"destination": "https://mailmerge.vercel.app/:match*"
+		},
+		{
+			"source": "/ponder/:match*",
+			"destination": "https://ponder.vercel.app/:match*"
+		},
+		{ "source": "/(.*)", "destination": "/index.html" }
+	],
 	"github": {
 		"autoAlias": true,
 		"enabled": true,

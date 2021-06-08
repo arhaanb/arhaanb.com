@@ -142,7 +142,8 @@ strong {
 }
 
 p {
-	line-height: 1.5em;
+	line-height: 1.6em;
+	opacity: 0.9;
 }
 
 .noselect, br, img, button {
@@ -219,5 +220,9 @@ p {
 @media (max-width: 750px) {
 	.navcont {
 		max-width: 41em;
+	}
+	p {
+		line-height: 1.75em;
+		opacity: 0.8;
 	}
 }

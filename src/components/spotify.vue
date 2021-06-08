@@ -6,7 +6,7 @@
 			href="https://open.spotify.com/user/arhaanb"
 			title="Now listening"
 		>
-			<img src="@/assets/spotify.svg" alt="Spotify Icon" />
+			<img src="@/assets/img/spotify.svg" alt="Spotify Icon" />
 		</a>
 		<div id="spotifycontainer">
 			<h5 v-if="spotify && spotify.isPlaying" class="title spotifytitle">
