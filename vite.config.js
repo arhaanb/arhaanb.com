@@ -9,10 +9,8 @@ export default defineConfig({
 		vue(),
 		ViteComponents({
 			customComponentResolvers: [
-				// https://github.com/antfu/vite-plugin-icons
 				ViteIconsResolver({
 					componentPrefix: ''
-					// enabledCollections: ['carbon']
 				})
 			]
 		}),
