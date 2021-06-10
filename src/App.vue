@@ -12,7 +12,7 @@
 					<img
 						draggable="false"
 						class="logo"
-						src="/favicon.ico"
+						src="/fav.png"
 						alt="Arhaan's logo"
 					/>
 				</router-link>
@@ -29,7 +29,7 @@
 			</div>
 		</nav>
 
-		<transition class="nav" name="fade">
+		<transition class="nav" name="nav">
 			<div v-if="nav" class="fullnav">
 				<div class="navcont">
 					<div class="topsec">
@@ -42,15 +42,11 @@
 
 					<div class="navdata">
 						<div class="flexer">
-							<router-link to="/">
-								<span @click="nav = !nav">Home</span>
+							<router-link to="/" @click="nav = !nav">Home</router-link>
+							<router-link to="/projects" @click="nav = !nav">
+								Projects
 							</router-link>
-							<router-link to="/projects">
-								<span @click="nav = !nav">Projects</span>
-							</router-link>
-							<router-link to="/hi">
-								<span @click="nav = !nav">Say hi</span>
-							</router-link>
+							<router-link to="/hi" @click="nav = !nav">Say hi</router-link>
 						</div>
 
 						<div class="btm">Arhaan Bahadur</div>
@@ -59,15 +55,11 @@
 			</div>
 		</transition>
 
-		<router-view class="router" v-slot="{ Component }">
+		<main>
 			<transition name="fade" mode="out-in">
-				<component :is="Component" />
+				<router-view />
 			</transition>
-		</router-view>
-
-		<!-- <main>
-			<router-view></router-view>
-		</main> -->
+		</main>
 
 		<div v-if="$route.meta.title !== 'notfound'" class="cont">
 			<Footer :class="`footer footer-${$route.meta.title}`" />
@@ -131,11 +123,21 @@ export default {
 
 .fade-enter-active,
 .fade-leave-active {
-	transition: opacity 0.3s ease;
+	transition: opacity 0.5s ease;
 }
 
 .fade-enter-from,
 .fade-leave-to {
+	opacity: 0;
+}
+
+.nav-enter-active,
+.nav-leave-active {
+	transition: opacity 0.2s ease;
+}
+
+.nav-enter-from,
+.nav-leave-to {
 	opacity: 0;
 }
 
@@ -175,6 +177,9 @@ export default {
 	a {
 		font-size: 2em;
 		margin-bottom: 0.65em;
+		span {
+			width: 100% !important;
+		}
 	}
 	a.router-link-exact-active {
 		color: #69e;

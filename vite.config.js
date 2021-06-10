@@ -3,7 +3,6 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import ViteComponents from 'vite-plugin-components'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
-import { minifyHtml } from 'vite-plugin-html'
 
 export default defineConfig({
 	plugins: [
@@ -15,8 +14,7 @@ export default defineConfig({
 				})
 			]
 		}),
-		ViteIcons(),
-		minifyHtml()
+		ViteIcons()
 	],
 	resolve: {
 		alias: {
