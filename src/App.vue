@@ -3,19 +3,18 @@
 		<nav v-if="$route.meta.title !== 'notfound'" class="navbar">
 			<div class="navcont">
 				<div v-if="$route.meta.title !== 'Home'" class="flexbruh noselect">
-					<router-link class="back" to="/">
-						<span>&larr;</span>
-					</router-link>
+					<router-link class="back" to="/">&larr;</router-link>
 					<span>Arhaan Bahadur</span>
 				</div>
-				<router-link v-else to="/">
-					<img
-						draggable="false"
-						class="logo"
-						src="/fav.png"
-						alt="Arhaan's logo"
-					/>
-				</router-link>
+				<!-- <router-link v-else to="/"> -->
+				<img
+					draggable="false"
+					class="logo"
+					src="/fav.png"
+					alt="Arhaan's logo"
+					v-else
+				/>
+				<!-- </router-link> -->
 
 				<div class="links">
 					<router-link to="/">Home</router-link>
@@ -68,9 +67,7 @@
 </template>
 
 <script>
-import Footer from './components/footer.vue'
 export default {
-	components: { Footer },
 	data() {
 		return {
 			nav: false
@@ -222,5 +219,9 @@ export default {
 
 .flexbruh .back {
 	margin-right: 1em;
+}
+
+.back {
+	font-size: 1em !important;
 }
 </style>

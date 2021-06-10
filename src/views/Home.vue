@@ -35,11 +35,7 @@
 </template>
 
 <script>
-import Spotify from '../components/spotify.vue'
-import Footer from '../components/footer.vue'
-
 export default {
-	components: { Spotify, Footer },
 	data() {
 		return {
 			age: 17

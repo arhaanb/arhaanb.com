@@ -59,14 +59,6 @@
 	</div>
 </template>
 
-<script>
-import Spotify from './spotify.vue'
-
-export default {
-	components: { Spotify }
-}
-</script>
-
 <style scoped>
 .arnh {
 	margin-top: 0.35em;

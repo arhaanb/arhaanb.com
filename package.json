@@ -38,6 +38,7 @@
 		"vite": "^2.3.7",
 		"vite-plugin-components": "^0.10.4",
 		"vite-plugin-icons": "^0.6.1",
+		"vite-plugin-md": "^0.6.7",
 		"vite-ssg": "^0.11.2"
 	}
 }

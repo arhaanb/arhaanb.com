@@ -42,12 +42,12 @@ const projects = {
 			desc: 'An unorthodox project made from home during the quarantine.',
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1622907481/broken_rxkxdv.png'
 		},
-		{
-			title: 'Dhruva Goyal',
-			desc: 'Portfolio website made for a Cybersecurity Enthusiast.',
-			link: 'https://dhruvagoyal.com',
-			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1622960008/dhruva_sx0uly.png'
-		},
+		// {
+		// 	title: 'Dhruva Goyal',
+		// 	desc: 'Portfolio website made for a Cybersecurity Enthusiast.',
+		// 	link: 'https://dhruvagoyal.com',
+		// 	img: 'https://res.cloudinary.com/arhaanb/image/upload/v1622960008/dhruva_sx0uly.png'
+		// },
 		{
 			title: 'Sabre <i>from The Office</i>',
 			desc: 'Redesign of the printer company from the TV Show &mdash; The Office.',
