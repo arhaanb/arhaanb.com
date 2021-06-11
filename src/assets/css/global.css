@@ -19,6 +19,10 @@ body {
 	background-color: #fff;
 }
 
+.title {
+	margin-bottom: 0.25em;
+}
+
 .img {
 	width: 100%;
 }
