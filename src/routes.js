@@ -1,6 +1,6 @@
 import Home from './views/Home.vue'
 import Projects from './views/Projects.vue'
-import Contact from './views/Contact.vue'
+import Explore from './views/Explore.vue'
 import Sahay from './views/projects/sahay.vue'
 import NotFound from './views/NotFound.vue'
 
@@ -11,11 +11,10 @@ export const routes = [
 		meta: { title: 'Projects' },
 		component: Projects
 	},
-	{ path: '/contact', component: Contact },
 	{
-		path: '/hi',
-		meta: { title: 'Contact' },
-		component: Contact
+		path: '/explore',
+		meta: { title: 'Explore' },
+		component: Explore
 	},
 	{ path: '/sahay', component: Sahay },
 	{ path: '/404', component: NotFound, meta: { title: 'notfound' } },

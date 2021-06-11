@@ -29,7 +29,7 @@
 		<p>
 			I make functional and useful products with beautiful user experiences. If
 			you want to say hi or work with me, feel free to
-			<router-link to="hi">contact me</router-link> on any of my socials.
+			<router-link to="/explore#contact">contact me</router-link> on any of my socials.
 		</p>
 	</div>
 </template>

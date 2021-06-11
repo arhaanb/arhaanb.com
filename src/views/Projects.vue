@@ -13,12 +13,12 @@
 				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907477/ddf_cdsojv.png"
 			/>
 
-			<Project
+			<!-- <Project
 				name="Sahay"
 				description="A collaborative experience for hospital management."
 				link="https://sahay.us"
 				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907478/smlsahay_rekpbv.png"
-			/>
+			/> -->
 
 			<Project
 				name="MINET X"

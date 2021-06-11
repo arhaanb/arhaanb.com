@@ -19,7 +19,7 @@
 				<div class="links">
 					<router-link to="/">Home</router-link>
 					<router-link to="/projects">Projects</router-link>
-					<router-link to="/hi">Say hi</router-link>
+					<router-link to="/explore">Explore</router-link>
 				</div>
 
 				<div class="ham" @click="nav = !nav">
@@ -45,7 +45,9 @@
 							<router-link to="/projects" @click="nav = !nav">
 								Projects
 							</router-link>
-							<router-link to="/hi" @click="nav = !nav">Say hi</router-link>
+							<router-link to="/explore" @click="nav = !nav"
+								>Explore</router-link
+							>
 						</div>
 
 						<div class="btm">Arhaan Bahadur</div>
@@ -158,6 +160,10 @@ export default {
 	top: 0;
 	z-index: 20;
 	overflow: hidden;
+}
+
+.footer:not(.footer-Home) {
+	margin-bottom: 4em;
 }
 
 .navdata {

@@ -20,7 +20,7 @@ const projects = {
 		},
 		{
 			title: 'arhn.us',
-			desc: 'A URL shoretener based on Vercel and Airtable.',
+			desc: 'A URL shortener based on Vercel and Airtable.',
 			link: 'https://github.com/arhaanb/arhn.us',
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1622960010/arhn.us.png'
 		},
