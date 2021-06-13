@@ -17,10 +17,9 @@
 					<span><bx-bx-link-external /></span>
 				</div>
 				<p>
-					I'm mostly interested in UI / UX Designs but I've tried making some
-					illustrations and 3D Models as well.
+					I'm mostly interested in UI / UX Designs but I enjoy making
+					illustrations and I've also tried out some 3D modelling.
 				</p>
-				<!-- <button class="cta">Check it out</button> -->
 			</div>
 		</a>
 
@@ -31,17 +30,15 @@
 					<span><bx-bx-link-external /></span>
 				</div>
 				<p>
-					I've won and organized loads of International and National Hackathons,
-					Design Events, Quizzes, and more.
+					I've participated in over 30 Hackathons, Designathons, Quizzes, etc.
+					Check out some of my wins.
 				</p>
 			</div>
 		</a>
 
 		<br /><br />
 
-		<Top />
-
-		<br />
+		<Top style="margin-bottom: 3em" />
 
 		<Contact />
 
@@ -128,6 +125,6 @@
 	}
 }
 #events:hover {
-	background-color: rgba(120, 233, 227, 0.336);
+	background-color: rgba(151, 228, 225, 0.384);
 }
 </style>

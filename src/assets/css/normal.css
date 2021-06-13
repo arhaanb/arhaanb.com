@@ -21,6 +21,16 @@ body {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Plex Mono';
+  src: url('/IBMPlexMono-Light.woff2');
+  font-weight: 400;
+}
+
+.mono {
+  font-family: "Plex Mono", monospace;
+}
+
 html {
   font-size: 62.5%;
 }
