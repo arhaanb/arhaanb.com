@@ -14,7 +14,7 @@
 			</p>
 			<p class="btm">
 				Or you can <router-link to="/">go back home</router-link>, and
-				<router-link to="/hi">contact me</router-link> if you think this is a
+				<router-link to="/explore#contact">contact me</router-link> if you think this is a
 				mistake.
 			</p>
 			<div class="yo">

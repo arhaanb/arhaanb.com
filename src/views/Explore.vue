@@ -1,52 +1,45 @@
 <template>
 	<div class="cont">
 		<h2 class="title">Explore</h2>
-		<p class="sub">
-			<!-- This page serves as a showcase for some of the fun stuff I do that I
-			wasn't sure where to put. Check it out! -->
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente
-			doloribus, perspiciatis earum excepturi expedita dicta beatae architecto
-			ea culpa temporibus quis officia labore tempora tempore deserunt deleniti
-			accusamus nihil!
-		</p>
+		<p class="sub">Miscellaneous stuff about me.</p>
 
-		<a href="//arhn.us" target="_blank">
+		<a href="//arhn.us/design" target="_blank">
 			<div id="design" class="coolbox">
 				<div class="flexbox">
 					<h6>Design</h6>
 					<span><bx-bx-link-external /></span>
 				</div>
 				<p>
-					I'm mostly interested in UI / UX Designs but I enjoy making
+					(WIP) I'm mostly interested in UI / UX Designs but I enjoy making
 					illustrations and I've also tried out some 3D modelling.
 				</p>
 			</div>
 		</a>
 
-		<a href="//arhn.us" target="_blank">
+		<a href="//arhn.us/events" target="_blank">
 			<div id="events" class="coolbox">
 				<div class="flexbox">
-					<h6>Events</h6>
+					<h6>Experience</h6>
 					<span><bx-bx-link-external /></span>
 				</div>
 				<p>
-					I've participated in over 30 Hackathons, Designathons, Quizzes, etc.
-					Check out some of my wins.
+					I've participated in and organized over 30 Hackathons, Designathons,
+					Quizzes, etc. Check out some of my wins.
 				</p>
 			</div>
 		</a>
 
 		<br /><br />
 
-		<Top style="margin-bottom: 3em" />
+		<Top id="top-tracks" style="margin-bottom: 4em" />
 
-		<Contact />
+		<!-- <Website /> -->
 
-		<br /><br />
+		<Contact style="margin-top: 4em" />
 
-		<div class="">
+		<!-- <div>
 			<h5 style="font-size: 1.2em">
-				You could also text me on one of my socials given below.
+				You can also find me on any of my socials below.
 			</h5>
 
 			<div class="socials">
@@ -57,9 +50,8 @@
 				<a href="//open.spotify.com/user/arhaanb" target="_blank">Spotify</a>
 				<a href="mailto:hi@arhaanb.co" target="_blank">Email</a>
 			</div>
-		</div>
+		</div> -->
 
-		<br />
 		<br />
 		<br />
 	</div>

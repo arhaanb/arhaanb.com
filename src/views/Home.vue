@@ -1,6 +1,11 @@
 <template>
 	<div class="cont">
-		<img class="topimg" src="../assets/img/arhaanb.jpg" alt="Arhaan Bahadur" />
+		<img
+			title="im so sexy"
+			class="topimg"
+			src="../assets/img/arhaanb.jpg"
+			alt="Arhaan Bahadur"
+		/>
 		<br />
 		<h4 class="name">Arhaan Bahadur</h4>
 
@@ -29,7 +34,8 @@
 		<p>
 			I make functional and useful products with beautiful user experiences. If
 			you want to say hi or work with me, feel free to
-			<router-link to="/explore#contact">contact me</router-link> on any of my socials.
+			<router-link to="/explore#contact">contact me</router-link> on any of my
+			socials.
 		</p>
 	</div>
 </template>

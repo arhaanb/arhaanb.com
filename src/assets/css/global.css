@@ -230,4 +230,7 @@ p {
 		line-height: 1.75em;
 		opacity: 0.8;
 	}
+	.smltitle {
+		font-size: 1.6em;
+	}
 }

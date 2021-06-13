@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h5 class="zero">Top Tracks</h5>
+		<h5 class="smltitle zero">Top Tracks</h5>
 		<p>My top tracks from Spotify this month</p>
 
 		<div v-if="songs">
@@ -8,7 +8,7 @@
 				<a target="_blank" :href="song.songUrl">
 					<div class="song">
 						<div class="flex">
-							<h1 class="index mono">
+							<h1 class="index noselect mono">
 								{{ index + 1 }}
 							</h1>
 							<div class="songinfo">
@@ -28,7 +28,7 @@
 			<div v-for="i in 5" :key="i">
 				<div class="song loading">
 					<div class="flex">
-						<h1 class="index mono">
+						<h1 class="index noselect mono">
 							{{ i }}
 						</h1>
 						<div class="loadinfo">
@@ -101,7 +101,7 @@ a:hover {
 	transition: 0.3s;
 	padding: 1em;
 	border-radius: 0.5em;
-	width: 100%;
+	// width: 100%;
 	.flex {
 		display: flex;
 		justify-content: flex-start;
