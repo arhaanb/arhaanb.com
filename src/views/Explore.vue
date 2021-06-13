@@ -16,7 +16,7 @@
 			</div>
 		</a>
 
-		<a href="//arhn.us/events" target="_blank">
+		<a href="//arhn.us/exp" target="_blank">
 			<div id="events" class="coolbox">
 				<div class="flexbox">
 					<h6>Experience</h6>
