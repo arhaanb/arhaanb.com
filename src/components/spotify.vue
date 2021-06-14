@@ -26,7 +26,7 @@
 
 <script>
 // import axios from 'axios'
-// import useSWRV from 'swrv'
+import useSWRV from 'swrv'
 var url = ''
 
 if (process.env.NODE_ENV == 'development') {
@@ -42,32 +42,32 @@ export default {
 		}
 	},
 
-	// setup() {
-	// 	const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
+	setup() {
+		const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
 
-	// 	return {
-	// 		spotify: data,
-	// 		error
-	// 	}
-	// },
-
-	mounted() {
-		// this.getSpotifyData()
-		// this.repeatSpotifyData()
-	},
-	methods: {
-		// repeatSpotifyData() {
-		// 	axios.get(url).then((res) => {
-		// 		this.spotify = res.data
-		// 	})
-		// 	setTimeout(this.repeatSpotifyData, 2000)
-		// },
-		// getSpotifyData() {
-		// 	axios.get(url).then((res) => {
-		// 		this.spotify = res.data
-		// 	})
-		// }
+		return {
+			spotify: data,
+			error
+		}
 	}
+
+	// mounted() {
+	// 	this.getSpotifyData()
+	// 	this.repeatSpotifyData()
+	// },
+	// methods: {
+	// 	repeatSpotifyData() {
+	// 		axios.get(url).then((res) => {
+	// 			this.spotify = res.data
+	// 		})
+	// 		setTimeout(this.repeatSpotifyData, 2000)
+	// 	},
+	// 	getSpotifyData() {
+	// 		axios.get(url).then((res) => {
+	// 			this.spotify = res.data
+	// 		})
+	// 	}
+	// }
 }
 </script>
 

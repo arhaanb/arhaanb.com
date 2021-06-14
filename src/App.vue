@@ -194,7 +194,7 @@ export default {
 }
 
 .footer-Home {
-	margin-top: 2em;
+	margin-top: 1.25em;
 }
 
 .footer-Projects {

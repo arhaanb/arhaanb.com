@@ -5,14 +5,13 @@
 			class="topimg"
 			src="../assets/img/arhaanb.jpg"
 			alt="Arhaan Bahadur"
+			draggable="false"
 		/>
 		<br />
 		<h4 class="name">Arhaan Bahadur</h4>
 
-		<div class="yo" style="margin-bottom: 1em">
-			<!-- <router-link to="/projects">Projects</router-link>
-			<router-link to="/hi">Say hi</router-link> -->
-			<h6>designer &middot; developer</h6>
+		<div class="yo" style="margin-bottom: 1.2em">
+			<h6 class="zero">designer &middot; developer</h6>
 		</div>
 
 		<p>
@@ -31,7 +30,8 @@
 			entrepreneurship club &mdash;
 			<a href="//minet.co" target="_blank">MINET</a>.
 		</p>
-		<p>
+
+		<p class="zero">
 			I make functional and useful products with beautiful user experiences. If
 			you want to say hi or work with me, feel free to
 			<router-link to="/explore#contact">contact me</router-link> on any of my
