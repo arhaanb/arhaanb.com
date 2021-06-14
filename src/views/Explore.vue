@@ -19,12 +19,12 @@
 		<a href="//arhn.us/exp" target="_blank">
 			<div id="events" class="coolbox">
 				<div class="flexbox">
-					<h6>Experience</h6>
+					<h6>Achievements</h6>
 					<span><bx-bx-link-external /></span>
 				</div>
 				<p>
-					I've participated in and organized over 30 Hackathons, Designathons,
-					Quizzes, etc. Check out some of my wins.
+					I've participated in over 30 Hackathons, Designathons, Quizzes, etc.
+					Check out some of my wins.
 				</p>
 			</div>
 		</a>

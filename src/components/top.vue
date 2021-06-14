@@ -128,7 +128,7 @@ a:hover {
 }
 
 .song:not(.loading):hover {
-	background-color: rgba(218, 252, 196, 0.5);
+	background-color: rgba(164, 248, 175, 0.25);
 	color: rgb(21, 117, 8);
 	.flex {
 		.index {
