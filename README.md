@@ -1,4 +1,4 @@
-# ⚡ [Arhaan Bahadur](https://arhaanb.co)
+# [Arhaan Bahadur](https://arhaanb.co)
 
 > My portfolio website.
 
