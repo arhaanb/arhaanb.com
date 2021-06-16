@@ -194,7 +194,7 @@ export default {
 }
 
 .footer-Home {
-	margin-top: 1.25em;
+	margin-top: 2em;
 }
 
 .footer-Projects {
@@ -204,7 +204,10 @@ export default {
 
 @media (max-width: 750px) {
 	.footer-Home {
-		margin-top: 0;
+		margin-top: 1.5em;
+	}
+	.footer-Home.flexfoot {
+		margin-bottom: 4.75em;
 	}
 	.footer {
 		margin-bottom: -4em;

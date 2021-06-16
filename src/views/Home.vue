@@ -15,9 +15,10 @@
 		</div>
 
 		<p>
-			I'm a {{ age }} year old student studying at The Mother's International
-			School. I enjoy participating in Hackathons and Design events, and I've
-			won several of them over the last few years. You can view some of the
+			I'm a {{ age }} year old student.
+			<!-- studying at The Mother's International School.  -->
+			I enjoy participating in Hackathons and Design events, and I've won
+			several of them over the last few years. You can view some of the
 			<router-link to="/projects">projects</router-link> I built, or check out
 			<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
 		</p>
