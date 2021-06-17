@@ -10,53 +10,47 @@
 		</p>
 
 		<div class="row">
-			<div class="flex-center">
-				<div class="seven columns">
-					<form v-if="!submitted" @submit.prevent="submitForm()">
-						<br />
-						<input
-							type="text"
-							v-model="form.name"
-							required
-							placeholder="Name"
-						/>
-						<input
-							type="email"
-							v-model="form.email"
-							required
-							placeholder="Email"
-						/>
-						<textarea
-							type="text"
-							v-model="form.message"
-							required
-							placeholder="Anything you wanna say"
-						/>
+			<!-- <div class="flex-center"> -->
+			<div class="seven columns">
+				<form v-if="!submitted" @submit.prevent="submitForm()">
+					<input type="text" v-model="form.name" required placeholder="Name" />
+					<input
+						type="email"
+						v-model="form.email"
+						required
+						placeholder="Email"
+					/>
+					<textarea
+						type="text"
+						v-model="form.message"
+						required
+						placeholder="Anything you wanna say"
+					/>
 
-						<p v-if="error">{{ error }}</p>
+					<p v-if="error">{{ error }}</p>
 
-						<div class="flex-center">
-							<button
-								:style="loading ? 'padding: 0 3em;' : ''"
-								type="submit"
-								:disabled="loading"
-								class="cool u-pull-right"
-							>
-								<span v-if="!loading">Send</span>
-								<span v-if="loading"><div class="loader"></div></span>
-							</button>
-						</div>
-						<br />
-					</form>
-				</div>
-				<div class="u-cf"></div>
-				<div v-if="submitted">
-					<p style="font-size: 1.2em">
-						Thank you for the message! I'll get back to you as soon as possible.
-					</p>
+					<div class="flex-center">
+						<button
+							:style="loading ? 'padding: 0 3em;' : ''"
+							type="submit"
+							:disabled="loading"
+							class="cool u-pull-right"
+						>
+							<span v-if="!loading">Send</span>
+							<span v-if="loading"><div class="loader"></div></span>
+						</button>
+					</div>
 					<br />
-				</div>
+				</form>
 			</div>
+			<div class="u-cf"></div>
+			<div v-if="submitted">
+				<p style="font-size: 1.2em">
+					Thank you for the message! I'll get back to you as soon as possible.
+				</p>
+				<br />
+			</div>
+			<!-- </div> -->
 		</div>
 	</main>
 </template>
