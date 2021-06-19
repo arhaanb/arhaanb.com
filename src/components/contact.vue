@@ -13,18 +13,26 @@
 			<!-- <div class="flex-center"> -->
 			<div class="seven columns">
 				<form v-if="!submitted" @submit.prevent="submitForm()">
-					<input type="text" v-model="form.name" required placeholder="Name" />
+					<input
+						type="text"
+						:disabled="loading"
+						v-model="form.name"
+						required
+						placeholder="Name"
+					/>
 					<input
 						type="email"
 						v-model="form.email"
 						required
 						placeholder="Email"
+						:disabled="loading"
 					/>
 					<textarea
 						type="text"
 						v-model="form.message"
 						required
 						placeholder="Anything you wanna say"
+						:disabled="loading"
 					/>
 
 					<p v-if="error">{{ error }}</p>
@@ -130,15 +138,16 @@ button {
 }
 
 button.cool {
-	box-shadow: 0px 8px 32px rgba(56, 123, 217, 0.6);
-	background-color: #6699ee;
-	color: #fff;
+	// box-shadow: 0px 8px 32px rgba(56, 123, 217, 0.6);
+	background-color: #74a5ff6e;
+	color: rgb(8, 41, 112);
 	border: none;
-	transform: translateY(-4px);
-	transition: 0.5s;
+	// transform: translateY(-4px);
+	transition: 0.3s;
 	letter-spacing: 0;
 	font-size: 0.9em;
 	width: 100%;
+	font-size: 1em;
 }
 
 button.cool:hover:not(:disabled) {
@@ -146,7 +155,7 @@ button.cool:hover:not(:disabled) {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background-color: rgb(67, 114, 196);
+	background-color: #7da3e6af;
 }
 
 button.cool:disabled {
@@ -154,7 +163,8 @@ button.cool:disabled {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background-color: rgb(138, 176, 241);
+	background-color: rgb(78, 138, 240);
+	cursor: wait;
 }
 
 /* Loader */

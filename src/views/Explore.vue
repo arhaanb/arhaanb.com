@@ -29,6 +29,19 @@
 			</div>
 		</a>
 
+		<a href="//arhn.us/events" target="_blank">
+			<div id="organ" class="coolbox">
+				<div class="flexbox">
+					<h6>Events</h6>
+					<span><bx-bx-link-external /></span>
+				</div>
+				<p>
+					Over the last few years I've been part of the core teams of a few
+					clubs. Check out some of the events I organized.
+				</p>
+			</div>
+		</a>
+
 		<br /><br />
 
 		<Top id="top-tracks" style="margin-bottom: 4em" />
@@ -51,7 +64,6 @@
 				<a href="mailto:hi@arhaanb.co" target="_blank">Email</a>
 			</div>
 		</div> -->
-
 	</div>
 </template>
 
@@ -116,5 +128,15 @@
 }
 #events:hover {
 	background-color: rgba(151, 228, 225, 0.384);
+}
+
+#organ {
+	background-color: rgba(197, 116, 235, 0.171);
+	h6 {
+		color: rgb(136, 26, 139);
+	}
+}
+#organ:hover {
+	background-color: rgba(194, 114, 231, 0.26);
 }
 </style>
