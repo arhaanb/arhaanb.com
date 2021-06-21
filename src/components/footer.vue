@@ -45,6 +45,14 @@
 					</a>
 
 					<a
+						href="//behance.net/arhaanbahadur"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<bx-bxl-behance />
+					</a>
+
+					<a
 						href="mailto:hi@arhaanb.co"
 						rel="noopener noreferrer"
 						target="_blank"

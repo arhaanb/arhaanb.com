@@ -14,8 +14,8 @@
 			</p>
 			<p class="btm">
 				Or you can <router-link to="/">go back home</router-link>, and
-				<router-link to="/explore#contact">contact me</router-link> if you think this is a
-				mistake.
+				<router-link to="/explore#contact">contact me</router-link> if you think
+				this is a mistake.
 			</p>
 			<div class="yo">
 				<a
@@ -53,6 +53,14 @@
 					rel="noopener noreferrer"
 				>
 					<carbon-logo-linkedin />
+				</a>
+
+				<a
+					href="//behance.net/arhaanbahadur"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<bx-bxl-behance />
 				</a>
 
 				<a
