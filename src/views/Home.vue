@@ -1,7 +1,6 @@
 <template>
 	<div class="cont">
 		<img
-			title="im so sexy"
 			class="topimg"
 			src="../assets/img/arhaanb.jpg"
 			alt="Arhaan Bahadur"
@@ -16,9 +15,10 @@
 
 		<!-- studying at The Mother's International School.  -->
 		<p>
-			I'm a {{ age }} year old student developer and designer. I enjoy
-			participating in Hackathons and Design events, and I've won several of
-			them over the last few years. You can view some of the
+			<!-- {{ age }} year old  -->
+			I'm a full-stack developer and designer. I enjoy participating in
+			Hackathons and Design events, and I've won several of them over the last
+			few years. You can view some of the
 			<router-link to="/projects">projects</router-link> I built, or check out
 			<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
 		</p>

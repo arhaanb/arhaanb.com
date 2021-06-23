@@ -1,7 +1,7 @@
 <template>
 	<a
 		@mouseleave="hover = false"
-		:href="link || '//github.com/arhaanb'"
+		:href="link || 'https://github.com/arhaanb'"
 		target="_blank"
 	>
 		<div class="project">
