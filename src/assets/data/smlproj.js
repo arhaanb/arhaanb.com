@@ -25,6 +25,12 @@ const projects = {
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1622960010/arhn.us.png'
 		},
 		{
+			title: 'Elire',
+			desc: 'A secure, digital platform for voting during the pandemic.',
+			link: 'https://github.com/arhaanb/elire',
+			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1624428017/Elire_sbxjxy.png'
+		},
+		{
 			title: 'Shiksha',
 			desc: 'A new way of online education. (Built for a creative event)',
 			link: 'https://arhn.us/shiksha',
@@ -71,6 +77,12 @@ const projects = {
 			desc: 'A simple chrome extension to block websites.',
 			link: 'https://github.com/arhaanb/siteblock',
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1622907863/siteblock.png'
+		},
+		{
+			title: 'Team Impulse',
+			desc: 'Web app to host the physics club\'s online crypic hunt.',
+			link: 'https://teamimpulse.herokuapp.com',
+			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1624428354/impulse_gdduon.png'
 		}
 	]
 }
