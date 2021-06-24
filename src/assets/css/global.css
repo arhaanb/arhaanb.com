@@ -4,11 +4,6 @@
 	--c-scrollbar-hover: rgb(223, 223, 223);
 }
 
-html {
-	scroll-behavior: smooth;
-	scroll-margin-top: 2em;
-}
-
 body {
 	/* background: linear-gradient(99deg, #c5f3ff80, #ffffff, #f0d3ff75, #ffffff);
 	background-size: 800% 800%;

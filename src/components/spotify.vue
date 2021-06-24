@@ -25,12 +25,12 @@
 </template>
 
 <script>
-// import axios from 'axios'
 import useSWRV from 'swrv'
 var url = ''
 
 if (process.env.NODE_ENV == 'development') {
 	url = 'https://arhaanb.co/api/spotify'
+	// url = 'http://localhost:3000/api/spotify'
 } else {
 	url = '/api/spotify'
 }
@@ -44,30 +44,13 @@ export default {
 
 	setup() {
 		const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
+		console.log(data)
 
 		return {
 			spotify: data,
 			error
 		}
 	}
-
-	// mounted() {
-	// 	this.getSpotifyData()
-	// 	this.repeatSpotifyData()
-	// },
-	// methods: {
-	// 	repeatSpotifyData() {
-	// 		axios.get(url).then((res) => {
-	// 			this.spotify = res.data
-	// 		})
-	// 		setTimeout(this.repeatSpotifyData, 2000)
-	// 	},
-	// 	getSpotifyData() {
-	// 		axios.get(url).then((res) => {
-	// 			this.spotify = res.data
-	// 		})
-	// 	}
-	// }
 }
 </script>
 
@@ -105,7 +88,7 @@ export default {
 a {
 	transition: 0.3s;
 }
-a.green:hover {
+a[href].green:hover {
 	background-color: rgba(210, 255, 221, 0.562);
 }
 

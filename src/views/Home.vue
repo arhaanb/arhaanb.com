@@ -33,8 +33,9 @@
 		</p>
 
 		<p class="zero">
-			I make functional and useful products with beautiful user experiences. If
-			you want to say hi or work with me, feel free to
+			I make functional and useful products with beautiful user experiences. I'm
+			always looking for oppurtunities to work on new projects and try out new
+			technologies. If you want to say hi or work with me, feel free to
 			<router-link to="/explore#contact">contact me</router-link> on any of my
 			socials.
 		</p>
@@ -132,7 +133,7 @@ img {
 }
 
 .topimg {
-	margin-top: 1em;
+	margin-top: 0.5em;
 }
 
 @media (max-width: 750px) {

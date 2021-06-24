@@ -10,35 +10,35 @@
 				name="Delhi Design Foundry"
 				description="A design collective based in New Delhi, India."
 				link="https://delhifoundry.co"
-				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907477/ddf_cdsojv.png"
+				img="https://res.cloudinary.com/arhaanb/image/upload/ddf.png"
 			/>
 
 			<!-- <Project
 				name="Sahay"
 				description="A collaborative experience for hospital management."
 				link="https://sahay.us"
-				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907478/smlsahay_rekpbv.png"
+				img="https://res.cloudinary.com/arhaanb/image/upload/smlsahay.png"
 			/> -->
 
 			<Project
 				name="MINET X"
 				description="The Mother's International School's annual Interschool Tech Symposium."
 				link="https://minet.co"
-				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907776/minetx_n6omtg.gif"
+				img="https://res.cloudinary.com/arhaanb/image/upload/minetx.gif"
 			/>
 
 			<Project
 				name="BugBase"
 				description="A consolidated bug bounty platform for Indian startups and projects."
 				link="https://www.behance.net/gallery/112423317/BugBase-an-Indian-Bug-Bounty-Program"
-				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907478/bugbase_tqtrmj.png"
+				img="https://res.cloudinary.com/arhaanb/image/upload/bugbase.png"
 			/>
 
 			<Project
 				name="Cura"
 				description="An app that helps you get vaccinated."
 				link="https://arhaanb.co/cura"
-				img="https://res.cloudinary.com/arhaanb/image/upload/v1622907479/cura_fhhiip.png"
+				img="https://res.cloudinary.com/arhaanb/image/upload/cura.png"
 			/>
 		</div>
 
