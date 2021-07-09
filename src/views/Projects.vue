@@ -37,7 +37,7 @@
 			<Project
 				name="Cura"
 				description="An app that helps you get vaccinated."
-				link="https://arhaanb.co/cura"
+				link="https://arhaanbahadur.co/cura"
 				img="https://res.cloudinary.com/arhaanb/image/upload/cura.png"
 			/>
 		</div>
