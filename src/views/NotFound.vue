@@ -7,9 +7,11 @@
 			<p class="top">
 				It seems like you hit a route that doesn't exist. You might find what
 				you're looking for at
-				<a :href="`https://arhn.us${$route.fullPath}`" target="_blank">{{
-					`arhn.us${$route.fullPath}`
-				}}</a
+				<a
+					:href="`https://arhn.us${$route.fullPath}`"
+					style="word-wrap: break-word"
+					target="_blank"
+					>{{ `arhn.us${$route.fullPath}` }}</a
 				>.
 			</p>
 			<p class="btm">
