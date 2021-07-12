@@ -16,4 +16,5 @@ The website also has a realtime indicator of what song I'm currently playing on 
 
 - [Vite](https://vitejs.org)
 - [Vue 3](https://vuejs.org)
+- [swrv (stale-while-revalidate)](https://github.com/Kong/swrv)
 - [vite-ssg](https://github.com/antfu/vite-ssg)
