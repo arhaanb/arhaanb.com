@@ -5,17 +5,23 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 module.exports = (req, res) => {
 	const { name, email, message } = req.body
 
-	const emailBody = `${name} sent you this message:
+	function newLine(str) {
+		return str.replace(/(?:\r\n|\r|\n)/g, '<br>')
+	}
 
-${message}
-
-Get back to them at ${email}`
+	const emailBody = `<strong>${name}</strong> sent you this message:
+	<br /><br />
+	${newLine(message)}
+	<br /><br />
+	--- <br />
+	Get back to them at <a href="mailto:${email}">${email}</a>`
 
 	const msg = {
 		from: 'web@arhn.us',
 		to: 'arhaanb+web@gmail.com',
 		subject: `${name} sent you a message.`,
-		text: emailBody
+		text: emailBody,
+		html: emailBody
 	}
 
 	sgMail
