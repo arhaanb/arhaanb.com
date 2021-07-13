@@ -7,9 +7,9 @@ module.exports = (req, res) => {
 
 	const emailBody = `${name} sent you this message:
 
-	${message}
+${message}
 
-	Get back to them at ${email}`
+Get back to them at ${email}`
 
 	const msg = {
 		from: 'web@arhn.us',

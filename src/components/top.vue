@@ -69,7 +69,7 @@ export default {
 	methods: {
 		getSongs() {
 			if (process.env.NODE_ENV == 'development') {
-				url = 'https://arhaanb.co/api/top-tracks'
+				url = 'https://arhaanbahadur.co/api/top-tracks'
 			} else {
 				url = '/api/top-tracks'
 			}
@@ -140,7 +140,6 @@ a:hover {
 		}
 	}
 }
-
 .songbro {
 	display: flex;
 }

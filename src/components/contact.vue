@@ -163,7 +163,7 @@ button.cool:disabled {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background-color: rgb(78, 138, 240);
+	background-color: rgb(138, 177, 245);
 	cursor: wait;
 }
 
