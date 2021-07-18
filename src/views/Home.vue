@@ -1,11 +1,6 @@
 <template>
 	<div class="cont">
-		<img
-			class="topimg"
-			src="../assets/img/arhaanb.jpg"
-			alt="Arhaan Bahadur"
-			draggable="false"
-		/>
+		<img class="topimg" src="/me.jpg" alt="Arhaan Bahadur" draggable="false" />
 		<br />
 		<h4 class="name">Arhaan Bahadur</h4>
 
@@ -15,10 +10,9 @@
 
 		<!-- studying at The Mother's International School.  -->
 		<p>
-			<!-- {{ age }} year old  -->
-			I'm a full-stack developer and designer. I enjoy participating in
-			Hackathons and Design events, and I've won several of them over the last
-			few years. You can view some of the
+			Hey! I'm {{ prefix }} {{ age }} year old full-stack developer and
+			designer. I enjoy participating in Hackathons and Design events, and I've
+			won several of them over the last few years. You can view some of the
 			<router-link to="/projects">projects</router-link> I built, or check out
 			<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
 		</p>
@@ -46,12 +40,14 @@
 export default {
 	data() {
 		return {
-			age: 17
+			age: 17,
+			prefix: 'a'
 		}
 	},
 	mounted() {
-		const age = this.getAge('7/23/2003')
+		const age = this.getAge('7/23/03')
 		this.age = age
+		this.prefix = [8, 11, 18].includes(age) ? 'an' : 'a'
 	},
 	methods: {
 		getAge(DOB) {
