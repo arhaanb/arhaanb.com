@@ -53,7 +53,7 @@
 					</a>
 
 					<a
-						href="mailto:arhaanb@gmail.co"
+						href="mailto:arhaanb@gmail.com"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
