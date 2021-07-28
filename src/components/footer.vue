@@ -8,7 +8,7 @@
 			<div class="flex-right">
 				<div class="socials">
 					<a
-						href="https://twitter.com/arhaan_bahadur"
+						href="https://twitter.com/arhaanbahadur"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
@@ -57,7 +57,6 @@
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<!-- hi@arhaanb.co -->
 						<bx-bx-mail-send />
 					</a>
 				</div>

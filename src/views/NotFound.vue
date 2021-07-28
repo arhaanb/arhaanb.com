@@ -21,7 +21,7 @@
 			</p>
 			<div class="yo">
 				<a
-					href="https://twitter.com/arhaan_bahadur"
+					href="https://twitter.com/arhaanbahadur"
 					rel="noopener noreferrer"
 					target="_blank"
 				>
