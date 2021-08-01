@@ -23,7 +23,7 @@
 			<Project
 				name="MINET X"
 				description="The Mother's International School's annual Interschool Tech Symposium."
-				link="https://minet.co"
+				link="https://2020.minet.co"
 				img="https://res.cloudinary.com/arhaanb/image/upload/minetx.gif"
 			/>
 
