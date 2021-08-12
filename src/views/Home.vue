@@ -10,9 +10,11 @@
 
 		<!-- studying at The Mother's International School.  -->
 		<p>
-			Hey! I'm {{ prefix }} {{ age }} year old full-stack developer and
-			designer. I enjoy participating in Hackathons and Design events, and I've
-			won several of them over the last few years. You can view some of the
+			Hey! I'm {{ prefix }} {{ age }} year old
+			<!-- full-stack -->
+			developer and designer. I enjoy participating in Hackathons and Design
+			events, and I've won several of them over the last few years. You can view
+			some of the
 			<router-link to="/projects">projects</router-link> I built, or check out
 			<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
 		</p>
