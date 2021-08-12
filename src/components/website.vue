@@ -19,7 +19,7 @@
 		it's serverless functions for features like the realtime Spotify currently
 		playing indicator and contact form. This website is Open Sourced at
 		<a href="//github.com/arhaanb/website" target="_blank"
-			>github.com/arhaanb/website</a
+			>github.com/<wbr />arhaanb/<wbr />website</a
 		>. Leave a star!
 	</p>
 </template>
