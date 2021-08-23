@@ -16,7 +16,7 @@ export const routes = [
 		meta: { title: 'Explore' },
 		component: Explore
 	},
-	{ path: '/p/sahay', component: Sahay },
+	// { path: '/p/sahay', component: Sahay },
 	{ path: '/404', component: NotFound, meta: { title: 'notfound' } },
 	{ path: '/:pathMatch(.*)', component: NotFound, meta: { title: 'notfound' } }
 ]

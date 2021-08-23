@@ -5,7 +5,7 @@
 }
 
 body {
-	background: linear-gradient(99deg, #a8fccbad, #ffffff, #f3daff75, #ffffff);
+	background: linear-gradient(99deg, #c3f8da8f, #ffffff, #f3daff75, #ffffff);
 	background-size: 800% 800%;
 	-webkit-animation: gradAnim 8s ease infinite;
 	-moz-animation: gradAnim 8s ease infinite;
