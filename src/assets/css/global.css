@@ -5,14 +5,18 @@
 }
 
 body {
-	/* background: linear-gradient(99deg, #c5f3ff80, #ffffff, #f0d3ff75, #ffffff);
+	background: linear-gradient(99deg, #a8fccbad, #ffffff, #f3daff75, #ffffff);
 	background-size: 800% 800%;
 	-webkit-animation: gradAnim 8s ease infinite;
 	-moz-animation: gradAnim 8s ease infinite;
 	-o-animation: gradAnim 8s ease infinite;
-	animation: gradAnim 8s ease infinite; */
+	animation: gradAnim 8s ease infinite;
 	background-color: #fff;
 }
+
+/* body {
+	background: radial-gradient( circle at 45% -20%, hsl(263, 53%, 20%), rgba(255, 255, 255, 0) 25%), radial-gradient( circle at 55% -20%, hsl(337, 47%, 25%), rgba(255, 255, 255, 0) 25%);
+} */
 
 .title {
 	margin-bottom: 0.25em;
