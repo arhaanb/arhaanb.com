@@ -50,7 +50,7 @@
 							>
 						</div>
 
-						<div class="btm">Arhaan Bahadur</div>
+						<!-- <div class="btm">Arhaan Bahadur</div> -->
 					</div>
 				</div>
 			</div>
