@@ -49,21 +49,6 @@
 		<Website />
 
 		<Contact style="margin-top: 4em" />
-
-		<!-- <div>
-			<h5 style="font-size: 1.2em">
-				You can also find me on any of my socials below.
-			</h5>
-
-			<div class="socials">
-				<a href="//instagram.com/arhaan_bahadur" target="_blank">Instagram</a>
-				<a href="//twitter.com/arhaan_bahadur" target="_blank">Twitter</a>
-				<a href="//github.com/arhaanb" target="_blank">GitHub</a>
-				<a href="//linkedin.com/in/arhaanb" target="_blank">Linkedin</a>
-				<a href="//open.spotify.com/user/arhaanb" target="_blank">Spotify</a>
-				<a href="mailto:hi@arhaanb.co" target="_blank">Email</a>
-			</div>
-		</div> -->
 	</div>
 </template>
 

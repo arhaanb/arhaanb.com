@@ -10,7 +10,7 @@
 
 		<!-- studying at The Mother's International School.  -->
 		<p>
-			Hey! I'm {{ prefix }} {{ age }} year old
+			Hey! I'm {{ `${prefix} ${age}` }} year old
 			<!-- full-stack -->
 			developer and designer. I enjoy participating in Hackathons and Design
 			events, and I've won several of them over the last few years. You can view
@@ -42,8 +42,8 @@
 export default {
 	data() {
 		return {
-			age: 17,
-			prefix: 'a'
+			age: 18,
+			prefix: 'an'
 		}
 	},
 	mounted() {

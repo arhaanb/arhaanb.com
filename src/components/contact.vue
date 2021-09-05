@@ -114,6 +114,7 @@ export default {
 <style scoped lang="scss">
 input,
 textarea {
+	background-color: rgba($color: #fff, $alpha: 0.2) !important;
 	min-width: 100%;
 	max-width: 100%;
 	font-family: 'Colfax';
@@ -138,11 +139,9 @@ button {
 }
 
 button.cool {
-	// box-shadow: 0px 8px 32px rgba(56, 123, 217, 0.6);
 	background-color: #74a5ff6e;
 	color: rgb(8, 41, 112);
 	border: none;
-	// transform: translateY(-4px);
 	transition: 0.3s;
 	letter-spacing: 0;
 	font-size: 0.9em;
