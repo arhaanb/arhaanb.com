@@ -68,7 +68,7 @@
 				</a>
 
 				<a
-					href="mailto:arhaanb@gmail.com"
+					href="mailto:hi@arhaanb.com"
 					rel="noopener noreferrer"
 					target="_blank"
 				>

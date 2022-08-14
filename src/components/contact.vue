@@ -7,7 +7,7 @@
 			<span v-if="!submitted">
 				I'll try to get back to you as soon as possible. </span
 			>Alternatively, you can email me at
-			<a href="mailto:arhaanb@gmail.com" target="_blank">arhaanb@gmail.com</a>.
+			<a href="mailto:hi@arhaanb.com" target="_blank">hi@arhaanb.com</a>.
 		</p>
 
 		<div class="row">
