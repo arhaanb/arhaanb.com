@@ -22,7 +22,7 @@
 		</div>
 
 		<div data-aos="fade-up" data-aos-delay="100">
-			<a rel="noopener noreferrer" href="//arhn.us/exp" target="_blank">
+			<a rel="noopener noreferrer" href="//arhn.us/awards" target="_blank">
 				<div id="events" class="coolbox">
 					<div class="flexbox">
 						<h6>Achievements</h6>
@@ -39,6 +39,23 @@
 		</div>
 
 		<div data-aos="fade-up" data-aos-delay="200">
+			<a rel="noopener noreferrer" href="//arhn.us/resume" target="_blank">
+				<div id="organ" class="coolbox">
+					<div class="flexbox">
+						<h6>Résumé</h6>
+						<span>
+							<bx-bx-link-external />
+						</span>
+					</div>
+					<p>
+						Check out some of the stuff I've worked on and teams I've been a
+						part of.
+					</p>
+				</div>
+			</a>
+		</div>
+
+		<!-- <div data-aos="fade-up" data-aos-delay="200">
 			<a rel="noopener noreferrer" href="//arhn.us/events" target="_blank">
 				<div id="organ" class="coolbox">
 					<div class="flexbox">
@@ -53,7 +70,7 @@
 					</p>
 				</div>
 			</a>
-		</div>
+		</div> -->
 
 		<br />
 		<br />
