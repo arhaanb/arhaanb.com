@@ -22,10 +22,13 @@
 					in Hackathons and Design events, and I've won several of them over the
 					last few years. Hello!-->
 					I’m Arhaan, {{ `${prefix} ${age}` }} year old student currently
-					studying Computer Science. I make
+					studying cs and design at
+					<a href="//iiitd.ac.in" target="_blank">iiit delhi</a>.
+					<!-- <a href="//iiitd.ac.in" target="_blank">IIIT Delhi</a>.  -->
+					I make
 					<!-- <strike>at college</strike> -->
 					<!-- functional and  -->
-					useful products with beautiful user experiences.
+					cool products with beautiful user experiences.
 					<!-- I enjoy participating
 					in Hackathons and Design events, and I’ve won several of them over the
 					last few years.-->
@@ -53,9 +56,8 @@
 				</p>-->
 
 				<p class="zero">
-					I’m always looking for opportunities to work on new projects
-					<!-- and try out new technologies. -->
-					or participate in a hackathon. Please feel free to
+					I’m always looking for opportunities to work on new projects,
+					participate in a hackathon or do anything fun. Feel free to
 					<router-link to="/explore#contact">reach out</router-link>!
 				</p>
 			</div>
@@ -210,6 +212,9 @@ export default {
 </script>
 
 <style scoped>
+p {
+	text-transform: lowercase;
+}
 .pics img {
 	width: 100%;
 }
