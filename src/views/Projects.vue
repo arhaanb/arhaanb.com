@@ -5,8 +5,8 @@ fi
 		<p class="zero">
 			<!-- These are some of the major projects I've built over the last couple of
 			years.-->
-			Building fun stuff with a focus on good UX. Some of the major projects
-			I've worked on over the last few years.
+			Building fun stuff with a focus on good UX. These are some of the major
+			projects I've worked on over the last few years.
 		</p>
 		<div class="bigproj">
 			<Project
