@@ -119,12 +119,12 @@
 					<img
 						draggable="false"
 						loading="lazy"
-						src="/yo.jpg"
+						src="/new_me.jpeg"
 						alt="me irl (fr)"
 						class="topimg"
 						style="width: 100%; margin-top: 3em; border-radius: 0.5em"
 					/>
-					<h6 class="center" style="opacity: 0.7">me :)</h6>
+					<h6 class="center" style="opacity: 0.7; margin-top: -0.5em">me irl</h6>
 				</div>
 			</div>
 		</div>
