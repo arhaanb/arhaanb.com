@@ -12,8 +12,22 @@ fi
 			<Project
 				name="Spotivity"
 				description="View your Spotify friend activity from your phone."
-				link="https://spotivity.vercel.app"
+				link="https://spotivity.me"
 				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
+			/>
+
+			<Project
+				name="Sparsh"
+				description="UPI made accessible using tap to pay."
+				link="https://sparsh.arhaanb.com"
+				img="/projects/sparsh.png"
+			/>
+
+			<Project
+				name="Cricket Bat Company"
+				description="Empowering consumers to buy the right cricket bat by analysing your play style."
+				link="https://cricketbatcompany.com"
+				img="/projects/cbc.png"
 			/>
 
 			<Project
@@ -61,12 +75,12 @@ fi
 				img="https://res.cloudinary.com/arhaanb/image/upload/minetx2.png"
 			/>
 
-			<Project
+			<!-- <Project
 				name="Cura"
 				description="An app that helps you get vaccinated."
 				link="https://cura.arhaanbahadur.co"
 				img="https://res.cloudinary.com/arhaanb/image/upload/cura.png"
-			/>
+			/> -->
 		</div>
 
 		<hr />
