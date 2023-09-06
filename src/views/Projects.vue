@@ -19,7 +19,7 @@ fi
 			<Project
 				name="Sparsh"
 				description="UPI made accessible using tap to pay."
-				link="https://sparsh.arhaanb.com"
+				link="https://devpost.com/software/sparsh"
 				img="/projects/sparsh.png"
 			/>
 
