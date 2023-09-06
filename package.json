@@ -27,19 +27,19 @@
 		"isomorphic-unfetch": "^3.1.0",
 		"querystring": "^0.2.1",
 		"swrv": "^1.0.0-beta.8",
-		"vue": "^3.2.31",
-		"vue-router": "^4.0.13",
+		"vue": "^3.3.4",
+		"vue-router": "^4.2.4",
 		"vue3-notion": "^0.1.45"
 	},
 	"devDependencies": {
-		"@vitejs/plugin-vue": "^2.3.1",
-		"@vue/compiler-sfc": "^3.2.11",
-		"@vue/server-renderer": "^3.2.11",
+		"@vitejs/plugin-vue": "^4.3.4",
+		"@vue/compiler-sfc": "^3.3.4",
+		"@vue/server-renderer": "^3.3.4",
 		"cross-env": "^7.0.3",
 		"sass": "^1.42.1",
 		"unplugin-icons": "^0.11.3",
 		"unplugin-vue-components": "^0.15.2",
-		"vite": "^2.9.1",
-		"vite-plugin-html": "^2.1.1"
+		"vite": "^4.4.9",
+		"vite-plugin-html": "^3.2.0"
 	}
 }
