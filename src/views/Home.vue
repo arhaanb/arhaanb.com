@@ -95,6 +95,14 @@
 				desc="Stuff I do"
 				ext
 			/>
+			<Page
+				data-aos="fade-up"
+				data-aos-delay="250"
+				title="Support"
+				to="https://www.buymeacoffee.com/arhaanb"
+				desc="Buy me a coffee"
+				ext
+			/>
 
 			<!-- <Page
 				data-aos="fade-up"
@@ -124,7 +132,9 @@
 						class="topimg"
 						style="width: 100%; margin-top: 3em; border-radius: 0.5em"
 					/>
-					<h6 class="center" style="opacity: 0.7; margin-top: -0.5em">me irl</h6>
+					<h6 class="center" style="opacity: 0.7; margin-top: -0.5em">
+						me irl
+					</h6>
 				</div>
 			</div>
 		</div>
