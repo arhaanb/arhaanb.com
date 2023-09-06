@@ -1,17 +1,17 @@
 import Home from './views/Home.vue'
-// import Projects from './views/Projects.vue'
-// import Explore from './views/Explore.vue'
+import Projects from './views/Projects.vue'
+import Explore from './views/Explore.vue'
 import NotFound from './views/NotFound.vue'
+import Page from './views/projects/project.vue'
 // const Home = () => import('./views/Home.vue')
-const Projects = () => import('./views/Projects.vue')
-const Explore = () => import('./views/Explore.vue')
-const Page = () => import('./views/projects/project.vue')
+// const Projects = () => import('./views/Projects.vue')
+// const Explore = () => import('./views/Explore.vue')
+// const Page = () => import('./views/projects/project.vue')
 // const NotFound = () => import('./views/NotFound.vue')
 
 // Projects
 // import LinkPlus from './views/projects/linkplus.vue'
 // import Notion from './views/projects/notion.vue'
-// import Page from './views/projects/project.vue'
 
 export const routes = [
 	{ path: '/', component: Home, meta: { title: 'Home' } },
