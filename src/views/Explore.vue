@@ -3,7 +3,7 @@
 		<h2 class="title fancy">Explore</h2>
 		<p class="sub">Miscellaneous stuff about me.</p>
 
-		<div data-aos="fade-up">
+		<div aos-animate data-aos="fade-up">
 			<a rel="noopener noreferrer" href="//arhn.us/design" target="_blank">
 				<div id="design" class="coolbox">
 					<div class="flexbox">
@@ -21,7 +21,7 @@
 			</a>
 		</div>
 
-		<div data-aos="fade-up" data-aos-delay="100">
+		<div aos-animate data-aos="fade-up" data-aos-delay="100">
 			<a rel="noopener noreferrer" href="//arhn.us/awards" target="_blank">
 				<div id="events" class="coolbox">
 					<div class="flexbox">
@@ -38,8 +38,34 @@
 			</a>
 		</div>
 
-		<div data-aos="fade-up" data-aos-delay="200">
-			<a rel="noopener noreferrer" href="//arhn.us/resume" target="_blank">
+		<div aos-animate data-aos="fade-up" data-aos-delay="200">
+			<a
+				rel="noopener noreferrer"
+				href="https://buymeacoffee.com/arhaanb"
+				target="_blank"
+			>
+				<div id="support" class="coolbox">
+					<div class="flexbox">
+						<h6>Support</h6>
+						<span>
+							<bx-bx-link-external />
+						</span>
+					</div>
+					<p>
+						<span class="bold">Buy me a coffee</span> to support my journey in
+						building delightful web and mobile apps like
+						<a href="//spotivity.me" target="_blank">Spotivity</a>.
+					</p>
+				</div>
+			</a>
+		</div>
+
+		<div aos-animate data-aos="fade-up">
+			<a
+				rel="noopener noreferrer"
+				href="https://arhaanb.com/resume"
+				target="_blank"
+			>
 				<div id="organ" class="coolbox">
 					<div class="flexbox">
 						<h6>Résumé</h6>
@@ -84,6 +110,10 @@
 </template>
 
 <style scoped lang="scss">
+.bold {
+	font-weight: 600;
+}
+
 .socials {
 	display: grid;
 	grid-gap: 1em;
@@ -139,17 +169,27 @@
 	h6 {
 		color: rgb(8, 128, 72);
 	}
-}
-#events:hover {
-	background-color: rgba(151, 228, 225, 0.384);
+	&:hover {
+		background-color: rgba(151, 228, 225, 0.384);
+	}
 }
 #organ {
 	background-color: rgba(197, 116, 235, 0.171);
 	h6 {
 		color: rgb(136, 26, 139);
 	}
+	&:hover {
+		background-color: rgba(194, 114, 231, 0.26);
+	}
 }
-#organ:hover {
-	background-color: rgba(194, 114, 231, 0.26);
+
+#support {
+	background-color: rgba(240, 227, 82, 0.171);
+	h6 {
+		color: rgb(173, 133, 14);
+	}
+	&:hover {
+		background-color: rgba(241, 216, 86, 0.26);
+	}
 }
 </style>

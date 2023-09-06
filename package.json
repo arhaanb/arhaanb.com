@@ -29,7 +29,7 @@
 		"swrv": "^1.0.0-beta.8",
 		"vue": "^3.2.31",
 		"vue-router": "^4.0.13",
-		"vue3-notion": "^0.1.33"
+		"vue3-notion": "^0.1.45"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^2.3.1",

@@ -19,13 +19,15 @@ fi
 			<Project
 				name="Sparsh"
 				description="UPI made accessible using tap to pay."
-				link="https://devpost.com/software/sparsh"
+				link="/p/sparsh"
 				img="/projects/sparsh.png"
+				data-aos-delay="200"
+				intlink
 			/>
 
 			<Project
 				name="Cricket Bat Company"
-				description="Empowering consumers to buy the right cricket bat by analysing your play style."
+				description="Empowering you to buy the right cricket bat by analysing your play style."
 				link="https://cricketbatcompany.com"
 				img="/projects/cbc.png"
 			/>
@@ -42,7 +44,8 @@ fi
 			<Project
 				name="Sahay"
 				description="A collaborative experience for hospital management."
-				link="https://sahay.arhn.us"
+				link="/p/sahay"
+				intlink
 				img="https://res.cloudinary.com/arhaanb/image/upload/smlsahay.png"
 			/>
 
