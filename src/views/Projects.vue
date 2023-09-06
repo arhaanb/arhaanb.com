@@ -18,7 +18,7 @@ fi
 
 			<Project
 				name="Sparsh"
-				description="UPI made accessible using tap to pay."
+				description="An accessible tap to pay network for UPI in India."
 				link="/p/sparsh"
 				img="/projects/sparsh.png"
 				data-aos-delay="200"
