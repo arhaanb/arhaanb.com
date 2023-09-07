@@ -55,7 +55,6 @@ export default {
 
 	setup() {
 		const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
-		console.log(data)
 
 		return {
 			spotify: data,

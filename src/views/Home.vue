@@ -70,12 +70,14 @@
 			<Page
 				data-aos="fade-up"
 				title="Portfolio"
+				data-aos-once="true"
 				to="/projects"
 				desc="I build stuff"
 			/>
 			<Page
 				data-aos="fade-up"
 				data-aos-delay="100"
+				data-aos-once="true"
 				title="Explore"
 				to="/explore"
 				desc="More arhaanb"
@@ -83,6 +85,7 @@
 			<Page
 				data-aos="fade-up"
 				data-aos-delay="150"
+				data-aos-once="true"
 				title="Contact"
 				to="/explore#contact"
 				desc="Let's talk"
@@ -90,6 +93,7 @@
 			<Page
 				data-aos="fade-up"
 				data-aos-delay="200"
+				data-aos-once="true"
 				title="Resume"
 				to="https://arhaanb.com/resume"
 				desc="Stuff I do"
@@ -98,6 +102,7 @@
 			<Page
 				data-aos="fade-up"
 				data-aos-delay="250"
+				data-aos-once="true"
 				title="Support"
 				to="https://www.buymeacoffee.com/arhaanb"
 				desc="Buy me a coffee"
