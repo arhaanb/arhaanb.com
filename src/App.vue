@@ -4,7 +4,7 @@
 			<div class="navcont">
 				<div v-if="$route.meta.title !== 'Home'" class="flexbruh noselect">
 					<!-- <router-link class="back" to="/">&larr;</router-link> -->
-					<router-link class="back" to="/" @click="$router.go(-1)"
+					<router-link class="back" to="/" @click.prevent="$router.go(-1)"
 						>&larr;</router-link
 					>
 					<span>Arhaan Bahadur</span>
