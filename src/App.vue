@@ -3,7 +3,10 @@
 		<nav v-if="$route.meta.title !== 'notfound'" class="navbar">
 			<div class="navcont">
 				<div v-if="$route.meta.title !== 'Home'" class="flexbruh noselect">
-					<router-link class="back" to="/">&larr;</router-link>
+					<!-- <router-link class="back" to="/">&larr;</router-link> -->
+					<router-link class="back" to="/" @click="$router.go(-1)"
+						>&larr;</router-link
+					>
 					<span>Arhaan Bahadur</span>
 				</div>
 				<!-- <router-link v-else to="/"> -->
