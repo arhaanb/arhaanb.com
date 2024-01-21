@@ -8,6 +8,9 @@ import 'aos/dist/aos.css'
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
+import '@imengyu/vue3-context-menu/lib/vue3-context-menu.css'
+import ContextMenu from '@imengyu/vue3-context-menu'
+
 const app = createApp(App)
 
 const router = createRouter({
@@ -27,6 +30,8 @@ const router = createRouter({
 
 // @ts-ignore
 app.use(AOS.init())
+
+app.use(ContextMenu)
 
 app.use(router)
 app.mount('#app')

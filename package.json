@@ -16,6 +16,7 @@
 	},
 	"dependencies": {
 		"@iconify/json": "^1.1.402",
+		"@imengyu/vue3-context-menu": "^1.3.6",
 		"@sendgrid/mail": "^7.4.4",
 		"@vueuse/core": "^6.5.3",
 		"@vueuse/head": "^0.6.0",

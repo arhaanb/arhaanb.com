@@ -130,16 +130,17 @@
 			<div class="flex-center">
 				<div class="six columns">
 					<img
+						@contextmenu="onContextMenu($event)"
 						draggable="false"
 						loading="lazy"
-						src="/new_me.jpeg"
+						src="/polaroid.svg"
 						alt="me irl (fr)"
 						class="topimg"
 						style="width: 100%; margin-top: 3em; border-radius: 0.5em"
 					/>
-					<h6 class="center" style="opacity: 0.7; margin-top: -0.5em">
+					<!-- <h6 class="center" style="opacity: 0.7; margin-top: -0.5em">
 						me irl
-					</h6>
+					</h6> -->
 				</div>
 			</div>
 		</div>
@@ -221,6 +222,27 @@ export default {
 				age = age - 1
 			}
 			return age
+		},
+		onContextMenu(e) {
+			//prevent the browser's default menu
+			e.preventDefault()
+			//show our menu
+			this.$contextmenu({
+				items: [
+					{
+						label: 'Download image',
+						onClick: () => {
+							window.open('https://arhaanb.com/new_me.jpeg')
+						}
+					}
+				],
+				iconFontClass: 'iconfont',
+				customClass: 'class-a',
+				zIndex: 3,
+				minWidth: 230,
+				x: e.x,
+				y: e.y
+			})
 		}
 	}
 }
