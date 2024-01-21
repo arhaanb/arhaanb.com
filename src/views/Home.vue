@@ -234,6 +234,34 @@ export default {
 						onClick: () => {
 							window.open('https://arhaanb.com/new_me.jpeg')
 						}
+					},
+					// {
+					// 	label: 'Copy image',
+					// 	onClick: () => {
+					// 		navigator.clipboard.write([
+					// 			new ClipboardItem({
+					// 				'image/png': 'https://arhaanb.com/new_me.jpeg'
+					// 			})
+					// 		])
+					// 	}
+					// },
+					{
+						label: 'Copy image address',
+						onClick: () => {
+							navigator.clipboard.writeText('https://arhaanb.com/new_me.jpeg')
+						}
+					},
+					{
+						label: 'Download polaroid',
+						onClick: () => {
+							window.open('https://arhaanb.com/polaroid.svg')
+						}
+					},
+					{
+						label: 'Copy polaroid address',
+						onClick: () => {
+							navigator.clipboard.writeText('https://arhaanb.com/polaroid.svg')
+						}
 					}
 				],
 				iconFontClass: 'iconfont',
