@@ -129,19 +129,22 @@
 		<div class="cont">
 			<div class="flex-center">
 				<div class="six columns">
-					<img
-						@contextmenu="onContextMenu($event)"
-						draggable="false"
-						loading="lazy"
-						src="/polaroid.svg"
-						alt="me irl (fr)"
-						class="topimg"
-						style="width: 100%; margin-top: 3em; border-radius: 0.5em"
-					/>
+					<div class="flex-center">
+						<img
+							@contextmenu="onContextMenu($event)"
+							draggable="false"
+							loading="lazy"
+							src="/polaroid.png"
+							alt="me irl (fr)"
+							class="topimg"
+							style="margin-top: 3em; border-radius: 0.5em"
+						/>
+					</div>
 					<!-- <h6 class="center" style="opacity: 0.7; margin-top: -0.5em">
 						me irl
 					</h6> -->
 				</div>
+				<div class="u-cf"></div>
 			</div>
 		</div>
 
@@ -254,13 +257,13 @@ export default {
 					{
 						label: 'Download polaroid',
 						onClick: () => {
-							window.open('https://arhaanb.com/polaroid.svg')
+							window.open('https://arhaanb.com/polaroid.png')
 						}
 					},
 					{
 						label: 'Copy polaroid address',
 						onClick: () => {
-							navigator.clipboard.writeText('https://arhaanb.com/polaroid.svg')
+							navigator.clipboard.writeText('https://arhaanb.com/polaroid.png')
 						}
 					}
 				],
@@ -377,10 +380,12 @@ img.topimg {
 }
 .topimg {
 	margin-top: 0.5em;
+	width: 100% !important;
 }
 @media (max-width: 750px) {
 	.topimg {
 		margin-top: 0;
+		width: 75% !important;
 	}
 	.name {
 		margin-top: 0.75em;
