@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import useSWRV from 'swrv'
+import axios from 'axios'
 var url = '/api/spotify'
 
 export default {
@@ -50,13 +50,18 @@ export default {
 			spotify: false
 		}
 	},
-
-	setup() {
-		const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
-
-		return {
-			spotify: data,
-			error
+	mounted() {
+		this.fetchData()
+		setInterval(this.fetchData, 2000)
+	},
+	methods: {
+		async fetchData() {
+			try {
+				const response = await axios.get(url)
+				this.spotify = response.data
+			} catch (error) {
+				console.error('Error fetching data:', error)
+			}
 		}
 	}
 }

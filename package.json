@@ -26,7 +26,6 @@
     "isomorphic-unfetch": "^4.0.2",
     "letterboxd": "^3.1.1",
     "nuxt": "^3.11.2",
-    "swrv": "^1.0.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "vue3-notion": "^0.1.45"
