@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import useSWRV from 'swrv'
+// import useSWRV from 'swrv'
 var url = '/api/spotify'
 
 export default {
@@ -48,11 +48,11 @@ export default {
 	},
 
 	setup() {
-		const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
+		// const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
 
 		return {
-			spotify: data,
-			error
+			spotify: undefined,
+			error: undefined
 		}
 	}
 }
