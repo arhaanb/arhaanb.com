@@ -6,9 +6,20 @@ export default defineNuxtConfig({
 		'@/assets/css/skeleton.css',
 		'@/assets/css/global.css'
 	],
+	vue: {
+		compilerOptions: {
+			isCustomElement: (tag) => tag === 'iconify-icon'
+		}
+	},
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },
 		head: {
+			script: [
+				{
+					src: 'https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js',
+					key: 'iconify-icon'
+				}
+			],
 			title: 'Arhaan Bahadur',
 			meta: [
 				{ charset: 'UTF-8' },
@@ -80,12 +91,7 @@ export default defineNuxtConfig({
 			]
 		}
 	},
-	modules: [
-		'nuxt-icon',
-		'nuxt-aos',
-		['vue3-notion/nuxt', { css: true }],
-		'nuxt-gtag'
-	],
+	modules: ['nuxt-aos', ['vue3-notion/nuxt', { css: true }], 'nuxt-gtag'],
 	gtag: {
 		id: 'G-402MKB1QXE'
 	}

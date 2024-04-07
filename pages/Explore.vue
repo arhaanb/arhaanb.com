@@ -9,7 +9,7 @@
 					<div class="flexbox">
 						<h6>Design</h6>
 						<span>
-							<Icon name="bx:link-external" />
+							<iconify-icon icon="bx:link-external" />
 						</span>
 					</div>
 					<p>
@@ -27,7 +27,7 @@
 					<div class="flexbox">
 						<h6>Achievements</h6>
 						<span>
-							<Icon name="bx:link-external" />
+							<iconify-icon icon="bx:link-external" />
 						</span>
 					</div>
 					<p>
@@ -48,7 +48,7 @@
 					<div class="flexbox">
 						<h6>Support</h6>
 						<span>
-							<Icon name="bx:link-external" />
+							<iconify-icon icon="bx:link-external" />
 						</span>
 					</div>
 					<p>
@@ -69,7 +69,7 @@
 					<div class="flexbox">
 						<h6>Résumé</h6>
 						<span>
-							<Icon name="bx:link-external" />
+							<iconify-icon icon="bx:link-external" />
 						</span>
 					</div>
 					<p>
@@ -143,9 +143,9 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		span {
-			margin-bottom: 0.5em;
-		}
+		// span {
+		// 	// margin-bottom: 0.5em;
+		// }
 	}
 	p {
 		margin-bottom: 0;

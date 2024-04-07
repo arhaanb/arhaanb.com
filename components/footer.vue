@@ -12,28 +12,28 @@
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Icon name="mdi:twitter" />
+						<iconify-icon icon="mdi:twitter" />
 					</a>
 					<a
 						href="https://instagram.com/arhaan_bahadur"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Icon name="mdi:instagram" />
+						<iconify-icon icon="mdi:instagram" />
 					</a>
 					<a
 						href="https://github.com/arhaanb"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Icon name="mdi:github" />
+						<iconify-icon icon="mdi:github" />
 					</a>
 					<a
 						href="https://open.spotify.com/user/arhaanb"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Icon name="mdi:spotify" />
+						<iconify-icon icon="mdi:spotify" />
 					</a>
 
 					<a
@@ -41,7 +41,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<Icon name="mdi:linkedin" />
+						<iconify-icon icon="mdi:linkedin" />
 					</a>
 
 					<a
@@ -49,7 +49,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<Icon name="mdi:behance" />
+						<iconify-icon icon="mdi:behance" />
 					</a>
 
 					<a
@@ -57,7 +57,7 @@
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<Icon name="mdi:email" />
+						<iconify-icon icon="mdi:email" />
 					</a>
 				</div>
 				<p class="zero arhn">Arhaan Bahadur</p>
