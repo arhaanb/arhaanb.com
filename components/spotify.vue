@@ -1,43 +1,47 @@
 <template>
 	<main class="spotflex">
-		<a
-			target="_blank"
-			class="logo"
-			href="https://open.spotify.com/user/arhaanb"
-			title="Now listening"
-			rel="noopener noreferrer"
-		>
-			<img src="@/assets/img/spotify.svg" alt="Spotify Icon" />
-		</a>
-		<div id="spotifycontainer">
-			<h5 v-if="spotify && spotify?.isPlaying" class="title spotifytitle">
-				<a
-					rel="noopener noreferrer"
-					class="green"
-					:href="spotify?.songUrl"
-					target="_blank"
-				>
-					<span :title="spotify?.title">{{
-						spotify?.title || spotify?.cleanTitle
-					}}</span>
-				</a>
-			</h5>
-			<h5 class="title not" v-else>
-				<a href="//open.spotify.com/user/arhaanb" target="_blank"
-					>Spotify &mdash; Not playing</a
-				>
-			</h5>
-			<h5 v-if="spotify" class="artist spotifytitle">
-				<span v-if="spotify?.isPlaying" :title="spotify?.artist || 'Unknown'">{{
-					spotify?.artist || 'Unknown'
-				}}</span>
-			</h5>
-		</div>
+		<ClientOnly>
+			<a
+				target="_blank"
+				class="logo"
+				href="https://open.spotify.com/user/arhaanb"
+				title="Now listening"
+				rel="noopener noreferrer"
+			>
+				<img src="@/assets/img/spotify.svg" alt="Spotify Icon" />
+			</a>
+			<div id="spotifycontainer">
+				<h5 v-if="spotify && spotify?.isPlaying" class="title spotifytitle">
+					<a
+						rel="noopener noreferrer"
+						class="green"
+						:href="spotify?.songUrl"
+						target="_blank"
+					>
+						<span :title="spotify?.title">{{
+							spotify?.title || spotify?.cleanTitle
+						}}</span>
+					</a>
+				</h5>
+				<h5 class="title not" v-else>
+					<a href="//open.spotify.com/user/arhaanb" target="_blank"
+						>Spotify &mdash; Not playing</a
+					>
+				</h5>
+				<h5 v-if="spotify" class="artist spotifytitle">
+					<span
+						v-if="spotify?.isPlaying"
+						:title="spotify?.artist || 'Unknown'"
+						>{{ spotify?.artist || 'Unknown' }}</span
+					>
+				</h5>
+			</div>
+		</ClientOnly>
 	</main>
 </template>
 
 <script>
-// import useSWRV from 'swrv'
+import useSWRV from 'swrv'
 var url = '/api/spotify'
 
 export default {
@@ -48,11 +52,11 @@ export default {
 	},
 
 	setup() {
-		// const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
+		const { data, error } = useSWRV(url, undefined, { refreshInterval: 1000 })
 
 		return {
-			spotify: undefined,
-			error: undefined
+			spotify: data,
+			error
 		}
 	}
 }
