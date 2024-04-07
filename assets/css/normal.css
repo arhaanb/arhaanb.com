@@ -1,0 +1,168 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+/* @font-face {
+	font-family: 'Colfax';
+	src: url('/ColfaxWebRegular.woff');
+	font-weight: 400;
+	font-display: swap;
+} */
+
+@font-face {
+	font-family: 'augillion';
+	src: url('/augillion.otf');
+	/* font-weight: 400; */
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Plex Mono';
+	src: url('/IBMPlexMono-Light.woff2');
+	font-weight: 400;
+	font-display: swap;
+}
+
+.mono {
+	font-family: 'Plex Mono', monospace;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+::selection {
+	background-color: #fff6c0;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	font-family: var(--fontSans);
+	color: #060c17;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p a {
+	transition: 300ms;
+	border-bottom: 1px dashed #abb0b6;
+	text-decoration: none;
+	color: inherit;
+}
+
+p a:not(.notion-link):hover {
+	background-color: rgba(252, 184, 153, 0.493);
+	/* background-color: rgba(184, 208, 250, 0.384); */
+	/* background-color: var(--red-text); */
+}
+
+p {
+	opacity: 0.9;
+}

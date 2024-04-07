@@ -1,0 +1,267 @@
+:root {
+	--c-bg: #fff;
+	--c-scrollbar: #bbb;
+	--c-scrollbar-hover: rgb(223, 223, 223);
+	--red-text: #ff983a;
+	--bg: #fff3e6;
+	--fontSans: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
+}
+
+::-webkit-scrollbar {
+	background: transparent !important;
+	width: 7px !important;
+	height: auto !important;
+}
+::-webkit-scrollbar-thumb {
+	background: rgb(187, 187, 187) !important;
+  border-radius: 2em;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #ccc !important;
+}
+::-webkit-scrollbar-track {
+	background: var(--bg) !important;
+}
+
+body {
+	/* background: linear-gradient(99deg, #c3f8da8f, #ffffff, #f3daff75, #ffffff);
+	background-size: 800% 800%;
+	-webkit-animation: gradAnim 8s ease infinite;
+	-moz-animation: gradAnim 8s ease infinite;
+	-o-animation: gradAnim 8s ease infinite;
+	animation: gradAnim 8s ease infinite; */
+	background-color: var(--bg);
+}
+
+.fancy {
+	font-family: 'augillion' !important;
+	text-transform: lowercase;
+	color: var(--red-text);
+}
+
+.notion-page,
+.notion-page-offset {
+	padding: 0 !important;
+	font-family: var(--fontSans) !important;
+}
+
+/* body {
+	background: radial-gradient( circle at 45% -20%, hsl(263, 53%, 20%), rgba(255, 255, 255, 0) 25%), radial-gradient( circle at 55% -20%, hsl(337, 47%, 25%), rgba(255, 255, 255, 0) 25%);
+} */
+
+.title {
+	margin-bottom: 0.25em;
+}
+
+.img {
+	width: 100%;
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.zero {
+	margin: 0;
+}
+
+@-webkit-keyframes gradAnim {
+	0% {
+		background-position: 0% 99%;
+	}
+
+	50% {
+		background-position: 100% 2%;
+	}
+
+	100% {
+		background-position: 0% 99%;
+	}
+}
+
+@-moz-keyframes gradAnim {
+	0% {
+		background-position: 0% 99%;
+	}
+
+	50% {
+		background-position: 100% 2%;
+	}
+
+	100% {
+		background-position: 0% 99%;
+	}
+}
+
+@-o-keyframes gradAnim {
+	0% {
+		background-position: 0% 99%;
+	}
+
+	50% {
+		background-position: 100% 2%;
+	}
+
+	100% {
+		background-position: 0% 99%;
+	}
+}
+
+@keyframes gradAnim {
+	0% {
+		background-position: 0% 99%;
+	}
+
+	50% {
+		background-position: 100% 2%;
+	}
+
+	100% {
+		background-position: 0% 99%;
+	}
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	margin: 0;
+	font-size: 2.5em;
+}
+
+.socials {
+	display: flex;
+}
+
+.back {
+	transition: 0.3s;
+}
+
+.back:hover {
+	opacity: 0.7;
+}
+
+::selection {
+	color: #222;
+	background: rgba(119, 179, 247, 0.212);
+}
+
+::-moz-selection {
+	color: #222;
+	background: rgba(119, 179, 247, 0.212);
+}
+
+strong {
+	font-weight: 550;
+}
+
+.yo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-center;
+	flex-wrap: wrap;
+	margin-top: 1.5em;
+}
+
+.yo a {
+	margin-right: 1em;
+	border: none;
+	color: var(--red-text);
+	margin-bottom: 0.8em;
+}
+
+.yo a:hover {
+	color: #222;
+	opacity: 90%;
+}
+
+@media (max-width: 750px) {
+	.none,
+	.anti {
+		display: none;
+	}
+}
+
+p {
+	line-height: 1.6em;
+	opacity: 0.9;
+}
+
+.noselect,
+br,
+img,
+button {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.back {
+	font-size: 1.25em;
+	border: none;
+}
+
+#nprogress {
+	pointer-events: none;
+}
+
+#nprogress .bar {
+	background-color: rgb(39, 80, 151);
+	opacity: 75%;
+	position: fixed;
+	z-index: 1031;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+}
+
+.center {
+	text-align: center;
+}
+
+.cont {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 41em;
+}
+
+.navcont {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 80%;
+}
+
+@media (max-width: 750px) {
+	.navcont {
+		max-width: 41em;
+	}
+
+	p {
+		line-height: 1.75em;
+		opacity: 0.8;
+	}
+
+	.smltitle {
+		font-size: 1.6em;
+	}
+}
