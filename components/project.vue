@@ -1,6 +1,12 @@
 <template>
 	<div data-aos="fade-up" data-aos-duration="500" class="project noselect">
-		<a rel="noopener noreferrer" v-if="!intlink" class="link" :href="link" target="_blank">
+		<a
+			rel="noopener noreferrer"
+			v-if="!intlink"
+			class="link"
+			:href="link"
+			target="_blank"
+		>
 			<div class="card">
 				<img loading="lazy" class="img" :alt="name" :src="img" />
 				<div class="info">
@@ -12,7 +18,7 @@
 			</div>
 		</a>
 
-		<router-link v-else class="link" :to="link">
+		<nuxt-link v-else class="link" :to="link">
 			<div class="card">
 				<img loading="lazy" class="img" :alt="name" :src="img" />
 				<div class="info">
@@ -22,7 +28,7 @@
 					<p class="txt" v-html="desc"></p>
 				</div>
 			</div>
-		</router-link>
+		</nuxt-link>
 	</div>
 </template>
 
@@ -66,7 +72,7 @@ export default {
 		}
 	}
 	&:before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;

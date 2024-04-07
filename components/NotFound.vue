@@ -2,7 +2,7 @@
 	<main>
 		<div class="container-sml">
 			<h1 class="title">
-				<router-link to="/" class="forofour">404</router-link>
+				<nuxt-link to="/" class="forofour">404</nuxt-link>
 			</h1>
 			<p class="top">
 				It seems like this page doesn't exist. You might find what you're
@@ -17,8 +17,8 @@
 			</p>
 			<p class="btm">
 				Or you can
-				<router-link to="/">go back home</router-link>, or
-				<router-link to="/explore#contact">contact me</router-link> if you think
+				<nuxt-link to="/">go back home</nuxt-link>, or
+				<nuxt-link to="/explore#contact">contact me</nuxt-link> if you think
 				this is a mistake.
 			</p>
 			<div v-if="!nosocials">

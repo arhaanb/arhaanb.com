@@ -1,10 +1,10 @@
 <template>
 	<div>
-		<router-link v-if="!ext" :to="to ? to : '/'" class="flexer">
+		<nuxt-link v-if="!ext" :to="to ? to : '/'" class="flexer">
 			<h5 class="main">{{ title ? title : 'Title' }}</h5>
 			<!-- <h5 class="sep">|</h5> -->
 			<h5 class="desc">{{ desc ? desc : null }}</h5>
-		</router-link>
+		</nuxt-link>
 		<a v-else target="_blank" :href="to ? to : '/'" class="flexer">
 			<h5 class="main">{{ title ? title : 'Title' }}</h5>
 			<!-- <h5 class="sep">|</h5> -->
