@@ -1,5 +1,5 @@
 <template>
 	<main>
-		<NotFound />
+		<NotFound nosocials />
 	</main>
 </template>
