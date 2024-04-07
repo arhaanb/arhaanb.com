@@ -31,10 +31,10 @@ function fetchRedirectUrl(urlObj) {
 								const redirectUri = records[0].get('url')
 								resolve(redirectUri)
 							} else {
-								resolve(null) // No redirect, resolve with null
+								resolve(null)
 							}
 						} else {
-							resolve(null) // No records found, resolve with null
+							resolve(null)
 						}
 					} catch (err) {
 						reject(err)
@@ -51,22 +51,15 @@ function fetchRedirectUrl(urlObj) {
 
 export default defineEventHandler(async (event) => {
 	const urlObj = getRequestURL(event)
-	// if (urlObj.pathname === '/__nuxt_error') return
-	console.log(urlObj.pathname)
 
-	// don't touch error routes
 	if (urlObj.pathname != '/__nuxt_error') {
-		// detect other conditions and redirect to a new url
-
-		// // const urlSearchParams = getRequestURL(event).searchParams
-		// if (process.server) {
-		// 	const url = event.node.req.url
-		// 	console.log(url)
-		// }
 		try {
 			const redirect = await fetchRedirectUrl(urlObj)
-			console.log(redirect)
-			await sendRedirect(event, redirect, 301)
+			if (redirect) {
+				await sendRedirect(event, redirect, 301)
+			} else {
+				return
+			}
 		} catch (error) {
 			return
 		}
