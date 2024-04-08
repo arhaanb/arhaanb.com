@@ -22,5 +22,9 @@ export const projects = [
 	{
 		id: 'sparsh',
 		notion: 'cbcfd33d9acf4f0ba8cee921eb7e1b35'
+	},
+	{
+		id: 'vipriya',
+		notion: 'f58941eb0e484467a84674c0cb33d0be'
 	}
 ]

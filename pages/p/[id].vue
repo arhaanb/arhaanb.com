@@ -14,7 +14,7 @@ definePageMeta({
 			if (projects.find((x) => x.id == params.id)?.notion) {
 				return
 			} else {
-				return abortNavigation('Not found')
+				return abortNavigation('Page not found')
 			}
 		}
 	]
