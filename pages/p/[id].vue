@@ -1,15 +1,12 @@
 <script setup>
-// import { NotionRenderer, getPageBlocks, useGetPageBlocks } from 'vue3-notion'
 import { projects } from './aaprojects.js'
-// import { ref, onMounted } from 'vue'
-// import { useRoute } from 'vue-router'
-// // import Fourerr from '../NotFound.vue'
+
 const { $notion } = useNuxtApp()
 const { params } = useRoute()
 
 definePageMeta({
 	middleware: [
-		function (to, from) {
+		function (to, _) {
 			const { params } = to
 			if (projects.find((x) => x.id == params.id)?.notion) {
 				return
@@ -20,23 +17,12 @@ definePageMeta({
 	]
 })
 
-const { data } = await useAsyncData('notion', () =>
-	$notion.getPageBlocks(projects.find((x) => x.id == params.id)?.notion)
-)
-
-// data.value = await useAsyncData('notion', () =>
-// 	$notion.getPageBlocks(
-// 		projects.find((x) => x.id == route.params.id)?.notion || undefined
-// 	)
-// )
-// data.value = await getPageBlocks(
-// 	projects.find((x) => x.id == route.params.id)?.notion || undefined
-// )
+var id = projects.find((x) => x.id == params.id)?.notion
+const { data } = await useAsyncData('notion', () => $notion.getPageBlocks(id))
 </script>
 
 <template>
 	<main>
-		<!-- {{ data }} -->
 		<div class="cont notionblog" v-if="data">
 			<NotionRenderer :blockMap="data" fullPage prism katex />
 			<br />
@@ -44,9 +30,6 @@ const { data } = await useAsyncData('notion', () =>
 		<div v-else class="errnotion">
 			<NotFound nosocials />
 		</div>
-		<!-- <div v-else class="cont">
-			<Notionloader />
-		</div> -->
 	</main>
 </template>
 
@@ -72,7 +55,6 @@ img {
 
 .notionblog p a:hover {
 	background-color: none !important;
-	/* color: aqua !important; */
 }
 
 .notion-title {
