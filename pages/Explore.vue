@@ -4,7 +4,11 @@
 		<p class="sub">Miscellaneous stuff about me.</p>
 
 		<div data-aos="fade-up">
-			<a rel="noopener noreferrer" href="//arhn.us/design" target="_blank">
+			<a
+				rel="noopener noreferrer"
+				href="https://arhaanb.com/design"
+				target="_blank"
+			>
 				<div id="design" class="coolbox">
 					<div class="flexbox">
 						<h6>Design</h6>
@@ -22,7 +26,11 @@
 		</div>
 
 		<div data-aos="fade-up" data-aos-delay="100">
-			<a rel="noopener noreferrer" href="//arhn.us/awards" target="_blank">
+			<a
+				rel="noopener noreferrer"
+				href="https://arhaanb.com/awards"
+				target="_blank"
+			>
 				<div id="events" class="coolbox">
 					<div class="flexbox">
 						<h6>Achievements</h6>

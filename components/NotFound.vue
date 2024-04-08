@@ -4,22 +4,15 @@
 			<h1 class="title">
 				<nuxt-link to="/" class="forofour">404</nuxt-link>
 			</h1>
-			<p class="top">
-				It seems like this page doesn't exist. You might find what you're
-				looking for at
-				<a
-					rel="noopener noreferrer"
-					:href="`https://arhn.us${$route.fullPath}`"
-					style="word-wrap: break-word"
-					target="_blank"
-					>{{ `arhn.us${$route.fullPath}` }}</a
-				>.
-			</p>
+			<p class="top">It seems like this page doesn't exist.</p>
 			<p class="btm">
 				Or you can
 				<nuxt-link to="/">go back home</nuxt-link>, or
 				<nuxt-link to="/explore#contact">contact me</nuxt-link> if you think
 				this is a mistake.
+			</p>
+			<p>
+				<nuxt-link class="homelink" to="/">&larr; Go home</nuxt-link>
 			</p>
 			<div v-if="!nosocials">
 				<Footer />
@@ -36,7 +29,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.homelink {
+	border: none;
+	transition: 0.2s;
+	&:hover {
+		background: transparent !important;
+		opacity: 0.4;
+	}
+}
+
 .forofour {
 	border: none;
 	opacity: 1;

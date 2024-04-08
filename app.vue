@@ -39,7 +39,10 @@
 							<nuxt-link to="/" @click="nav = !nav">Home</nuxt-link>
 							<nuxt-link to="/projects" @click="nav = !nav">Projects</nuxt-link>
 							<nuxt-link to="/explore" @click="nav = !nav">Explore</nuxt-link>
-							<nuxt-link to="/explore#contact" @click="nav = !nav"
+							<nuxt-link
+								class="contactlink"
+								to="/explore#contact"
+								@click="nav = !nav"
 								>Contact</nuxt-link
 							>
 						</div>
@@ -115,7 +118,10 @@ export default {
 
 .navbar .links a.router-link-exact-active {
 	color: var(--red-text);
-	// color: rgb(60, 124, 233);
+}
+
+.contactlink {
+	color: #222 !important;
 }
 
 .navbar .links a:hover {

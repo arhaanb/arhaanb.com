@@ -1,9 +1,8 @@
 import Airtable from 'airtable'
 
 var base = new Airtable({
-	apiKey:
-		'patC0OlDvuqXjhtCH.ba4c7c494a49ac494676c40e3f5c68665b7b1982907330f63a5be14d41868e57'
-}).base('app9zWIBRbLvBx5yc')
+	apiKey: process.env.AIRTABLE_API_KEY
+}).base(process.env.AIRTABLE_BASE_ID)
 
 function convertAndTrim(str) {
 	str = str.toLowerCase()
