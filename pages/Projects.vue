@@ -25,14 +25,6 @@ fi
 				intlink
 			/>
 
-			<!-- <Project
-				name="Vipriya"
-				description="A dating app that matches you based on your music taste."
-				link="/p/vipriya"
-				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
-				intlink
-			/> -->
-
 			<Project
 				name="Cricket Bat Company"
 				description="Empowering you to buy the right cricket bat by analysing your play style."
@@ -40,6 +32,14 @@ fi
 				img="/projects/cbc.png"
 			/>
 
+			<Project
+				name="Vipriya"
+				description="A dating app that matches you based on your music taste."
+				link="/p/vipriya"
+				img="/projects/vipriya.png"
+				intlink
+			/>
+			
 			<Project
 				name="PAYOUT."
 				description="An equity-based crowdfunding platform for investing in Startups. <i>Get funded, quick.</i>"
