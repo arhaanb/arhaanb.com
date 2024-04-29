@@ -94,5 +94,9 @@ export default defineNuxtConfig({
 	modules: ['nuxt-aos', ['vue3-notion/nuxt', { css: true }], 'nuxt-gtag'],
 	gtag: {
 		id: 'G-402MKB1QXE'
+	},
+	routeRules: {
+		'/p/**': { redirect: '/projects/**' },
+		'/project/**': { redirect: '/projects/**' }
 	}
 })

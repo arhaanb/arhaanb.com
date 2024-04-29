@@ -19,7 +19,7 @@ fi
 			<Project
 				name="Sparsh"
 				description="An accessible tap to pay network for UPI in India."
-				link="/p/sparsh"
+				link="/projects/sparsh"
 				img="/projects/sparsh.png"
 				data-aos-delay="200"
 				intlink
@@ -35,7 +35,7 @@ fi
 			<Project
 				name="Vipriya"
 				description="A dating app that matches you based on your music taste."
-				link="/p/vipriya"
+				link="/projects/vipriya"
 				img="/projects/vipriya.png"
 				intlink
 			/>
@@ -44,7 +44,7 @@ fi
 				name="PAYOUT."
 				description="An equity-based crowdfunding platform for investing in Startups. <i>Get funded, quick.</i>"
 				img="https://res.cloudinary.com/arhaanb/image/upload/v1656856077/payout.png"
-				link="/p/payout"
+				link="/projects/payout"
 				intlink
 				data-aos-delay="100"
 			/>
@@ -52,7 +52,7 @@ fi
 			<Project
 				name="Sahay"
 				description="A collaborative experience for hospital management."
-				link="/p/sahay"
+				link="/projects/sahay"
 				intlink
 				img="https://res.cloudinary.com/arhaanb/image/upload/smlsahay.png"
 			/>
@@ -68,7 +68,7 @@ fi
 				name="Link+AI"
 				description="A mobile app to help you improve your LinkedIn profile and view beautiful stats."
 				img="https://res.cloudinary.com/arhaanb/image/upload/linkplus.png"
-				link="/p/linkplusai"
+				link="/projects/linkplusai"
 				intlink
 			/>
 
