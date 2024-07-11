@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
 		Get back to them at <a href="mailto:${email}">${email}</a>`
 
 		const msg = {
-			from: 'web@arhn.us',
+			from: 'web@arhaanb.com',
 			to: 'arhaanb+web@gmail.com',
 			subject: `${name} sent you a message.`,
 			text: emailBody,
