@@ -16,7 +16,7 @@
 					<h6 class="zero">designer &middot; developer</h6>
 				</div>
 
-				<p class="zero" style="margin-bottom: 1em">
+				<p class="zero" style="margin-bottom: 0em">
 					<!-- Hello! I'm {{ `${prefix} ${age}` }} year old developer and designer,
 					currently a freshman studying Computer Science. I enjoy participating
 					in Hackathons and Design events, and I've won several of them over the
@@ -28,7 +28,11 @@
 					I make
 					<!-- <strike>at college</strike> -->
 					<!-- functional and  -->
-					cool products with beautiful user experiences.
+					cool
+					<span class="font-bold">products with beautiful user experiences</span
+					>. I’m always looking for opportunities to work on new projects,
+					participate in a hackathon or do anything fun! Feel free to
+					<nuxt-link to="/explore#contact">reach out</nuxt-link>!
 					<!-- I enjoy participating
 					in Hackathons and Design events, and I’ve won several of them over the
 					last few years.-->
@@ -55,11 +59,11 @@
 					>.
 				</p>-->
 
-				<p class="zero">
+				<!-- <p class="zero">
 					I’m always looking for opportunities to work on new projects,
 					participate in a hackathon or do anything fun! Feel free to
 					<nuxt-link to="/explore#contact">reach out</nuxt-link>!
-				</p>
+				</p> -->
 			</div>
 
 			<!-- <img src="https://arhaanbahadur.co/me.jpeg" alt=""> -->
@@ -99,7 +103,7 @@
 				desc="Stuff I do"
 				ext
 			/>
-			<Page
+			<!-- <Page
 				data-aos="fade-up"
 				data-aos-delay="250"
 				data-aos-once="true"
@@ -107,7 +111,7 @@
 				to="https://www.buymeacoffee.com/arhaanb"
 				desc="Buy me a coffee"
 				ext
-			/>
+			/> -->
 
 			<!-- <Page
 				data-aos="fade-up"
@@ -126,11 +130,109 @@
 			/> -->
 		</div>
 
-		<div class="cont">
+		<section class="mt-12">
+			<div class="cont">
+				<h3 class="fancy mb-3 lg:mb-5 zero">
+					Building & designing <br />
+					delightful experiences.
+				</h3>
+				<p class="mb-3 lg:mb-8">
+					I work with startups to design & build beautiful products.
+					<nuxt-link to="/projects">view more &rarr;</nuxt-link>
+				</p>
+				<!-- <p>I build web and mobile apps.</p> -->
+			</div>
+
+			<!-- <div class="proj-scroll">
+				<ProjectCard />
+				<ProjectCard />
+				<ProjectCard />
+				<ProjectCard />
+			</div> -->
+
+			<EmblaCarousel />
+
+			<!-- <section class="embla">
+				<div class="embla__viewport">
+					<div class="embla__container">
+						<div class="embla__slide">
+							<div class="embla__slide__number">1</div>
+						</div>
+						<div class="embla__slide">
+							<div class="embla__slide__number">2</div>
+						</div>
+						<div class="embla__slide">
+							<div class="embla__slide__number">3</div>
+						</div>
+						<div class="embla__slide">
+							<div class="embla__slide__number">4</div>
+						</div>
+						<div class="embla__slide">
+							<div class="embla__slide__number">5</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="embla__controls">
+					<div class="embla__buttons">
+						<button class="embla__button embla__button--prev" type="button">
+							<svg class="embla__button__svg" viewBox="0 0 532 532">
+								<path
+									fill="currentColor"
+									d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z"
+								></path>
+							</svg>
+						</button>
+
+						<button class="embla__button embla__button--next" type="button">
+							<svg class="embla__button__svg" viewBox="0 0 532 532">
+								<path
+									fill="currentColor"
+									d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z"
+								></path>
+							</svg>
+						</button>
+					</div>
+
+					<div class="embla__dots"></div>
+				</div>
+			</section> -->
+		</section>
+
+		<br /><br />
+
+		<!-- <section>
+			<div class="cont">
+				<h3 class="fancy mb-3 lg:mb-5">
+					i've had the chance to wrok with some crazy brands
+				</h3>
+			</div>
+
+			<div class="navcont logos">
+				<img
+					src="https://equitree.vercel.app/_next/static/media/logo.0d1e6b8d.png"
+					alt=""
+					:key="i"
+					v-for="i in 15"
+				/>
+				<img
+					src="https://daysforclothing.com/cdn/shop/files/LOGO_LANDSCAPE-removebg-preview_a0c21198-2a60-4b75-9429-9aa28f24b08a.jpg?v=1718224774&width=600"
+					:key="i"
+					v-for="i in 10"
+					alt=""
+				/>
+			</div>
+		</section>
+
+		<section class="cont">
+			<h3 class="fancy mb-3 lg:mb-5">like what you see?</h3>
+			<Contact />
+		</section> -->
+		<!-- @contextmenu="onContextMenu($event)" -->
+		<!-- <div class="cont">
 			<div class="flex-center">
 				<div class="six columns">
 					<div class="flex-center">
-						<!-- @contextmenu="onContextMenu($event)" -->
 						<img
 							draggable="false"
 							loading="lazy"
@@ -140,13 +242,10 @@
 							style="margin-top: 3em; border-radius: 0.5em"
 						/>
 					</div>
-					<!-- <h6 class="center" style="opacity: 0.7; margin-top: -0.5em">
-						me irl
-					</h6> -->
 				</div>
 				<div class="u-cf"></div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- <div class="navcont">
 			<div class="pics">
@@ -180,6 +279,12 @@
 		</div> -->
 	</main>
 </template>
+
+<script setup>
+import emblaCarouselVue from 'embla-carousel-vue'
+
+const [emblaRef] = emblaCarouselVue()
+</script>
 
 <script>
 export default {
@@ -258,7 +363,25 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.logos {
+	margin-bottom: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2.5em;
+	row-gap: 1em;
+	img {
+		height: 2.5em;
+	}
+}
+.proj-scroll {
+	margin-top: 2em;
+	overflow-x: auto;
+	white-space: nowrap;
+	display: flex;
+}
 p {
 	text-transform: lowercase;
 }

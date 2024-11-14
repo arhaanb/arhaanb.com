@@ -17,6 +17,7 @@
     "trailingComma": "none"
   },
   "dependencies": {
+    "@nuxt/ui": "^2.19.2",
     "@sendgrid/mail": "^8.1.3",
     "@vueuse/core": "^10.9.0",
     "@vueuse/head": "^2.0.0",
@@ -24,6 +25,7 @@
     "aos": "^2.3.4",
     "axios": "^1.6.8",
     "bad-words": "^3.0.4",
+    "embla-carousel-vue": "^8.3.1",
     "isomorphic-unfetch": "^4.0.2",
     "letterboxd": "^3.1.1",
     "nuxt": "^3.11.2",

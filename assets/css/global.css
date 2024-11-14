@@ -16,7 +16,7 @@
 }
 ::-webkit-scrollbar-thumb {
 	background: rgb(187, 187, 187) !important;
-  border-radius: 2em;
+	border-radius: 2em;
 }
 ::-webkit-scrollbar-thumb:hover {
 	background: #ccc !important;
@@ -158,13 +158,13 @@ body {
 }
 
 ::selection {
-	color: #222;
-	background: rgba(119, 179, 247, 0.212);
+	color: #222 !important;
+	background: rgba(119, 179, 247, 0.212) !important;
 }
 
 ::-moz-selection {
-	color: #222;
-	background: rgba(119, 179, 247, 0.212);
+	color: #222 !important;
+	background: rgba(119, 179, 247, 0.212) !important;
 }
 
 strong {
