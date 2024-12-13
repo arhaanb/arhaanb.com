@@ -7051,6 +7051,13 @@ vue-devtools-stub@^0.1.0:
   resolved "https://registry.yarnpkg.com/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz#a65b9485edecd4273cedcb8102c739b83add2c81"
   integrity sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==
 
+vue-notion@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vue-notion/-/vue-notion-3.0.0.tgz#4b1d8432f1cb443b4bc7a3c8b82a8607a125e48d"
+  integrity sha512-L72uiJ1to3cgeBHClY0mkBHpnciTPCec1DLPyDcdFboPPQNlmByaBbFmTc2z++oEn0MOShKU+4zy0aY1pxrEXg==
+  dependencies:
+    defu "^6.1.2"
+
 vue-observe-visibility@^2.0.0-alpha.1:
   version "2.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/vue-observe-visibility/-/vue-observe-visibility-2.0.0-alpha.1.tgz#1e4eda7b12562161d58984b7e0dea676d83bdb13"
@@ -7077,10 +7084,10 @@ vue-virtual-scroller@2.0.0-beta.8:
     vue-observe-visibility "^2.0.0-alpha.1"
     vue-resize "^2.0.0-alpha.1"
 
-vue3-notion@^0.1.45:
-  version "0.1.45"
-  resolved "https://registry.yarnpkg.com/vue3-notion/-/vue3-notion-0.1.45.tgz#8dd3567db9b8afcb0e604b3816deb6aac65b10d1"
-  integrity sha512-6e7z9dsZeOQAVmqyvuvM0ljrIVsgWFzfkN4GZeSp9vLb/c+ctdBnVjYtDM0XaBVHme9tqUAbyeQYH8bnKQFGig==
+vue3-notion@^0.1.46:
+  version "0.1.46"
+  resolved "https://registry.yarnpkg.com/vue3-notion/-/vue3-notion-0.1.46.tgz#6d41eac2ff0fe7cd3433af22422eb6a780874c3b"
+  integrity sha512-Y+d/rjZtTfMcpy0IVtsIXKw+0gXXZSBjrlfgqGGccDi8MTMOcxAaXlo1tiTRuJHEjSZpTmdHtuC+Ve5ZZdkPng==
   dependencies:
     katex "^0.15.1"
     prismjs "^1.25.0"

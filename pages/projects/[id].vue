@@ -18,13 +18,21 @@ definePageMeta({
 })
 
 var id = projects.find((x) => x.id == params.id)?.notion
-const { data } = await useAsyncData('notion', () => $notion.getPageBlocks(id))
+
+// console.log({ id })
+// const { data } = await useAsyncData('notion', () => $notion.getPageBlocks(id))
+
+const { data: blockMap } = await useAsyncData('page_nuxt', () =>
+	$notion.getPageBlocks(id)
+)
+
+// console.log({ blockMap })
 </script>
 
 <template>
 	<main>
-		<div class="cont notionblog" v-if="data">
-			<NotionRenderer :blockMap="data" fullPage prism katex />
+		<div class="cont notionblog" v-if="blockMap">
+			<NotionRenderer :blockMap="blockMap" fullPage />
 			<br />
 		</div>
 		<div v-else class="errnotion">
