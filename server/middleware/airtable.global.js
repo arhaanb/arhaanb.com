@@ -51,16 +51,16 @@ function fetchRedirectUrl(urlObj) {
 export default defineEventHandler(async (event) => {
 	const urlObj = getRequestURL(event)
 
-	if (urlObj.pathname != '/__nuxt_error') {
-		try {
-			const redirect = await fetchRedirectUrl(urlObj)
-			if (redirect) {
-				await sendRedirect(event, redirect, 301)
-			} else {
-				return
-			}
-		} catch (error) {
-			return
-		}
-	}
+	// if (urlObj.pathname != '/__nuxt_error') {
+	// 	try {
+	// 		const redirect = await fetchRedirectUrl(urlObj)
+	// 		if (redirect) {
+	// 			await sendRedirect(event, redirect, 301)
+	// 		} else {
+	// 			return
+	// 		}
+	// 	} catch (error) {
+	// 		return
+	// 	}
+	// }
 })
