@@ -60,7 +60,7 @@ fi
 			<Project
 				name="Delhi Design Foundry"
 				description="A design collective based in New Delhi, India."
-				link="https://ddf.arhn.us"
+				link="https://arhaanb.com/ddf"
 				img="https://res.cloudinary.com/arhaanb/image/upload/delhidesignfoundry.png"
 			/>
 

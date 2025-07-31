@@ -50,7 +50,7 @@ const projects = {
 		},
 		{
 			title: 'Safar',
-			link: 'https://arhn.us/safar',
+			link: 'https://arhaanb.com/safar',
 			desc: 'A case study and mobile app to make travel safer during quarantine.',
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/safar.png'
 		},
@@ -75,7 +75,7 @@ const projects = {
 		{
 			title: 'Shiksha',
 			desc: 'A new way of online education. (Built for a creative event)',
-			link: 'https://arhn.us/shiksha',
+			link: 'https://arhaanb.com/shiksha',
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/shiksha.png'
 		},
 		{
