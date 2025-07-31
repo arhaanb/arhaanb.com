@@ -13,126 +13,103 @@ export const redirects = [
 	},
 	{
 		path: 'arhaanbot',
-		url: 'https://discord.com/oauth2/authorize?client_id=751846270498373725&scope=bot',
-		disabled: false
+		url: 'https://discord.com/oauth2/authorize?client_id=751846270498373725&scope=bot'
 	},
 	{
 		path: 'terrano',
-		url: 'https://gh.arhaanbahadur.co/terrano',
-		disabled: false
+		url: 'https://gh.arhaanb.com/terrano'
 	},
 	{
 		path: 'gpl',
-		url: 'https://gpl.arhaanbahadur.co',
-		disabled: false
+		url: 'https://gpl.arhaanbahadur.co'
 	},
 	{
 		path: 'safar',
-		url: 'https://safar.arhaanbahadur.co',
-		disabled: false
+		url: 'https://safar.arhaanbahadur.co'
 	},
 	{
 		path: 'byte',
-		url: 'https://minetbyte.netlify.app',
-		disabled: false
+		url: 'https://minetbyte.netlify.app'
 	},
 	{
 		path: 'elire',
-		url: 'https://elire.arhaanbahadur.co',
-		disabled: false
+		url: 'https://elire.arhaanbahadur.co'
 	},
 	{
 		path: 'core',
-		url: 'https://elire.arhaanbahadur.co',
-		disabled: false
+		url: 'https://elire.arhaanbahadur.co'
 	},
 	{
 		path: 'shiksha',
-		url: 'https://shiksha.arhn.us',
+		url: 'https://shiksha.arhn.us'
 	},
 	{
 		path: 'sahyog',
-		url: 'https://sahyog.arhaanbahadur.co',
+		url: 'https://sahyog.arhaanbahadur.co'
 	},
 	{
 		path: 'sahyog-app',
-		url: 'https://sahyog-app.arhaanbahadur.co',
+		url: 'https://sahyog-app.arhaanbahadur.co'
 	},
 	{
 		path: 'sahyog/app',
-		url: 'https://sahyog-app.arhaanbahadur.co',
+		url: 'https://sahyog-app.arhaanbahadur.co'
 	},
 	{
 		path: 'sahyog-apk',
-		url: 'https://sahyog.arhaanbahadur.co/sahyog.apk',
+		url: 'https://sahyog.arhaanbahadur.co/sahyog.apk'
 	},
 	{
 		path: 'sahyog/apk',
-		url: 'https://sahyog.arhaanbahadur.co/sahyog.apk',
+		url: 'https://sahyog.arhaanbahadur.co/sahyog.apk'
 	},
 	{
 		path: 'participation',
-		url: 'https://docs.google.com/document/d/1F646XE9BSBatcTqWFvqeZDwnPbL3KMbqp27zVC1SBMM/edit?usp=sharing',
+		url: 'https://docs.google.com/document/d/1F646XE9BSBatcTqWFvqeZDwnPbL3KMbqp27zVC1SBMM/edit?usp=sharing'
 	},
 	{
 		path: 'kuizu',
-		url: 'https://kuizu.arhaanbahadur.co',
-		disabled: false
+		url: 'https://kuizu.arhaanbahadur.co'
 	},
 	{
 		path: 'spotify',
-		url: 'https://open.spotify.com/user/arhaanb',
-		disabled: false
+		url: 'https://open.spotify.com/user/arhaanb'
 	},
 	{
 		path: 'twitter',
-		url: 'https://twitter.com/arhaanbahadur',
-		disabled: false
+		url: 'https://twitter.com/arhaanbahadur'
 	},
 	{
 		path: 'gh',
-		url: 'https://github.com/arhaanb',
-		disabled: false
+		url: 'https://github.com/arhaanb'
 	},
 	{
 		path: 'github',
-		url: 'https://github.com/arhaanb',
-		disabled: false
+		url: 'https://github.com/arhaanb'
 	},
 	{
 		path: 'instagram',
-		url: 'https://instagram.com/arhaan_bahadur',
-		disabled: false
+		url: 'https://instagram.com/arhaan_bahadur'
 	},
 	{
 		path: 'kuizu-present',
-		url: 'https://docs.google.com/presentation/d/1ILiXmmX-gkLWtgheTxafUw8o_BI1kH2ucIWlHRqpxaE/edit?usp=sharing',
-		disabled: false
+		url: 'https://docs.google.com/presentation/d/1ILiXmmX-gkLWtgheTxafUw8o_BI1kH2ucIWlHRqpxaE/edit?usp=sharing'
 	},
 	{
 		path: 'cura',
-		url: 'https://cura.arhaanbahadur.co',
-		disabled: false
+		url: 'https://cura.arhaanbahadur.co'
 	},
 	{
 		path: 'analytics',
-		url: 'https://analytics.arhaanbahadur.co',
-		disabled: false
-	},
-	{
-		path: 'anal',
-		url: 'https://analytics.arhaanbahadur.co',
-		disabled: false
+		url: 'https://analytics.arhaanb.com'
 	},
 	{
 		path: 'thor',
-		url: 'https://gh.arhaanbahadur.co/thor',
-		disabled: false
+		url: 'https://gh.arhaanb.com/thor'
 	},
 	{
 		path: 'sabre',
-		url: 'https://drive.google.com/drive/folders/1pin-rZCf0Po0_FLXZgwk1c-xvq184qQh',
-		disabled: false
+		url: 'https://drive.google.com/drive/folders/1pin-rZCf0Po0_FLXZgwk1c-xvq184qQh'
 	},
 	{
 		path: 'ec',
@@ -180,28 +157,23 @@ export const redirects = [
 	},
 	{
 		path: 'movie',
-		url: 'https://www.youtube.com/watch?v=Z_jnFEpjP8I',
-		disabled: false
+		url: 'https://www.youtube.com/watch?v=Z_jnFEpjP8I'
 	},
 	{
 		path: 'ppt',
-		url: 'https://docs.google.com/presentation/d/1RlYvUV6FbLLx8s06oUeF7vHzhVOLcx9PR8tdxWL56RE/edit?usp=sharing',
-		disabled: false
+		url: 'https://docs.google.com/presentation/d/1RlYvUV6FbLLx8s06oUeF7vHzhVOLcx9PR8tdxWL56RE/edit?usp=sharing'
 	},
 	{
 		path: 'spotivity',
-		url: 'https://play.google.com/store/apps/details?id=com.arhaanb.spotifyactivity',
-		disabled: false
+		url: 'https://play.google.com/store/apps/details?id=com.arhaanb.spotifyactivity'
 	},
 	{
 		path: 'awards',
-		url: 'https://arhaanb.notion.site/Awards-52a78fdb74624703802ce9cc7ceee89f',
-		disabled: false
+		url: 'https://arhaanb.notion.site/Awards-52a78fdb74624703802ce9cc7ceee89f'
 	},
 	{
 		path: 'resume',
-		url: 'https://drive.google.com/file/d/1pYTuMmtAmCuZrMJ90l9VXXUWRKQkIHAj/view?usp=sharing',
-		disabled: false
+		url: 'https://drive.google.com/file/d/1pYTuMmtAmCuZrMJ90l9VXXUWRKQkIHAj/view?usp=sharing'
 	},
 	{
 		path: 'spot-design',
