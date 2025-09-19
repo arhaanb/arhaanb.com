@@ -226,5 +226,9 @@ export const redirects = [
 	{
 		path: 'dawaiposter',
 		url: 'https://drive.google.com/file/d/14OR6QSJbWEwEZVlw6fH410B3U6nF7V5Z/view?usp=sharing'
+	},
+	{
+		path: 'iduda-3',
+		url: 'https://docs.google.com/presentation/d/1Jme5ZzRdKoFliYoTZHxTTY1ZGrBBweXxclXLM1pepb8/edit?usp=sharing'
 	}
 ]
