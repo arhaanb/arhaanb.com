@@ -230,5 +230,9 @@ export const redirects = [
 	{
 		path: 'iduda-3',
 		url: 'https://docs.google.com/presentation/d/1Jme5ZzRdKoFliYoTZHxTTY1ZGrBBweXxclXLM1pepb8/edit?usp=sharing'
-	}
+	},
+	{
+		path: 'times-foundation',
+		url: 'https://www.figma.com/design/XiBY6ZXgvPSxDAYoCJfRmB'
+	},
 ]
