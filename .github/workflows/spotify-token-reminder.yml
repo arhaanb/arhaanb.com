@@ -1,0 +1,56 @@
+name: Spotify token reminder
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check token age
+        id: check
+        run: |
+          DAYS=$(node scripts/check-spotify-token.mjs)
+          echo "days=$DAYS" >> "$GITHUB_OUTPUT"
+          if [ "$DAYS" -lt 30 ]; then
+            echo "expiring=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "expiring=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open reminder issue
+        if: steps.check.outputs.expiring == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          EXISTING=$(gh issue list --state open --search "Spotify refresh token in:title" --json number -q '.[0].number')
+          if [ -z "$EXISTING" ]; then
+            gh issue create \
+              --title "Spotify refresh token expires in ${{ steps.check.outputs.days }} days" \
+              --body "The Spotify refresh token expires in ${{ steps.check.outputs.days }} days (6-month lifetime from the last authorization).
+
+Re-authorize by running:
+
+\`\`\`bash
+node scripts/spotify-refresh-token.mjs
+\`\`\`
+
+It opens a browser, completes the auth-code flow, and automatically updates \`.env\` and \`scripts/spotify-token-state.json\`. Then commit and push the state file update (and update the token in Vercel). This issue auto-closes on a later daily run once the state is refreshed."
+          fi
+
+      - name: Close stale reminder
+        if: steps.check.outputs.expiring == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ISSUE=$(gh issue list --state open --search "Spotify refresh token in:title" --json number -q '.[0].number')
+          if [ -n "$ISSUE" ]; then
+            gh issue close "$ISSUE" --comment "The refresh token has been renewed; closing this reminder."
+          fi

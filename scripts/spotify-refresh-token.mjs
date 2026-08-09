@@ -84,6 +84,19 @@ const updateEnv = (refreshToken) => {
 	console.log(`\nUpdated SPOTIFY_REFRESH_TOKEN in .env`)
 }
 
+const statePath = path.resolve(
+	path.dirname(fileURLToPath(import.meta.url)),
+	'spotify-token-state.json'
+)
+
+const updateState = () => {
+	fs.writeFileSync(
+		statePath,
+		JSON.stringify({ issuedAt: new Date().toISOString() }, null, 2) + '\n'
+	)
+	console.log(`Updated ${path.basename(statePath)} (issuedAt: ${new Date().toISOString()})`)
+}
+
 const server = http.createServer(async (req, res) => {
 	const uri = redirectUri()
 	const url = new URL(req.url, uri)
@@ -107,6 +120,7 @@ const server = http.createServer(async (req, res) => {
 	try {
 		const { refresh_token } = await exchangeCode(code, uri)
 		updateEnv(refresh_token)
+		updateState()
 		console.log('You can close this tab and restart the dev server.')
 	} catch (err) {
 		console.error(err.message)
