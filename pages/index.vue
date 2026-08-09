@@ -18,7 +18,7 @@
 
 				<p class="zero" style="margin-bottom: 0.4em">
 					I’m Arhaan, a computer science &amp; design graduate from
-					<a class="brand" href="//iiitd.ac.in" target="_blank"
+					<a class="brand" href="https://hcd.iiitd.ac.in/" target="_blank"
 						><img src="/logos/iiitd.svg" alt="IIIT Delhi" /> IIIT Delhi</a
 					>,
 					{{ phase === 'soon' ? 'joining' : 'currently working at' }}
