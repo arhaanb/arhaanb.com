@@ -11,7 +11,7 @@ Steps:
 3. Write a commit message following this format:
    - First line: `<type>: <short summary>` (max 72 chars)
    - Blank line
-   - Description body: 1-3 sentences explaining what changed and why
+   - Description body: short, concise bullet points summarizing what changed and why
    - Types: `feat:` (new feature), `fix:` (bug fix), `refactor:` (code restructuring), `style:` (UI/styling), `chore:` (maintenance/config), `docs:` (documentation), `perf:` (performance), `test:` (tests)
    - Use lowercase for the summary, no period at the end
    - The description should provide context that isn't obvious from the diff

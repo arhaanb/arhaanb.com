@@ -13,6 +13,11 @@ if (!localDoc.value?.body) {
 	})
 }
 
+useHead({
+	title: () => localDoc.value?.title,
+	meta: [{ name: 'description', content: () => localDoc.value?.description }]
+})
+
 const STATUS_LABELS = {
 	archived: 'No longer active',
 	deprecated: 'No longer active',
@@ -52,7 +57,7 @@ function formatDate(date) {
 					statusLabel
 				}}</span>
 			</div>
-			<ContentDoc :path="`/projects/${params.id}`" />
+			<ContentRenderer :value="localDoc" />
 			<br />
 		</div>
 	</main>

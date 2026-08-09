@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	devtools: { enabled: false },
+	experimental: {
+		// avoid vite pre-transform errors for the virtual `#app-manifest`
+		// module on cold starts (nuxt/nuxt#33606); route rules are still
+		// handled server-side by nitro
+		appManifest: false
+	},
 	css: [
 		'@/assets/css/normal.css',
 		'@/assets/css/skeleton.css',
