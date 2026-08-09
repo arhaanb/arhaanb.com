@@ -17,7 +17,7 @@
 				</div>
 
 				<p class="zero" style="margin-bottom: 0.4em">
-					I’m Arhaan, a computer science &amp; design graduate from
+					I’m Arhaan, a <strong>computer science &amp; design</strong> graduate from
 					<a class="brand" href="https://hcd.iiitd.ac.in/" target="_blank"
 						><img src="/logos/iiitd.svg" alt="IIIT Delhi" /> IIIT Delhi</a
 					>,
