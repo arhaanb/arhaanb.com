@@ -1,86 +1,69 @@
 <template>
-	<main>
-		<div class="container-sml">
-			<h1 class="title">
-				<nuxt-link to="/" class="forofour">404</nuxt-link>
-			</h1>
-			<p class="top">It seems like this page doesn't exist.</p>
-			<p class="btm">
-				Or you can
-				<nuxt-link to="/">go back home</nuxt-link>, or
-				<nuxt-link to="/explore#contact">contact me</nuxt-link> if you think
-				this is a mistake.
-			</p>
-			<p>
-				<nuxt-link class="homelink" to="/">&larr; Go home</nuxt-link>
-			</p>
-			<div v-if="!nosocials">
-				<Footer />
-			</div>
+	<div class="notfound">
+		<p class="code">404</p>
+		<p class="line">this page doesn't exist</p>
+		<p class="desc">
+			It may have been moved, or the link you followed was broken.
+		</p>
+		<div class="links">
+			<nuxt-link to="/" class="link">&larr; go back home</nuxt-link>
+			<nuxt-link to="/explore#contact" class="link">contact me</nuxt-link>
 		</div>
-	</main>
+	</div>
 </template>
 
-<script>
-export default {
-	props: {
-		nosocials: Boolean
-	}
-}
-</script>
-
 <style lang="scss" scoped>
-.homelink {
-	border: none;
-	transition: 0.2s;
-	&:hover {
-		background: transparent !important;
-		opacity: 0.4;
-	}
+.notfound {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 1.5em;
 }
 
-.forofour {
-	border: none;
-	opacity: 1;
+.code {
+	font-family: 'augillion', var(--fontSans);
 	color: var(--red-text);
-	/* color: rgb(8, 75, 119); */
+	text-transform: lowercase;
+	font-size: 7em;
+	line-height: 1;
+	margin: 0;
+}
+
+.line {
+	font-size: 1.5em;
+	font-weight: 500;
+	opacity: 0.65;
+	margin: 0.75em 0 0;
+}
+
+.desc {
+	font-size: 1.15em;
+	opacity: 0.9;
+	max-width: 32ch;
+	line-height: 1.55;
+	margin: 0.5em 0 1.75em;
+}
+
+.links {
+	display: flex;
+	gap: 1.4em;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.link {
+	color: #222;
+	text-decoration: none;
+	border-bottom: 1px dashed #abb0b6;
+	padding-bottom: 0.1em;
+	font-size: 1.05em;
 	transition: 0.2s;
-}
 
-.forofour:hover {
-	opacity: 0.75;
-}
-
-.container-sml {
-	margin: 0 auto;
-	padding: 0 2em;
-	max-width: 25em;
-}
-
-p.top {
-	margin: 0.5em 0;
-}
-p.btm {
-	margin-bottom: 1em;
-}
-.yo {
-	margin-top: 0;
-}
-p {
-	opacity: 1;
-}
-
-.yo a {
-	padding: 0.35em;
-	font-size: 1.1em;
-	transition: 0.2s;
-}
-
-.yo a:hover {
-	color: chocolate;
-}
-
-.title {
-	margin-top: 7em;
+	&:hover {
+		border-bottom-color: var(--red-text);
+		color: var(--red-text);
+	}
 }
 </style>

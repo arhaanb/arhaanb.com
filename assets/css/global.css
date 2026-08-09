@@ -41,12 +41,6 @@ body {
 	color: var(--red-text);
 }
 
-.notion-page,
-.notion-page-offset {
-	padding: 0 !important;
-	font-family: var(--fontSans) !important;
-}
-
 /* body {
 	background: radial-gradient( circle at 45% -20%, hsl(263, 53%, 20%), rgba(255, 255, 255, 0) 25%), radial-gradient( circle at 55% -20%, hsl(337, 47%, 25%), rgba(255, 255, 255, 0) 25%);
 } */

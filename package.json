@@ -22,9 +22,10 @@
     }
   },
   "dependencies": {
+    "@nuxt/content": "^2.13.4",
     "@nuxt/ui": "^2.19.2",
     "@sendgrid/mail": "^8.1.3",
-    "@vueuse/core": "^10.9.0",
+    "@vueuse/core": "^10.11.1",
     "@vueuse/head": "^2.0.0",
     "airtable": "^0.12.2",
     "aos": "^2.3.4",
@@ -35,13 +36,11 @@
     "letterboxd": "^3.1.1",
     "nuxt": "^3.11.2",
     "vue": "^3.4.21",
-    "vue-notion": "^3.0.0",
-    "vue-router": "^4.3.0",
-    "vue3-notion": "^0.1.46"
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "nuxt-aos": "^1.2.4",
-    "nuxt-gtag": "^2.0.5",
+    "nuxt-gtag": "^2.1.0",
     "sass": "^1.74.1"
   }
 }

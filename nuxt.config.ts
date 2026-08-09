@@ -91,12 +91,7 @@ export default defineNuxtConfig({
 			]
 		}
 	},
-	modules: [
-		'nuxt-aos',
-		['vue3-notion/nuxt', { css: true }],
-		'nuxt-gtag',
-		'@nuxt/ui'
-	],
+	modules: ['nuxt-aos', 'nuxt-gtag', '@nuxt/ui', '@nuxt/content'],
 	gtag: {
 		id: 'G-402MKB1QXE'
 	},

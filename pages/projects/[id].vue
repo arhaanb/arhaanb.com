@@ -1,112 +1,131 @@
 <script setup>
-import { projects } from './aaprojects.js'
-
-const { $notion } = useNuxtApp()
 const { params } = useRoute()
 
-definePageMeta({
-	middleware: [
-		function (to, _) {
-			const { params } = to
-			if (projects.find((x) => x.id == params.id)?.notion) {
-				return
-			} else {
-				return abortNavigation('Page not found')
-			}
-		}
-	]
-})
-
-var id = projects.find((x) => x.id == params.id)?.notion
-
-// console.log({ id })
-// const { data } = await useAsyncData('notion', () => $notion.getPageBlocks(id))
-
-const { data: blockMap } = await useAsyncData('page_nuxt', () =>
-	$notion.getPageBlocks(id)
+const { data: localDoc } = await useAsyncData(`local-${params.id}`, () =>
+	queryContent(`/projects/${params.id}`).findOne()
 )
 
-// console.log({ blockMap })
+if (!localDoc.value?.body) {
+	throw createError({
+		statusCode: 404,
+		statusMessage: 'Page Not Found',
+		fatal: false
+	})
+}
 </script>
 
 <template>
 	<main>
-		<div class="cont notionblog" v-if="blockMap">
-			<NotionRenderer :blockMap="blockMap" fullPage />
+		<div class="cont md-post">
+			<ContentDoc :path="`/projects/${params.id}`" />
 			<br />
-		</div>
-		<div v-else class="errnotion">
-			<NotFound nosocials />
 		</div>
 	</main>
 </template>
 
 <style>
-/* override notion styles */
-ul.notion-list {
-	padding-inline-start: 0;
-	list-style-position: outside;
+/* local mdx content */
+html {
+	scroll-behavior: smooth;
 }
 
-img {
-	-webkit-user-drag: none;
-	-khtml-user-drag: none;
-	-moz-user-drag: none;
-	-o-user-drag: none;
-	user-drag: none;
+.md-post h1[id],
+.md-post h2[id],
+.md-post h3[id],
+.md-post h4[id],
+.md-post h5[id],
+.md-post h6[id] {
+	scroll-margin-top: 2em;
 }
 
-.notion-callout .notion-emoji {
-	font-size: 1.5em;
-	line-height: 1.235em;
+.md-post {
+	font-family: var(--fontSans);
+	color: #222;
+	line-height: 1.6;
+	max-width: 46em;
 }
 
-.notionblog p a:hover {
-	background-color: none !important;
+.md-post h1 {
+	font-family: 'augillion', var(--fontSans);
+	font-weight: 400;
+	text-transform: lowercase;
+	color: var(--red-text);
+	font-size: 3em;
+	line-height: 1.1;
+	margin: 0 0 0.4em;
 }
 
-.notion-title {
-	margin-bottom: 0.2em;
+.md-post h2 {
+	font-size: 1.35em;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	margin: 2em 0 0.5em;
 }
 
-.notion-h1 {
-	margin-bottom: 0.3em !important;
+.md-post h3 {
+	font-size: 1.15em;
+	font-weight: 600;
+	margin: 1.5em 0 0.4em;
 }
 
-.notion-text em {
-	font-style: italic;
+.md-post p {
+	font-size: 1.05em;
+	line-height: 1.65;
+	opacity: 0.9;
+	margin: 0 0 1.1em;
 }
 
-.notion-hr {
-	border: none !important;
+.md-post ul {
+	list-style: disc outside;
+}
+
+.md-post ol {
+	list-style: decimal outside;
+}
+
+.md-post ul,
+.md-post ol {
+	margin: 0 0 1.2em;
+	padding-left: 1.35em;
+}
+
+.md-post li {
+	margin-bottom: 0.4em;
+	padding-left: 0.25em;
+	opacity: 0.9;
+}
+
+.md-post li::marker {
+	color: var(--red-text);
+}
+
+.md-post img {
 	width: 100%;
-	height: 0.05em;
-	background-color: #222;
-	opacity: 0.3;
+	height: auto;
+	border-radius: 0.5em;
+	margin: 1.25em 0;
+	box-shadow: 0 2px 12px rgba(34, 34, 34, 0.1);
+	border: 1px solid rgba(34, 34, 34, 0.08);
 }
 
-.notion-blank {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+.md-post blockquote {
+	margin: 1.25em 0;
+	padding: 1em 1.25em;
+	border-radius: 0.75em;
+	background: rgba(146, 184, 250, 0.22);
+	border: none;
+	color: #222;
 }
 
-.notion-image-inset {
-	border-radius: 0.25em;
+.md-post blockquote p {
+	margin: 0;
+	opacity: 1;
+	font-weight: 600;
 }
 
-.errnotion {
-	margin-top: -5em;
-	margin-bottom: 11em;
-}
-
-@media (max-width: 750px) {
-	.errnotion {
-		margin-top: -3em;
-		margin-bottom: 12em;
-	}
+.md-post hr {
+	margin: 2em 0;
+	border: 0;
+	border-top: 1px solid rgba(34, 34, 34, 0.15);
 }
 </style>

@@ -157,7 +157,7 @@ p a {
 	color: inherit;
 }
 
-p a:not(.notion-link):not(.brand):hover {
+p a:not(.brand):hover {
 	background-color: rgba(252, 184, 153, 0.493);
 }
 

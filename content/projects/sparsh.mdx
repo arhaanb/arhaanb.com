@@ -1,0 +1,96 @@
+---
+title: Sparsh
+description: An accessible tap to pay network for UPI in India.
+---
+
+# Sparsh
+
+*Introducing, Sparsh — An accessible tap to pay network for UPI in India.*
+
+> 🏆 Winner at [RedBrick Hacks](https://www.redbrickhacks.co/) (Ashoka University) — iPad Air 5th Gen
+
+::Youtube{id="bY2xwkj7v7E" title="Introducing, Sparsh — An accessible tap to pay network for UPI in India."}
+::
+
+*Introducing, Sparsh — An accessible tap to pay network for UPI in India.*
+
+## Inspiration
+
+The inspiration came from simply looking around us and thinking about the things we use daily. A basic service like UPI for the new age India, whose use is so widespread and common, is still not accessible or easy to use, especially in the case of visually challenged (and some motor challenges) where the "point to scan" motion for a QR code makes user interaction with the app difficult. And unfortunately there seems to exist almost no complete solution for this target group of over a 40 million in an economy like India.
+
+## Design
+
+**Check out the Behance project for Sparsh!**
+
+::LinkCard{href="https://www.behance.net/gallery/183713529/Sparsh-A-tap-to-pay-network-for-UPI" title="Sparsh on Behance" desc="A tap to pay network for UPI"}
+::
+
+![Sparsh cover](/img/projects/sparsh/cover.png)
+
+::LinkCard{href="http://sparsh.arhaanb.com" title="Visit the website" desc="sparsh.arhaanb.com"}
+::
+
+## What it does
+
+The app essentially makes UPI more accessible for people who may be visually impaired by implementing technologies like tap to pay and universally accepted UX guidelines by providing special "modes". This allows people who may find it troublesome to scan a QR code on their own, to be more independent and make their own payments, thus empowering them.
+
+Visual disabilities take form in various ways, cataract, colour blindness, tunnel vision, partial blindness, and more. There are also certain motor impairments like cerebral palsy and Parkinson's that suffer from the same drawback of the "point to scan" motion. Our app makes sure we cater to as many forms as we can by using features like text to speech, voice recognition, and tap to pay.
+
+The app has the same purpose as most UPI apps, except it uses the safer, more technologically advanced NFC tags to store the information of the user (such as bank details, phone number, account details etc.) It caters to all as it offers a specific accessibility mode that can be switched on to switch to a UI that is completely voice assisted, has bigger buttons, larger text and high contrast screens.
+
+![What it does — 1](/img/projects/sparsh/what-it-does-1.png)
+
+![What it does — 2](/img/projects/sparsh/what-it-does-2.png)
+
+To operate it:
+
+1. Post sign up (where you can choose to switch on the accessibility mode during onboarding), you can simply use the voice assistant to open the app or open it normally.
+2. The user then just needs to tap the NFC tag to the reader. There are no additional steps of finding the right button or the right angle!
+3. Pre-generated bills can be paid as is, or you can simply speak into the app to tell it the amount.
+
+We built a cross platform app that works on both iOS and Android for it to be accessible to all.
+
+![What it does — 3](/img/projects/sparsh/what-it-does-3.png)
+
+## How we built it
+
+We worked on our project using our prior knowledge of the double diamond technique, which worked quite well for us!
+
+1. **Discover**: We examined the everyday tasks we come across day to day and tried to narrow down to a specific chore which may have been made unnecessarily difficult for the wider audience.
+2. **Define**: We looked into how we could fix certain issues by brainstorming and acting out User Journey Maps. This included targeting what parts we would be fixing: ui, colours, user journeys, etc.
+3. **Design**: This solidified a lot of the ideas we had. We were able to build proper user flows to study what the experience would look like and how we can make it better. This also included making high fidelity mockups of the app to make sure we could put our point across effectively.
+4. **Deliver**: We built the app with React Native and Expo. We implemented features like controlling the app through Siri or Google Assistant, Text to Speech and added some more features like Separate Colour Schemes, Voice commands, and more as shown in the demo.
+
+![How we built it](/img/projects/sparsh/how-we-built-it.png)
+
+::LinkCard{href="https://www.figma.com/file/RJeONAHeup1ITE0FljVdLj/framework?type=design&node-id=192%3A237&mode=design&t=tzjNAs72LcOex7rY-1" title="Sparsh on Figma" desc="Redbrick Hacks 2023 — framework"}
+::
+
+## Challenges we ran into
+
+- **NFC**: It was our team's first time interacting with any sort of NFC Hardware. We learnt about a lot of different formats you can use on an NFC chip and their use cases. We initially ran into a bunch of bugs trying to figure this out, but eventually we got around to it and now use the NDEF Protocol to store data on the chips.
+- **Finding standardised or universal web accessibility guidelines** for building designs for visually impaired people: These are unfortunately not very well documented yet, so we gathered information from our own observations and multiple resources during our research.
+
+## Accomplishments that we're proud of
+
+- It was some of our teammates' first hardware based project. Working with hardware posed some unexpected challenges (over purely software) for sure - presenting, figuring out the right protocols and APIs, taking care of your hardware, and being aware of the way users will interact with the hardware.
+- We're quite proud of the way we've implemented the solution to reduce human error as much as possible using design and technical cues and constraints. We think we managed our time and division of work quite well! We were very collaborative, but we established boundaries and everyone was working on their own tasks, which increased our speed of building things.
+- Coming up with a realistic business model.
+
+![Accomplishments](/img/projects/sparsh/accomplishments.png)
+
+## What we learned
+
+- The role colour schemes can play in making an app more accessible. We also learnt about how to make more practical and accessible apps in general - through both design and technology.
+- We learnt a lot about things on the technical side: NFC Chips (their protocols and APIs), Text to speech and Voice recognition libraries and their implementation, Voice assistant APIs to add voice control to our app.
+
+## What's next for Sparsh
+
+We aim to become one of the first players providing Tap to Pay technologies in India. We've seen widespread use of this technology in countries like the US, Singapore, etc. Our vision is to use these technologies in as many places as possible like metros, community spaces, building smart homes etc. An Apple Watch app: The Apple Watch also supports NFC, this would have an added level of convenience when using the app to just tap and pay.
+
+## A practical Business Model
+
+We plan on building two apps, a user friendly consumer app (B2C) and APIs to integrate with existing merchant's billing systems, with NFC infrastructure (B2B)
+
+- **B2C**: Where we provide users an app that lets them interact with the NFC chip and make payments easily using a well thought out accessible UI.
+- **B2B**: We provide bigger companies like PayTM, PhonePE, etc. our chips to be integrated in their speakers and devices that announce payments for quick adoption. We can also make a small API that lets restaurants or shops integrate our tech with their billing system for pre - generated bills.
