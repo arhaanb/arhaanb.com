@@ -17,7 +17,7 @@
 						</span>
 					</div>
 					<p>
-						(WIP) I'm mostly interested in Interface and Product Design but I
+						I'm mostly interested in Interface and Product Design but I
 						enjoy making illustrations and I've also tried out some 3D
 						modelling.
 					</p>
