@@ -48,7 +48,6 @@ html {
 .md-post h1 {
 	font-family: 'augillion', var(--fontSans);
 	font-weight: 400;
-	text-transform: lowercase;
 	color: var(--red-text);
 	font-size: 3em;
 	line-height: 1.1;
