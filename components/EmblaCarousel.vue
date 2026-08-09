@@ -20,7 +20,7 @@ const items = [
 	},
 	{
 		name: 'Vipriya',
-		img: '/projects/vipriya.png',
+		img: '/img/projects/vipriya/banner.webp',
 		desc: 'A dating app that matches you based on your music taste.',
 		link: '/projects/vipriya'
 	},

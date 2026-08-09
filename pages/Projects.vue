@@ -36,7 +36,7 @@ fi
 				name="Vipriya"
 				description="A dating app that matches you based on your music taste."
 				link="/projects/vipriya"
-				img="/projects/vipriya.png"
+				img="/img/projects/vipriya/banner.webp"
 				intlink
 			/>
 			
