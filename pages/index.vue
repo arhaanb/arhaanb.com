@@ -29,7 +29,7 @@
 					in <span class="tokyo">🇯🇵 Tokyo</span
 					>{{ phase === 'soon' ? ' soon' : '' }}.
 				</p>
-				<p class="zero" style="margin-bottom: 0em">
+				<p class="zero second" style="margin-bottom: 0em">
 					I make thoughtful products with beautiful user experiences. I’m always
 					looking for opportunities to work on new projects, participate in a
 					hackathon, or do anything interesting. Feel free to
@@ -457,7 +457,11 @@ export default {
 		margin-top: 0;
 	}
 	.intro {
-		line-height: 1.9em;
+		line-height: 1.65em;
+		text-wrap: balance;
+	}
+	.second {
+		margin-top: 1em;
 	}
 	.picsgrid,
 	.socialgrid {
