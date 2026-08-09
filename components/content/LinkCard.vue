@@ -83,7 +83,7 @@ const SITES = {
 		icon: 'mdi:google-play',
 		color: '#00c46c'
 	},
-	'figma.com': { label: 'Figma', icon: 'mdi:figma', color: '#a259ff' },
+	'figma.com': { label: 'Figma', icon: 'devicon:figma', color: '#a259ff' },
 	'drive.google.com': {
 		label: 'Google Drive',
 		icon: 'mdi:google-drive',
