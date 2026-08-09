@@ -389,7 +389,8 @@ export default {
 	border: 1.5px solid;
 	box-shadow: 0 2px 8px rgba(34, 34, 34, 0.08);
 	white-space: nowrap;
-	transform: rotate(-1deg);
+	--tilt: -1deg;
+	transform: rotate(var(--tilt));
 	transition: 0.3s;
 	img {
 		height: 0.95em;
@@ -403,14 +404,17 @@ export default {
 .brand--uniqlo {
 	color: #e2231a;
 	border-color: #e2231a;
+	--tilt: -1deg;
 }
 .tokyo {
 	color: #222;
 	border-color: #222;
+	--tilt: 0.75deg;
 }
 .brand:hover,
 .tokyo:hover {
-	transform: rotate(0deg) translateY(-1px);
+	--tilt: 0deg;
+	transform: rotate(var(--tilt)) translateY(-1px);
 	background: #fff;
 }
 

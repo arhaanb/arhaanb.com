@@ -15,27 +15,12 @@
 						<iconify-icon icon="mdi:twitter" />
 					</a>
 					<a
-						href="https://instagram.com/arhaan_bahadur"
-						rel="noopener noreferrer"
-						target="_blank"
-					>
-						<iconify-icon icon="mdi:instagram" />
-					</a>
-					<a
 						href="https://github.com/arhaanb"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
 						<iconify-icon icon="mdi:github" />
 					</a>
-					<a
-						href="https://open.spotify.com/user/arhaanb"
-						rel="noopener noreferrer"
-						target="_blank"
-					>
-						<iconify-icon icon="mdi:spotify" />
-					</a>
-
 					<a
 						href="//linkedin.com/in/arhaanb"
 						target="_blank"
