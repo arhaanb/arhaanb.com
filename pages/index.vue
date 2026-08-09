@@ -17,11 +17,11 @@
 				</div>
 
 				<p class="zero" style="margin-bottom: 0.4em">
-					I’m Arhaan, a CS &amp; design graduate from
+					I’m Arhaan, a computer science &amp; design graduate from
 					<a class="brand" href="//iiitd.ac.in" target="_blank"
 						><img src="/logos/iiitd.svg" alt="IIIT Delhi" /> IIIT Delhi</a
 					>,
-					{{ phase === 'soon' ? 'joining' : 'currently building and designing at' }}
+					{{ phase === 'soon' ? 'joining' : 'currently working at' }}
 					<a class="brand brand--uniqlo" href="//fastretailing.com" target="_blank"
 						><img src="/logos/uniqlo.svg" alt="Uniqlo" /> Fast Retailing
 						(UNIQLO)</a
@@ -30,8 +30,9 @@
 					>{{ phase === 'soon' ? ' soon' : '' }}.
 				</p>
 				<p class="zero" style="margin-bottom: 0em">
-					I design thoughtful digital products and user experiences. Open to
-					interesting projects, collaborations, and hackathons. Feel free to
+					I make thoughtful products with beautiful user experiences. I’m always
+					looking for opportunities to work on new projects, participate in a
+					hackathon, or do anything interesting. Feel free to
 					<nuxt-link to="/explore#contact">reach out</nuxt-link>!
 				</p>
 
