@@ -67,7 +67,7 @@
 			</a>
 		</div>
 
-		<div aos-animate data-aos="fade-up">
+		<!-- <div aos-animate data-aos="fade-up">
 			<a
 				rel="noopener noreferrer"
 				href="https://arhaanb.com/resume"
@@ -86,7 +86,7 @@
 					</p>
 				</div>
 			</a>
-		</div>
+		</div> -->
 
 		<!-- <div data-aos="fade-up" data-aos-delay="200">
 			<a rel="noopener noreferrer" href="//arhn.us/events" target="_blank">

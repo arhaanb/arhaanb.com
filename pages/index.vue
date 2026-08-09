@@ -83,7 +83,7 @@
 				to="/explore#contact"
 				desc="Let's talk"
 			/>
-			<Page
+			<!-- <Page
 				data-aos="fade-up"
 				data-aos-delay="200"
 				data-aos-once="true"
@@ -91,7 +91,7 @@
 				to="https://arhaanb.com/resume"
 				desc="Stuff I do"
 				ext
-			/>
+			/> -->
 			<!-- <Page
 				data-aos="fade-up"
 				data-aos-delay="250"
