@@ -9,14 +9,49 @@ if (!localDoc.value?.body) {
 	throw createError({
 		statusCode: 404,
 		statusMessage: 'Page Not Found',
-		fatal: false
+		fatal: true
 	})
+}
+
+const STATUS_LABELS = {
+	archived: 'No longer active',
+	deprecated: 'No longer active',
+	inactive: 'No longer active'
+}
+
+const statusLabel = computed(() => {
+	const status = localDoc.value?.status
+	return status ? STATUS_LABELS[status] || String(status) : ''
+})
+
+function formatDate(date) {
+	if (!date) return ''
+	const s = String(date)
+	const m = s.match(/^(\d{4})-(\d{2})(?:-\d{2})?$/)
+	if (m) {
+		return new Date(Date.UTC(+m[1], +m[2] - 1, 1)).toLocaleDateString('en-US', {
+			month: 'long',
+			year: 'numeric',
+			timeZone: 'UTC'
+		})
+	}
+	const d = new Date(s)
+	return isNaN(d) ? s : d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
 }
 </script>
 
 <template>
 	<main>
 		<div class="cont md-post">
+			<h1>{{ localDoc.title }}</h1>
+			<div v-if="localDoc?.date || statusLabel" class="proj-meta">
+				<span v-if="localDoc?.date" class="proj-meta-date">{{
+					formatDate(localDoc.date)
+				}}</span>
+				<span v-if="statusLabel" class="proj-meta-status">{{
+					statusLabel
+				}}</span>
+			</div>
 			<ContentDoc :path="`/projects/${params.id}`" />
 			<br />
 		</div>
@@ -25,10 +60,6 @@ if (!localDoc.value?.body) {
 
 <style>
 /* local mdx content */
-html {
-	scroll-behavior: smooth;
-}
-
 .md-post h1[id],
 .md-post h2[id],
 .md-post h3[id],
@@ -126,5 +157,33 @@ html {
 	margin: 2em 0;
 	border: 0;
 	border-top: 1px solid rgba(34, 34, 34, 0.15);
+}
+
+.proj-meta {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.75em;
+	margin: 0 0 1.5em;
+	font-family: var(--fontSans);
+}
+
+.proj-meta-date {
+	font-size: 0.85em;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #666;
+}
+
+.proj-meta-status {
+	font-size: 0.78em;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #fff;
+	background: var(--red-text);
+	border-radius: 999px;
+	padding: 0.35em 0.9em;
 }
 </style>

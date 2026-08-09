@@ -9,6 +9,10 @@
 		'Segoe UI Symbol';
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
 	background: transparent !important;
 	width: 7px !important;
