@@ -38,7 +38,7 @@
 					</a>
 				</div>
 			</div>
-			<div v-else>
+			<div v-else-if="!error">
 				<div v-for="i in 5" :key="i" data-aos="fade-right">
 					<div class="song loading">
 						<div class="flex">
@@ -61,6 +61,10 @@
 					</div>
 				</div>
 			</div>
+			<div v-else class="song error">
+				<p class="zero">Couldn't load top tracks.</p>
+				<button class="retry" @click="getSongs">Retry</button>
+			</div>
 		</ClientOnly>
 	</div>
 </template>
@@ -72,7 +76,8 @@ var url = '/api/top-tracks'
 export default {
 	data() {
 		return {
-			songs: false
+			songs: false,
+			error: false
 		}
 	},
 	mounted() {
@@ -80,12 +85,19 @@ export default {
 	},
 	methods: {
 		getSongs() {
+			this.error = false
 			axios
 				.get(url)
 				.then((res) => {
-					this.songs = res.data.tracks
+					if (res.data.error) {
+						this.error = true
+					} else {
+						this.songs = res.data.tracks
+					}
 				})
-				.catch((err) => console.log(err))
+				.catch(() => {
+					this.error = true
+				})
 		},
 		getRandom(min, max) {
 			return Math.floor(Math.random() * (max - min)) + min
@@ -146,6 +158,26 @@ a.yah:hover {
 }
 .songbro {
 	display: flex;
+}
+.song.error {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1em;
+	p {
+		margin: 0;
+	}
+	.retry {
+		cursor: pointer;
+		border: none;
+		border-radius: 0.4em;
+		padding: 0.5em 1em;
+		background: rgba(34, 34, 34, 0.08);
+		transition: 0.3s;
+		&:hover {
+			background: rgba(34, 34, 34, 0.16);
+		}
+	}
 }
 .loadinfo {
 	width: 100%;

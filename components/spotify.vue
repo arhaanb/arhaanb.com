@@ -127,7 +127,8 @@ a[href].green:hover {
 
 .not {
 	font-size: 0.85em;
-	margin-top: -0.45em;
+	line-height: 1.5;
+	margin: 0;
 }
 
 #spotifycontainer {
@@ -144,7 +145,6 @@ a[href].green:hover {
 @media (max-width: 750px) {
 	.not {
 		font-size: 0.95em;
-		margin-top: -0.35em;
 	}
 	#spotifycontainer {
 		max-width: 80%;
