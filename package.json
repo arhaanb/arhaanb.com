@@ -16,6 +16,11 @@
     "singleQuote": true,
     "trailingComma": "none"
   },
+  "pnpm": {
+    "overrides": {
+      "cheerio": "1.0.0-rc.12"
+    }
+  },
   "dependencies": {
     "@nuxt/ui": "^2.19.2",
     "@sendgrid/mail": "^8.1.3",

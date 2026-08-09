@@ -16,35 +16,23 @@
 					<h6 class="zero">designer &middot; developer</h6>
 				</div>
 
+				<p class="zero" style="margin-bottom: 0.4em">
+					I’m Arhaan, a CS &amp; design graduate from
+					<a class="brand" href="//iiitd.ac.in" target="_blank"
+						><img src="/logos/iiitd.svg" alt="IIIT Delhi" /> IIIT Delhi</a
+					>,
+					{{ phase === 'soon' ? 'joining' : 'currently building and designing at' }}
+					<a class="brand brand--uniqlo" href="//fastretailing.com" target="_blank"
+						><img src="/logos/uniqlo.svg" alt="Uniqlo" /> Fast Retailing
+						(UNIQLO)</a
+					>
+					in <span class="tokyo">🇯🇵 Tokyo</span
+					>{{ phase === 'soon' ? ' soon' : '' }}.
+				</p>
 				<p class="zero" style="margin-bottom: 0em">
-					<!-- Hello! I'm {{ `${prefix} ${age}` }} year old developer and designer,
-					currently a freshman studying Computer Science. I enjoy participating
-					in Hackathons and Design events, and I've won several of them over the
-					last few years. Hello!-->
-					I’m Arhaan, {{ `${prefix} ${age}` }} year old student currently
-					studying cs and design at
-					<a href="//iiitd.ac.in" target="_blank">iiit delhi</a>.
-					<!-- <a href="//iiitd.ac.in" target="_blank">IIIT Delhi</a>.  -->
-					I make
-					<!-- <strike>at college</strike> -->
-					<!-- functional and  -->
-					cool
-					<span class="font-bold">products with beautiful user experiences</span
-					>. I’m always looking for opportunities to work on new projects,
-					participate in a hackathon or do anything fun! Feel free to
+					I design thoughtful digital products and user experiences. Open to
+					interesting projects, collaborations, and hackathons. Feel free to
 					<nuxt-link to="/explore#contact">reach out</nuxt-link>!
-					<!-- I enjoy participating
-					in Hackathons and Design events, and I’ve won several of them over the
-					last few years.-->
-					<!-- You can view some of the
-					<router-link to="/projects">projects</router-link> I built, or check
-					out my
-					<a
-						rel="noopener noreferrer"
-						href="//github.com/arhaanb"
-						target="_blank"
-						>GitHub account</a
-					>.-->
 				</p>
 
 				<!-- <p>
@@ -299,6 +287,11 @@ export default {
 		this.age = age
 		this.prefix = [8, 11, 18].includes(age) ? 'an' : 'a'
 	},
+	computed: {
+		phase() {
+			return new Date() >= new Date(2026, 8, 1) ? 'current' : 'soon'
+		}
+	},
 	methods: {
 		getAge(DOB) {
 			var today = new Date()
@@ -382,9 +375,44 @@ export default {
 	white-space: nowrap;
 	display: flex;
 }
-p {
-	text-transform: lowercase;
+.brand,
+.tokyo {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35em;
+	background: #fff;
+	font-size: 0.92em;
+	font-weight: 600;
+	padding: 0.02em 0.45em 0.05em;
+	border-radius: 0.5em;
+	border: 1.5px solid;
+	box-shadow: 0 2px 8px rgba(34, 34, 34, 0.08);
+	white-space: nowrap;
+	transform: rotate(-1deg);
+	transition: 0.3s;
+	img {
+		height: 0.95em;
+		width: auto;
+	}
 }
+.brand {
+	color: #2b559e;
+	border-color: #2b559e;
+}
+.brand--uniqlo {
+	color: #e2231a;
+	border-color: #e2231a;
+}
+.tokyo {
+	color: #222;
+	border-color: #222;
+}
+.brand:hover,
+.tokyo:hover {
+	transform: rotate(0deg) translateY(-1px);
+	background: #fff;
+}
+
 .pics img {
 	width: 100%;
 }
