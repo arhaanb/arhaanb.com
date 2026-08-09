@@ -36,13 +36,13 @@ jobs:
               --title "Spotify refresh token expires in ${{ steps.check.outputs.days }} days" \
               --body "The Spotify refresh token expires in ${{ steps.check.outputs.days }} days (6-month lifetime from the last authorization).
 
-Re-authorize by running:
+          Re-authorize by running:
 
-\`\`\`bash
-node scripts/spotify-refresh-token.mjs
-\`\`\`
+          \`\`\`bash
+          node scripts/spotify-refresh-token.mjs
+          \`\`\`
 
-It opens a browser, completes the auth-code flow, and automatically updates \`.env\` and \`scripts/spotify-token-state.json\`. Then commit and push the state file update (and update the token in Vercel). This issue auto-closes on a later daily run once the state is refreshed."
+          It opens a browser, completes the auth-code flow, and automatically updates \`.env\` and \`scripts/spotify-token-state.json\`. Then commit and push the state file update (and update the token in Vercel). This issue auto-closes on a later daily run once the state is refreshed."
           fi
 
       - name: Close stale reminder
