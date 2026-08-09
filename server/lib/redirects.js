@@ -116,10 +116,6 @@ export const redirects = [
 		url: 'https://www.notion.so/Participation-bd3a717037fc4a26b257ba4b536a4e12'
 	},
 	{
-		path: 'projects',
-		url: 'https://arhaanbahadur.co/projects'
-	},
-	{
 		path: 'workexp',
 		url: 'https://www.notion.so/Work-Experience-3a1226c731e3442eac32d2584ebd7ebd'
 	},
