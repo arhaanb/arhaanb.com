@@ -22,7 +22,7 @@
 						><img src="/logos/iiitd.svg" alt="IIIT Delhi" /> IIIT Delhi</a
 					>,
 					{{ phase === 'soon' ? 'joining' : 'currently working at' }}
-					<a class="brand brand--uniqlo" href="//fastretailing.com" target="_blank"
+					<a class="brand brand--uniqlo" href="https://www.fastretailing.com/eng/" target="_blank"
 						><img src="/logos/uniqlo.svg" alt="Uniqlo" /> Fast Retailing
 						(UNIQLO)</a
 					>
