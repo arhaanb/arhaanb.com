@@ -16,7 +16,7 @@
 					<h6 class="zero">designer &middot; developer</h6>
 				</div>
 
-				<p class="zero" style="margin-bottom: 0.4em">
+				<p class="zero intro" style="margin-bottom: 0.4em">
 					I’m Arhaan, a <strong>computer science &amp; design</strong> graduate from
 					<a class="brand" href="https://hcd.iiitd.ac.in/" target="_blank"
 						><img src="/logos/iiitd.svg" alt="IIIT Delhi" /> IIIT Delhi</a
@@ -441,8 +441,23 @@ export default {
 	font-size: 1.1em;
 }
 @media (max-width: 750px) {
+	.brand,
+	.tokyo {
+		transform: none;
+		font-size: 0.88em;
+		line-height: 1.2;
+		padding: 0.12em 0.45em;
+		border-width: 1.25px;
+		box-shadow: none;
+		img {
+			height: 0.85em;
+		}
+	}
 	.meirl {
 		margin-top: 0;
+	}
+	.intro {
+		line-height: 1.9em;
 	}
 	.picsgrid,
 	.socialgrid {
