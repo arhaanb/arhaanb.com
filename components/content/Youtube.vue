@@ -26,9 +26,7 @@ defineProps({
 	margin: 1.5em 0;
 	border-radius: 0.75em;
 	overflow: hidden;
-	box-shadow: 0 2px 12px rgba(34, 34, 34, 0.12);
-	border: 1px solid rgba(34, 34, 34, 0.08);
-	background: #000;
+	box-shadow: 0 2px 12px rgba(34, 34, 34, 0.1);
 }
 .youtube-embed iframe {
 	position: absolute;

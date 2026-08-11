@@ -200,15 +200,14 @@ function fmt(n) {
 	padding: 1em 1.15em;
 	border-radius: 0.9em;
 	background: #fff;
-	border: 1.5px solid #222;
+	box-shadow: 0 2px 12px rgba(34, 34, 34, 0.08);
 	color: #222;
 	transition: 0.25s ease;
 	margin: 0.9em 0;
 }
 .linkcard:hover {
 	transform: translateY(-2px);
-	border-color: var(--accent);
-	box-shadow: 0 8px 24px rgba(34, 34, 34, 0.08);
+	box-shadow: 0 8px 24px rgba(34, 34, 34, 0.14);
 }
 
 .linkcard-icon {
