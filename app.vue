@@ -8,13 +8,22 @@
 			<NuxtPage />
 		</main>
 
-		<div class="cont">
+		<div class="cont" :class="{ 'cont-post': isPost }">
 			<Footer class="footer" />
 		</div>
 	</main>
 </template>
 
+<script setup>
+const route = useRoute()
+
+const isPost = computed(() => route.name === 'projects-id')
+</script>
+
 <style lang="scss">
+.cont.cont-post {
+	max-width: 46em;
+}
 .page-enter-active,
 .page-leave-active {
 	transition: all 0.2s;
