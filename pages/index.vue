@@ -188,6 +188,59 @@
 			</section> -->
 		</section>
 
+		<!-- <section class="clients-section">
+			<div class="cont">
+				<h3 class="fancy zero mb-3 lg:mb-5">brands &amp; clients</h3>
+				<p class="clients-sub mb-6">
+					Teams and companies I've had the chance to work with.
+				</p>
+				<div class="client-logos">
+					<a
+						v-for="c in clients"
+						:key="c.name"
+						:href="c.url"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="client-logo"
+						:title="c.name"
+					>
+						<img v-if="c.img" :src="c.img" :alt="c.name" loading="lazy" />
+						<span v-else class="client-wordmark">{{ c.name }}</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery-section">
+			<div class="cont">
+				<h3 class="fancy zero mb-3 lg:mb-5">selected work</h3>
+				<p class="gallery-sub mb-6">
+					A few of my favourite things I've designed &amp; built.
+				</p>
+			</div>
+
+			<div class="gallery-inner">
+				<div class="gallery-grid">
+					<nuxt-link
+						v-for="p in gallery"
+						:key="p.name"
+						:to="p.link"
+						class="polaroid"
+						:style="{ '--tilt': p.tilt }"
+						:target="p.link.startsWith('/') ? '_self' : '_blank'"
+					>
+						<div class="polaroid-img">
+							<img :src="p.img" :alt="p.name" loading="lazy" />
+						</div>
+						<div class="polaroid-cap">
+							<span class="polaroid-name">{{ p.name }}</span>
+							<span class="polaroid-tag">{{ p.tag }}</span>
+						</div>
+					</nuxt-link>
+				</div>
+			</div>
+		</section> -->
+
 		<br /><br />
 
 		<!-- <section>
@@ -273,6 +326,68 @@
 import emblaCarouselVue from 'embla-carousel-vue'
 
 const [emblaRef] = emblaCarouselVue()
+
+const clients = [
+	{
+		name: 'IIIT Delhi',
+		img: '/logos/iiitd.svg',
+		url: 'https://hcd.iiitd.ac.in/'
+	},
+	{
+		name: 'Fast Retailing',
+		img: '/logos/uniqlo.svg',
+		url: 'https://www.fastretailing.com/eng/'
+	},
+	{ name: 'Cricket Bat Company', url: 'https://cricketbatcompany.com' },
+	{ name: 'SOMA', url: 'https://mysoma.in' },
+	{ name: 'CoachIn', url: 'https://coachin.in' },
+	{ name: 'TopBar', url: 'https://topbar.io' }
+]
+
+const gallery = [
+	{
+		name: 'Sparsh',
+		img: '/projects/sparsh.png',
+		link: '/projects/sparsh',
+		tag: 'tap to pay · UPI',
+		tilt: '-1.2deg'
+	},
+	{
+		name: 'PAYOUT.',
+		img: '/img/projects/payout/hero.png',
+		link: '/projects/payout',
+		tag: 'crowdfunding',
+		tilt: '1.2deg'
+	},
+	{
+		name: 'Cricket Bat Company',
+		img: '/projects/cbc.png',
+		link: 'https://cricketbatcompany.com',
+		tag: 'e-commerce',
+		tilt: '1deg'
+	},
+	{
+		name: 'Vipriya',
+		img: '/img/projects/vipriya/banner.webp',
+		link: '/projects/vipriya',
+		tag: 'dating · music',
+		tilt: '-1deg'
+	},
+	{
+		name: 'Sahay',
+		img: '/img/projects/sahay/cover.png',
+		link: '/projects/sahay',
+		tag: 'healthcare',
+		tilt: '1.4deg'
+	},
+	{
+		name: 'link+ai',
+		img: '/img/projects/linkplusai/cover.png',
+		link: '/projects/linkplusai',
+		tag: 'smart links',
+		tilt: '-1.4deg'
+	}
+]
 </script>
 
 <script>
@@ -370,6 +485,112 @@ export default {
 		height: 2.5em;
 	}
 }
+
+.clients-section {
+	margin-top: 2em;
+}
+.clients-sub,
+.gallery-sub {
+	opacity: 0.75;
+}
+.client-logos {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1.75em 2.75em;
+	padding: 1.5em 0 2.5em;
+}
+.client-logo {
+	opacity: 0.7;
+	filter: grayscale(1);
+	transition: 0.3s ease;
+	img {
+		height: 2.2em;
+		width: auto;
+		object-fit: contain;
+	}
+	.client-wordmark {
+		font-family: 'augillion', var(--fontSans);
+		font-size: 1.5em;
+		color: #222;
+		white-space: nowrap;
+	}
+	&:hover {
+		opacity: 1;
+		filter: none;
+		transform: translateY(-2px);
+	}
+}
+
+.gallery-section {
+	margin-top: 2em;
+}
+.gallery-inner {
+	margin: 1.25em auto 0;
+	padding: 0 2em;
+	max-width: 54em;
+}
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.75em;
+}
+.polaroid {
+	display: block;
+	background: #fff;
+	border-radius: 1em;
+	padding: 0.8em;
+	box-shadow: 0 2px 12px rgba(34, 34, 34, 0.1);
+	transform: rotate(var(--tilt, 0deg));
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	.polaroid-img {
+		border-radius: 0.6em;
+		overflow: hidden;
+		aspect-ratio: 4 / 3;
+		background: #faf5ec;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			transition: transform 0.4s ease;
+		}
+	}
+	.polaroid-cap {
+		display: flex;
+		flex-direction: column;
+		gap: 0.15em;
+		padding: 0.7em 0.15em 0.2em;
+	}
+	.polaroid-name {
+		font-size: 1.02em;
+		font-weight: 700;
+		letter-spacing: -0.01em;
+		line-height: 1.3;
+		color: #222;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.polaroid-tag {
+		font-size: 0.72em;
+		font-weight: 600;
+		opacity: 0.55;
+		letter-spacing: 0.03em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	&:hover {
+		transform: rotate(0deg) translateY(-4px);
+		box-shadow: 0 8px 24px rgba(34, 34, 34, 0.14);
+		.polaroid-img img {
+			transform: scale(1.05);
+		}
+	}
+}
+
 .proj-scroll {
 	margin-top: 2em;
 	overflow-x: auto;
@@ -469,6 +690,14 @@ export default {
 		/* grid-gap: 3em; */
 		grid-gap: 0;
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.client-logos {
+		justify-content: flex-start;
+		gap: 1.5em 2em;
+		padding: 1.25em 0 2em;
+	}
+	.gallery-grid {
+		grid-template-columns: 1fr;
 	}
 	.pics {
 		margin-top: 0;
