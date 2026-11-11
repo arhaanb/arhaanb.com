@@ -1,8 +1,21 @@
 <template>
 	<div data-aos="fade-up" data-aos-duration="500" class="project noselect">
+		<div v-if="inactive" class="link inactive" :title="`${name} is no longer active`">
+			<div class="card">
+				<img loading="lazy" class="img" :alt="name" :src="img" />
+				<span class="tag">inactive</span>
+				<div class="info">
+					<h1 class="title">
+						<span v-html="title"></span>
+					</h1>
+					<p class="txt" v-html="desc"></p>
+				</div>
+			</div>
+		</div>
+
 		<a
 			rel="noopener noreferrer"
-			v-if="!intlink"
+			v-else-if="!intlink"
 			class="link"
 			:href="link"
 			target="_blank"
@@ -39,7 +52,8 @@ export default {
 		description: String,
 		link: String,
 		img: String,
-		intlink: Boolean
+		intlink: Boolean,
+		inactive: Boolean
 	},
 	data() {
 		return {
@@ -139,6 +153,24 @@ export default {
 }
 .link {
 	text-decoration: none;
+}
+.inactive {
+	cursor: default;
+	.tag {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		z-index: 3;
+		font-size: 0.7em;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(white, 0.85);
+		background: rgba(black, 0.3);
+		backdrop-filter: blur(6px);
+		padding: 0.3em 0.75em;
+		border-radius: 100em;
+		pointer-events: none;
+	}
 }
 .project {
 	margin-bottom: 1.55em;

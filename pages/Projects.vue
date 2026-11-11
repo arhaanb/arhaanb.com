@@ -28,8 +28,8 @@ fi
 			<Project
 				name="Cricket Bat Company"
 				description="Empowering you to buy the right cricket bat by analysing your play style."
-				link="https://cricketbatcompany.com"
 				img="/projects/cbc.png"
+				inactive
 			/>
 
 			<Project
