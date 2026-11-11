@@ -60,7 +60,7 @@ fi
 			<Project
 				name="Delhi Design Foundry"
 				description="A design collective based in New Delhi, India."
-				link="https://arhaanb.com/ddf"
+				inactive
 				img="https://res.cloudinary.com/arhaanb/image/upload/delhidesignfoundry.png"
 			/>
 
@@ -126,6 +126,7 @@ fi
 						:desc="p.desc"
 						:link="p.link"
 						:img="p.img"
+						:inactive="p.inactive"
 						class="sml"
 					/>
 				</div>

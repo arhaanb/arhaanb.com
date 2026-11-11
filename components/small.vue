@@ -1,9 +1,12 @@
 <template>
-	<a
+	<component
+		:is="inactive ? 'div' : 'a'"
 		@mouseleave="hover = false"
-		:href="link || 'https://github.com/arhaanb'"
-		target="_blank"
-		rel="noopener noreferrer"
+		:href="inactive ? undefined : link || 'https://github.com/arhaanb'"
+		:target="inactive ? undefined : '_blank'"
+		:rel="inactive ? undefined : 'noopener noreferrer'"
+		:class="{ inactive }"
+		:title="inactive ? `${title} is no longer active` : undefined"
 	>
 		<div class="project">
 			<div v-if="mobileLarger && hover" class="pop">
@@ -15,14 +18,17 @@
 				<!-- <img loading="lazy" :src="img" class="mobileimg" :alt="title" /> -->
 			</div>
 			<div @mouseover="hover = true" @mouseleave="hover = false" class="info">
-				<h4 class="name" v-html="name"></h4>
+				<h4 class="name">
+					<span v-html="name"></span>
+					<span v-if="inactive" class="tag">inactive</span>
+				</h4>
 				<h5 class="description">
 					<span v-if="desc" v-html="description"></span>
 					<span v-else>This is a small description for the project above.</span>
 				</h5>
 			</div>
 		</div>
-	</a>
+	</component>
 </template>
 
 <script>
@@ -30,7 +36,13 @@ import { useBreakpoints, breakpointsTailwind } from '@vueuse/core'
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
 export default {
-	props: { title: String, desc: String, link: String, img: String },
+	props: {
+		title: String,
+		desc: String,
+		link: String,
+		img: String,
+		inactive: Boolean
+	},
 	data() {
 		return {
 			name: this.$props.title,
@@ -86,6 +98,24 @@ a {
 		margin-bottom: 0.4em;
 	}
 	margin-top: 1em;
+}
+
+.inactive {
+	cursor: default;
+	.tag {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 0.5em;
+		font-size: 0.55em;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		opacity: 0.55;
+		border: 1px solid currentColor;
+		padding: 0.15em 0.6em;
+		border-radius: 100em;
+		position: relative;
+		top: -0.1em;
+	}
 }
 
 .mobileimg {

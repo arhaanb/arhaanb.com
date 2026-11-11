@@ -21,7 +21,7 @@ const projects = {
 		{
 			title: 'Cura',
 			desc: 'An app that helps you get vaccinated. Built during the COVID Pandemic.',
-			link: 'https://cura.arhn.us',
+			inactive: true,
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/cura.png'
 		},
 		{
@@ -33,7 +33,7 @@ const projects = {
 		{
 			title: 'Team Impulse',
 			desc: "Web app to host the physics club's online crypic hunt.",
-			link: 'https://teamimpulse.herokuapp.com',
+			inactive: true,
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/impulse.png'
 		},
 		{
@@ -45,19 +45,19 @@ const projects = {
 		{
 			title: 'Dhruva Goyal',
 			desc: 'Portfolio website made for a Cybersecurity Enthusiast.',
-			link: 'https://dhruvagoyal.com',
+			inactive: true,
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1622960008/dhruva.png'
 		},
 		{
 			title: 'Safar',
-			link: 'https://arhaanb.com/safar',
+			inactive: true,
 			desc: 'A case study and mobile app to make travel safer during quarantine.',
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/safar.png'
 		},
 		{
 			title: 'MISMUN',
 			desc: 'Brand and Website for the Online Model United Nations event held at MIS.',
-			link: 'https://minet.co/mismun',
+			inactive: true,
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/mismun.png'
 		},
 		{
@@ -75,12 +75,12 @@ const projects = {
 		{
 			title: 'Shiksha',
 			desc: 'A new way of online education. (Built for a creative event)',
-			link: 'https://arhaanb.com/shiksha',
+			inactive: true,
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/shiksha.png'
 		},
 		{
 			title: 'BROKEN: Movie',
-			link: 'https://brokenmovie.net',
+			inactive: true,
 			desc: 'An award winning short-film made from home during the quarantine.',
 			img: 'https://res.cloudinary.com/arhaanb/image/upload/broken.png'
 		},
