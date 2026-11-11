@@ -1,11 +1,12 @@
 <template>
 	<component
-		:is="inactive ? 'div' : 'a'"
+		:is="inactive ? (link ? NuxtLink : 'div') : 'a'"
 		@mouseleave="hover = false"
 		:href="inactive ? undefined : link || 'https://github.com/arhaanb'"
+		:to="inactive && link ? link : undefined"
 		:target="inactive ? undefined : '_blank'"
 		:rel="inactive ? undefined : 'noopener noreferrer'"
-		:class="{ inactive }"
+		:class="{ inactive, archived: inactive && link }"
 		:title="inactive ? `${title} is no longer active` : undefined"
 	>
 		<div class="project">
@@ -35,7 +36,12 @@
 import { useBreakpoints, breakpointsTailwind } from '@vueuse/core'
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
+import { NuxtLink } from '#components'
+
 export default {
+	setup() {
+		return { NuxtLink }
+	},
 	props: {
 		title: String,
 		desc: String,
@@ -102,6 +108,9 @@ a {
 
 .inactive {
 	cursor: default;
+	&.archived {
+		cursor: pointer;
+	}
 	.tag {
 		display: inline-block;
 		vertical-align: middle;

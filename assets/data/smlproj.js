@@ -21,8 +21,9 @@ const projects = {
 		{
 			title: 'Cura',
 			desc: 'An app that helps you get vaccinated. Built during the COVID Pandemic.',
+			link: '/projects/archive#cura',
 			inactive: true,
-			img: 'https://res.cloudinary.com/arhaanb/image/upload/cura.png'
+			img: '/img/projects/archive/cura.png'
 		},
 		{
 			title: 'X 2020 Quiz App',
@@ -33,8 +34,9 @@ const projects = {
 		{
 			title: 'Team Impulse',
 			desc: "Web app to host the physics club's online crypic hunt.",
+			link: '/projects/archive#team-impulse',
 			inactive: true,
-			img: 'https://res.cloudinary.com/arhaanb/image/upload/impulse.png'
+			img: '/img/projects/archive/impulse.png'
 		},
 		{
 			title: 'Ponder',
@@ -45,20 +47,23 @@ const projects = {
 		{
 			title: 'Dhruva Goyal',
 			desc: 'Portfolio website made for a Cybersecurity Enthusiast.',
+			link: '/projects/archive#dhruva-goyal',
 			inactive: true,
-			img: 'https://res.cloudinary.com/arhaanb/image/upload/v1622960008/dhruva.png'
+			img: '/img/projects/archive/dhruva.png'
 		},
 		{
 			title: 'Safar',
+			link: '/projects/archive#safar',
 			inactive: true,
 			desc: 'A case study and mobile app to make travel safer during quarantine.',
-			img: 'https://res.cloudinary.com/arhaanb/image/upload/safar.png'
+			img: '/img/projects/archive/safar.png'
 		},
 		{
 			title: 'MISMUN',
 			desc: 'Brand and Website for the Online Model United Nations event held at MIS.',
+			link: '/projects/archive#mismun',
 			inactive: true,
-			img: 'https://res.cloudinary.com/arhaanb/image/upload/mismun.png'
+			img: '/img/projects/archive/mismun.png'
 		},
 		{
 			title: 'Sabre from The Office',
@@ -75,14 +80,16 @@ const projects = {
 		{
 			title: 'Shiksha',
 			desc: 'A new way of online education. (Built for a creative event)',
+			link: '/projects/archive#shiksha',
 			inactive: true,
-			img: 'https://res.cloudinary.com/arhaanb/image/upload/shiksha.png'
+			img: '/img/projects/archive/shiksha.png'
 		},
 		{
 			title: 'BROKEN: Movie',
+			link: '/projects/archive#broken-movie',
 			inactive: true,
 			desc: 'An award winning short-film made from home during the quarantine.',
-			img: 'https://res.cloudinary.com/arhaanb/image/upload/broken.png'
+			img: '/img/projects/archive/broken.png'
 		},
 		{
 			title: 'Kuizu',

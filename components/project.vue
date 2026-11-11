@@ -1,6 +1,13 @@
 <template>
 	<div data-aos="fade-up" data-aos-duration="500" class="project noselect">
-		<div v-if="inactive" class="link inactive" :title="`${name} is no longer active`">
+		<component
+			:is="link ? NuxtLink : 'div'"
+			v-if="inactive"
+			:to="link || undefined"
+			class="link inactive"
+			:class="{ archived: link }"
+			:title="`${name} is no longer active`"
+		>
 			<div class="card">
 				<img loading="lazy" class="img" :alt="name" :src="img" />
 				<span class="tag">inactive</span>
@@ -11,7 +18,7 @@
 					<p class="txt" v-html="desc"></p>
 				</div>
 			</div>
-		</div>
+		</component>
 
 		<a
 			rel="noopener noreferrer"
@@ -46,7 +53,12 @@
 </template>
 
 <script>
+import { NuxtLink } from '#components'
+
 export default {
+	setup() {
+		return { NuxtLink }
+	},
 	props: {
 		name: String,
 		description: String,
@@ -156,6 +168,9 @@ export default {
 }
 .inactive {
 	cursor: default;
+	&.archived {
+		cursor: pointer;
+	}
 	.tag {
 		position: absolute;
 		top: 1em;

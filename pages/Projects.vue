@@ -29,6 +29,7 @@ fi
 				name="Cricket Bat Company"
 				description="Empowering you to buy the right cricket bat by analysing your play style."
 				img="/projects/cbc.png"
+				link="/projects/archive#cricket-bat-company"
 				inactive
 			/>
 
@@ -60,8 +61,9 @@ fi
 			<Project
 				name="Delhi Design Foundry"
 				description="A design collective based in New Delhi, India."
+				link="/projects/archive#delhi-design-foundry"
 				inactive
-				img="https://res.cloudinary.com/arhaanb/image/upload/delhidesignfoundry.png"
+				img="/img/projects/archive/delhidesignfoundry.png"
 			/>
 
 			<Project
@@ -142,7 +144,9 @@ fi
 							target="_blank"
 							>GitHub (@arhaanb)</a
 						>
-						for more. Most of my projects are open source.
+						for more. Most of my projects are open source. Projects that are
+						no longer online live in
+						<nuxt-link to="/projects/archive">the archive</nuxt-link>.
 					</p>
 				</div>
 				<div class="u-cf"></div>
