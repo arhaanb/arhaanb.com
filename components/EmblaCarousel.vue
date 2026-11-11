@@ -30,18 +30,6 @@ const items = [
 		desc: 'Upskill yourself with coaches near you! CoachIn connects you with experts around your area.',
 		img: 'https://coachin.in/og.png?948539',
 		link: 'https://coachin.in'
-	},
-	{
-		name: 'Cricket Bat Company',
-		img: '/projects/cbc.png',
-		desc: 'Empowering you to buy the right Cricket bat by analysing your play style.',
-		link: 'https://cricketbatcompany.com'
-	},
-	{
-		name: 'SOMA',
-		desc: 'An e-commerce store selling handmade, luxury, ayurveda beauty products.',
-		img: 'https://www.mysoma.in/cdn/shop/files/1_c917d4a0-8958-4448-9183-23a5a4187dbc.jpg?v=1702746135&width=990',
-		link: 'https://mysoma.in'
 	}
 	// {
 	// 	name: 'Equitree (with TopBar)',
