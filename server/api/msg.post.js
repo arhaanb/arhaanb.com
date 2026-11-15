@@ -1,5 +1,5 @@
-import sgMail from '@sendgrid/mail'
-sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+// SendGrid via its REST API (plain fetch) so it runs on Cloudflare Workers
+const SENDGRID_ENDPOINT = 'https://api.sendgrid.com/v3/mail/send'
 
 export default defineEventHandler(async (event) => {
 	const body = await readBody(event)
@@ -20,20 +20,32 @@ export default defineEventHandler(async (event) => {
 		Get back to them at <a href="mailto:${email}">${email}</a>`
 
 		const msg = {
-			from: 'web@arhaanb.com',
-			to: 'arhaanb+web@gmail.com',
+			personalizations: [{ to: [{ email: 'arhaanb+web@gmail.com' }] }],
+			from: { email: 'web@arhaanb.com' },
 			subject: `${name} sent you a message.`,
-			text: emailBody,
-			html: emailBody
+			content: [
+				{ type: 'text/plain', value: emailBody },
+				{ type: 'text/html', value: emailBody }
+			]
 		}
 
 		try {
-			await sgMail.send(msg)
+			const res = await fetch(SENDGRID_ENDPOINT, {
+				method: 'POST',
+				headers: {
+					Authorization: `Bearer ${process.env.SENDGRID_API_KEY}`,
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(msg)
+			})
+			if (!res.ok) {
+				throw new Error(`SendGrid error ${res.status}: ${await res.text()}`)
+			}
 			console.log('Email sent')
 			return { body, message: 'Success', error: false }
 		} catch (error) {
 			console.error(error)
-			return { body, message: error, error: true }
+			return { body, message: error.message || error, error: true }
 		}
 	} else {
 		return { message: 'Only POST stuff here.' }

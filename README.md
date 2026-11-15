@@ -8,10 +8,18 @@
 - `/projects` - Showcase of my projects
 - `/explore` - A little extra about me
 
-The website also has a realtime indicator of what song I'm currently playing on Spotify, and my top 5 songs of the month. This was possible using [Vercel](https://vercel.com)'s Serverless Functions and the Spotify API. Learn more about this website at [arhaanb.com/explore](https://arhaanb.com/explore).
+The website also has a realtime indicator of what song I'm currently playing on Spotify, and my top 5 songs of the month. This was possible using [Cloudflare Workers](https://workers.cloudflare.com) and the Spotify API. Learn more about this website at [arhaanb.com/explore](https://arhaanb.com/explore).
 
 ## Built using
 
 - [Vite](https://vitejs.org)
 - [Vue 3](https://vuejs.org)
 - Spotify API
+
+## Deployment
+
+Hosted on Cloudflare Workers (Nuxt/Nitro `cloudflare_module` preset, config in `wrangler.jsonc`).
+
+Pushes to `main` deploy to production automatically via `.github/workflows/deploy.yml`. It needs these GitHub repo secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, `SENDGRID_API_KEY` (the latter four are synced to the Worker as secrets on each deploy).
+
+Manual deploy from your machine: `pnpm build && npx wrangler deploy`.

@@ -17,10 +17,13 @@
 		</p>
 		<p>
 			The website has been deployed to
-			<a rel="noopener noreferrer" href="//vercel.com" target="_blank"
-				>Vercel</a
+			<a
+				rel="noopener noreferrer"
+				href="//workers.cloudflare.com"
+				target="_blank"
+				>Cloudflare Workers</a
 			>
-			and it takes advantage of its serverless functions for features like the
+			and it takes advantage of edge functions for features like the
 			realtime Spotify currently playing indicator and contact form. It's Open
 			Sourced at
 			<a
