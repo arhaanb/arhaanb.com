@@ -1,6 +1,48 @@
 <script setup lang="ts">
 const items = [
 	{
+		name: 'The Gaj',
+		desc: 'A luxury wilderness resort in the foothills of Uttarakhand.',
+		link: 'https://thegaj.in',
+		img: '/projects/gaj.webp'
+	},
+	{
+		name: 'Liquid Carbon',
+		desc: 'An industrial sustainability company providing advanced water recovery.',
+		link: 'https://liquidcarbon.ai',
+		img: '/projects/liquidcarbon.webp'
+	},
+	{
+		name: 'Equitree Capital',
+		desc: 'A financial investment firm specializing in private equity and PMS for high net worth individuals.',
+		link: 'https://equitreecapital.com',
+		img: '/projects/equitree.webp'
+	},
+	{
+		name: 'Taneja Companies',
+		desc: "Dunkin' franchise owner website, showcasing locations, franchise info, and brand identity.",
+		link: 'https://tanejacompanies.com',
+		img: '/projects/tanejacompanies.webp'
+	},
+	{
+		name: 'Times Foundation',
+		desc: 'Times Foundation (Times of India) — Product & UX work.',
+		link: '/times-foundation',
+		img: '/projects/times-foundation.webp'
+	},
+	{
+		name: 'ABA',
+		desc: 'Applebury Behavior Associates — autism therapy services website.',
+		link: 'https://appleburybehaviorassociates.com',
+		img: '/projects/applebury.webp'
+	},
+	{
+		name: 'The First Draft',
+		desc: 'Newsletter platform for Jindal Global University.',
+		link: 'https://thefirstdraft.vercel.app',
+		img: '/projects/thefirstdraft.webp'
+	},
+	{
 		name: 'Spotivity',
 		desc: 'Spotivity is an app that let’s you see what music your friends are listening to.',
 		link: 'https://spotivity.me',
