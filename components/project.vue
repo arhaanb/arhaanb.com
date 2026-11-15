@@ -9,7 +9,10 @@
 			:title="`${name} is no longer active`"
 		>
 			<div class="card">
-				<img loading="lazy" class="img" :alt="name" :src="img" />
+				<picture>
+					<source media="(max-width: 750px)" :srcset="cardImg" />
+					<img loading="lazy" class="img" :alt="name" :src="img" />
+				</picture>
 				<span class="tag">inactive</span>
 				<div class="info">
 					<h1 class="title">
@@ -28,24 +31,32 @@
 			target="_blank"
 		>
 			<div class="card">
-				<img loading="lazy" class="img" :alt="name" :src="img" />
+				<picture>
+					<source media="(max-width: 750px)" :srcset="cardImg" />
+					<img loading="lazy" class="img" :alt="name" :src="img" />
+				</picture>
 				<div class="info">
 					<h1 class="title">
 						<span v-html="title"></span>
 					</h1>
 					<p class="txt" v-html="desc"></p>
+					<p class="cta">View project &rarr;</p>
 				</div>
 			</div>
 		</a>
 
 		<nuxt-link v-else class="link" :to="link">
 			<div class="card">
-				<img loading="lazy" class="img" :alt="name" :src="img" />
+				<picture>
+					<source media="(max-width: 750px)" :srcset="cardImg" />
+					<img loading="lazy" class="img" :alt="name" :src="img" />
+				</picture>
 				<div class="info">
 					<h1 class="title">
 						<span v-html="title"></span>
 					</h1>
 					<p class="txt" v-html="desc"></p>
+					<p class="cta">View project &rarr;</p>
 				</div>
 			</div>
 		</nuxt-link>
@@ -71,6 +82,12 @@ export default {
 		return {
 			title: this.$props.name,
 			desc: this.$props.description
+		}
+	},
+	computed: {
+		// on phones, show the same 2:1 card the homepage carousel uses
+		cardImg() {
+			return this.img?.replace('/projects/wide/', '/projects/')
 		}
 	}
 }
@@ -139,28 +156,54 @@ export default {
 		// margin-bottom: 0.5em;
 	}
 }
+.cta {
+	display: none;
+}
 @media (max-width: 750px) {
+	// same layout as the homepage cards: 2:1 image, then title, description, link
 	.card {
-		height: 10em;
-		padding-top: 5em;
+		height: auto;
+		padding: 0;
+		background: transparent;
+		flex-direction: column;
+		align-items: stretch;
 		&:before {
-			opacity: 1;
-			// background: rgba(black, 0.25);
-			background: linear-gradient(
-				0deg,
-				rgba(0, 0, 0, 0.75) 0%,
-				rgba(0, 0, 0, 0.6) 50%,
-				rgba(0, 0, 0, 0.3) 100%
-			);
-			// backdrop-filter: blur(1.25px);
+			display: none;
+		}
+		.img {
+			position: static;
+			display: block;
+			height: auto;
+			aspect-ratio: 2 / 1;
+			border-radius: 0.5em;
 		}
 		.info {
 			opacity: 1;
-			transform: translateY(0px);
-			h1 {
-				font-size: 1.65em;
-			}
+			transform: none;
+			color: inherit;
+			padding: 0.75em 1em 0;
 		}
+		.title {
+			font-family: 'augillion' !important;
+			font-weight: 400;
+			font-size: 1.65em;
+			color: teal;
+		}
+		.txt {
+			margin-top: 0.4em;
+			margin-bottom: 0.6em;
+			line-height: 1.5;
+		}
+		.cta {
+			display: block;
+			margin: 0;
+			opacity: 0.6;
+			font-weight: 600;
+		}
+	}
+	.inactive .tag {
+		top: 0.75em;
+		right: 0.75em;
 	}
 }
 .link {
