@@ -10,7 +10,7 @@
 	},
 	"observability": { "enabled": true },
 	"send_email": [
-		{ "name": "SEND_EMAIL", "destination_address": "arhaanb@gmail.com" }
+		{ "name": "SEND_EMAIL", "destination_address": "arhaanb+web@gmail.com" }
 	],
 	"vars": {
 		"ENABLE_SPOTIFY": "true"

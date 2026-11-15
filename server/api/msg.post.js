@@ -4,7 +4,7 @@
 import { EmailMessage } from 'cloudflare:email'
 
 const FROM = 'web@arhaanb.com'
-const TO = 'arhaanb@gmail.com'
+const TO = 'arhaanb+web@gmail.com'
 
 // strip anything that could break out of a mime header
 const headerSafe = (str) => String(str).replace(/[\r\n]+/g, ' ').trim()
