@@ -7,6 +7,12 @@ const items = [
 		img: '/projects/gaj.webp'
 	},
 	{
+		name: 'Vayura',
+		desc: 'A fresh-air purification brand, bringing homes healthier air.',
+		link: 'https://vayurapure.in',
+		img: '/projects/vayura.webp'
+	},
+	{
 		name: 'Liquid Carbon',
 		desc: 'An industrial sustainability company providing advanced water recovery.',
 		link: 'https://liquidcarbon.ai',
