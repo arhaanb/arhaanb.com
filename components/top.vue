@@ -70,7 +70,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 var url = '/api/top-tracks'
 
 export default {
@@ -86,7 +85,7 @@ export default {
 	methods: {
 		getSongs() {
 			this.error = false
-			axios
+			http
 				.get(url)
 				.then((res) => {
 					if (res.data.error) {

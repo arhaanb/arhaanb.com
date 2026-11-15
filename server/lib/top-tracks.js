@@ -1,4 +1,3 @@
-import fetch from 'isomorphic-unfetch'
 import { getAccessToken } from './spotify.js'
 
 const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks?time_range=short_term`

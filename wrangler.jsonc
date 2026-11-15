@@ -1,0 +1,15 @@
+{
+	"$schema": "https://unpkg.com/wrangler@4/config-schema.json",
+	"name": "arhaanb",
+	"main": "./.output/server/index.mjs",
+	"compatibility_date": "2026-11-01",
+	"compatibility_flags": ["nodejs_compat"],
+	"assets": {
+		"directory": "./.output/public",
+		"binding": "ASSETS"
+	},
+	"observability": { "enabled": true },
+	"vars": {
+		"ENABLE_SPOTIFY": "true"
+	}
+}

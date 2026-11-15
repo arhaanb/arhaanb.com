@@ -66,7 +66,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 const errormsg =
 	'An error occurred. Please try again, or message me on one of my socials instead.'
 var url = ''
@@ -90,7 +89,7 @@ export default {
 
 			url = '/api/msg'
 
-			axios
+			http
 				.post(url, this.form)
 				.then((res) => {
 					if (res.data.error == false) {

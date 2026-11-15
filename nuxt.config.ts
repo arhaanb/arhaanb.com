@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	compatibilityDate: '2025-07-15',
 	devtools: { enabled: false },
 	experimental: {
 		// avoid vite pre-transform errors for the virtual `#app-manifest`
@@ -96,6 +97,9 @@ export default defineNuxtConfig({
 				{ rel: 'shortcut icon', href: '/favicon.ico' }
 			]
 		}
+	},
+	nitro: {
+		preset: 'cloudflare_module'
 	},
 	modules: ['nuxt-aos', 'nuxt-gtag', '@nuxt/ui', '@nuxt/content'],
 	gtag: {

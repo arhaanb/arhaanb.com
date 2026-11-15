@@ -41,7 +41,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 var url = '/api/spotify'
 
 export default {
@@ -57,7 +56,7 @@ export default {
 	methods: {
 		async fetchData() {
 			try {
-				const response = await axios.get(url)
+				const response = await http.get(url)
 				this.spotify = response.data
 			} catch (error) {
 				console.error('Error fetching data:', error)

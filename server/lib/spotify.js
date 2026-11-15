@@ -1,4 +1,3 @@
-import fetch from 'isomorphic-unfetch'
 
 const {
 	SPOTIFY_CLIENT_ID: client_id,
