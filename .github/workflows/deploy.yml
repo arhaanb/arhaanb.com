@@ -38,15 +38,11 @@ jobs:
           wranglerVersion: '4'
           command: deploy
           secrets: |
-            AIRTABLE_API_KEY
-            AIRTABLE_BASE_ID
             SPOTIFY_CLIENT_ID
             SPOTIFY_CLIENT_SECRET
             SPOTIFY_REFRESH_TOKEN
             SENDGRID_API_KEY
         env:
-          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
-          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
