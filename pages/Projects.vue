@@ -24,6 +24,13 @@ fi
 			/>
 
 			<Project
+				name="Spotivity"
+				description="View your Spotify friend activity from your phone."
+				link="https://spotivity.me"
+				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
+			/>
+
+			<Project
 				name="Equitree Capital"
 				description="A financial investment firm specializing in private equity and PMS for high net worth individuals."
 				link="https://equitreecapital.com"
@@ -65,13 +72,6 @@ fi
 				img="/projects/sparsh.png"
 				data-aos-delay="200"
 				intlink
-			/>
-
-			<Project
-				name="Spotivity"
-				description="View your Spotify friend activity from your phone."
-				link="https://spotivity.me"
-				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
 			/>
 
 			<Project

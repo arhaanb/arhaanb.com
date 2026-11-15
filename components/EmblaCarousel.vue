@@ -15,6 +15,12 @@ const items = [
 		img: '/projects/gaj.webp'
 	},
 	{
+		name: 'Spotivity',
+		desc: 'Spotivity is an app that let’s you see what music your friends are listening to.',
+		link: 'https://spotivity.me',
+		img: 'https://res.cloudinary.com/arhaanb/image/upload/spotivity.png'
+	},
+	{
 		name: 'Equitree Capital',
 		desc: 'A financial investment firm specializing in private equity and PMS for high net worth individuals.',
 		link: 'https://equitreecapital.com',
@@ -49,12 +55,6 @@ const items = [
 		desc: 'An accessible tap to pay network for UPI in India. 1st prize, Redbrick Hacks at Ashoka University.',
 		img: '/projects/sparsh.png',
 		link: '/projects/sparsh'
-	},
-	{
-		name: 'Spotivity',
-		desc: 'Spotivity is an app that let’s you see what music your friends are listening to.',
-		link: 'https://spotivity.me',
-		img: 'https://res.cloudinary.com/arhaanb/image/upload/spotivity.png'
 	},
 	{
 		name: 'Vipriya',
