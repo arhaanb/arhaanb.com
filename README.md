@@ -20,6 +20,8 @@ The website also has a realtime indicator of what song I'm currently playing on 
 
 Hosted on Cloudflare Workers (Nuxt/Nitro `cloudflare_module` preset, config in `wrangler.jsonc`).
 
-Pushes to `main` deploy to production automatically via `.github/workflows/deploy.yml`. It needs these GitHub repo secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`, `SENDGRID_API_KEY` (the latter four are synced to the Worker as secrets on each deploy).
+Pushes to `main` deploy to production automatically via `.github/workflows/deploy.yml`. It needs these GitHub repo secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN` (the Spotify ones are synced to the Worker as secrets on each deploy).
+
+The contact form sends mail through Cloudflare Email Routing (`send_email` binding in `wrangler.jsonc`) to a verified destination address.
 
 Manual deploy from your machine: `pnpm build && npx wrangler deploy`.

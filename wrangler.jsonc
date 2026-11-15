@@ -9,6 +9,9 @@
 		"binding": "ASSETS"
 	},
 	"observability": { "enabled": true },
+	"send_email": [
+		{ "name": "SEND_EMAIL", "destination_address": "arhaanb@gmail.com" }
+	],
 	"vars": {
 		"ENABLE_SPOTIFY": "true"
 	}

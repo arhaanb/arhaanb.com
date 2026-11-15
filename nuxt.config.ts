@@ -99,7 +99,11 @@ export default defineNuxtConfig({
 		}
 	},
 	nitro: {
-		preset: 'cloudflare_module'
+		preset: 'cloudflare_module',
+		rollupConfig: {
+			// provided by the workers runtime
+			external: ['cloudflare:email']
+		}
 	},
 	modules: ['nuxt-aos', 'nuxt-gtag', '@nuxt/ui', '@nuxt/content'],
 	gtag: {
