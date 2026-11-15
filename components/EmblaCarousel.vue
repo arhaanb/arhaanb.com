@@ -1,22 +1,18 @@
 <script setup lang="ts">
 const items = [
 	{
+		name: 'Times Foundation',
+		desc: 'Times Foundation (Times of India) — Product & UX work.',
+		// server-side redirect (server/lib/redirects.js), so it needs a full page load
+		link: '/times-foundation',
+		external: true,
+		img: '/projects/times-foundation.webp'
+	},
+	{
 		name: 'The Gaj',
 		desc: 'A luxury wilderness resort in the foothills of Uttarakhand.',
 		link: 'https://thegaj.in',
 		img: '/projects/gaj.webp'
-	},
-	{
-		name: 'Vayura',
-		desc: 'A fresh-air purification brand, bringing homes healthier air.',
-		link: 'https://vayurapure.in',
-		img: '/projects/vayura.webp'
-	},
-	{
-		name: 'Liquid Carbon',
-		desc: 'An industrial sustainability company providing advanced water recovery.',
-		link: 'https://liquidcarbon.ai',
-		img: '/projects/liquidcarbon.webp'
 	},
 	{
 		name: 'Equitree Capital',
@@ -25,16 +21,22 @@ const items = [
 		img: '/projects/equitree.webp'
 	},
 	{
+		name: 'Liquid Carbon',
+		desc: 'An industrial sustainability company providing advanced water recovery.',
+		link: 'https://liquidcarbon.ai',
+		img: '/projects/liquidcarbon.webp'
+	},
+	{
 		name: 'Taneja Companies',
 		desc: "Dunkin' franchise owner website, showcasing locations, franchise info, and brand identity.",
 		link: 'https://tanejacompanies.com',
 		img: '/projects/tanejacompanies.webp'
 	},
 	{
-		name: 'Times Foundation',
-		desc: 'Times Foundation (Times of India) — Product & UX work.',
-		link: '/times-foundation',
-		img: '/projects/times-foundation.webp'
+		name: 'Vayura',
+		desc: 'A fresh-air purification brand, bringing homes healthier air.',
+		link: 'https://vayurapure.in',
+		img: '/projects/vayura.webp'
 	},
 	{
 		name: 'ABA',
@@ -43,10 +45,10 @@ const items = [
 		img: '/projects/applebury.webp'
 	},
 	{
-		name: 'The First Draft',
-		desc: 'Newsletter platform for Jindal Global University.',
-		link: 'https://thefirstdraft.vercel.app',
-		img: '/projects/thefirstdraft.webp'
+		name: 'Sparsh',
+		desc: 'An accessible tap to pay network for UPI in India. 1st prize, Redbrick Hacks at Ashoka University.',
+		img: '/projects/sparsh.png',
+		link: '/projects/sparsh'
 	},
 	{
 		name: 'Spotivity',
@@ -55,10 +57,10 @@ const items = [
 		img: 'https://res.cloudinary.com/arhaanb/image/upload/spotivity.png'
 	},
 	{
-		name: 'Sparsh',
-		desc: 'An accessible tap to pay network for UPI in India. 1st prize, Redbrick Hacks at Ashoka University.',
-		img: '/projects/sparsh.png',
-		link: '/projects/sparsh'
+		name: 'Vipriya',
+		img: '/img/projects/vipriya/banner.webp',
+		desc: 'A dating app that matches you based on your music taste.',
+		link: '/projects/vipriya'
 	},
 	{
 		name: 'PAYOUT.',
@@ -67,17 +69,16 @@ const items = [
 		link: '/projects/payout'
 	},
 	{
-		name: 'Vipriya',
-		img: '/img/projects/vipriya/banner.webp',
-		desc: 'A dating app that matches you based on your music taste.',
-		link: '/projects/vipriya'
-	},
-
-	{
 		name: 'CoachIn',
 		desc: 'Upskill yourself with coaches near you! CoachIn connects you with experts around your area.',
 		img: 'https://coachin.in/og.png?948539',
 		link: 'https://coachin.in'
+	},
+	{
+		name: 'The First Draft',
+		desc: 'Newsletter platform for Jindal Global University.',
+		link: 'https://thefirstdraft.vercel.app',
+		img: '/projects/thefirstdraft.webp'
 	}
 	// {
 	// 	name: 'Equitree (with TopBar)',

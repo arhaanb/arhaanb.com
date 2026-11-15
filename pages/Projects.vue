@@ -10,24 +10,17 @@ fi
 		</p>
 		<div class="bigproj">
 			<Project
+				name="Times Foundation"
+				description="Times Foundation (Times of India) — Product & UX work."
+				link="/times-foundation"
+				img="/projects/wide/times-foundation.webp"
+			/>
+
+			<Project
 				name="The Gaj"
 				description="A luxury wilderness resort in the foothills of Uttarakhand."
 				link="https://thegaj.in"
 				img="/projects/wide/gaj.webp"
-			/>
-
-			<Project
-				name="Vayura"
-				description="A fresh-air purification brand, bringing homes healthier air."
-				link="https://vayurapure.in"
-				img="/projects/wide/vayura.webp"
-			/>
-
-			<Project
-				name="Liquid Carbon"
-				description="An industrial sustainability company providing advanced water recovery."
-				link="https://liquidcarbon.ai"
-				img="/projects/wide/liquidcarbon.webp"
 			/>
 
 			<Project
@@ -38,6 +31,13 @@ fi
 			/>
 
 			<Project
+				name="Liquid Carbon"
+				description="An industrial sustainability company providing advanced water recovery."
+				link="https://liquidcarbon.ai"
+				img="/projects/wide/liquidcarbon.webp"
+			/>
+
+			<Project
 				name="Taneja Companies"
 				description="Dunkin' franchise owner website, showcasing locations, franchise info, and brand identity."
 				link="https://tanejacompanies.com"
@@ -45,11 +45,10 @@ fi
 			/>
 
 			<Project
-				name="Times Foundation"
-				description="Times Foundation (Times of India) — Product & UX work."
-				link="/times-foundation"
-				img="/projects/wide/times-foundation.webp"
-				intlink
+				name="Vayura"
+				description="A fresh-air purification brand, bringing homes healthier air."
+				link="https://vayurapure.in"
+				img="/projects/wide/vayura.webp"
 			/>
 
 			<Project
@@ -57,20 +56,6 @@ fi
 				description="Applebury Behavior Associates — autism therapy services website."
 				link="https://appleburybehaviorassociates.com"
 				img="/projects/wide/applebury.webp"
-			/>
-
-			<Project
-				name="The First Draft"
-				description="Newsletter platform for Jindal Global University."
-				link="https://thefirstdraft.vercel.app"
-				img="/projects/wide/thefirstdraft.webp"
-			/>
-
-			<Project
-				name="Spotivity"
-				description="View your Spotify friend activity from your phone."
-				link="https://spotivity.me"
-				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
 			/>
 
 			<Project
@@ -83,11 +68,10 @@ fi
 			/>
 
 			<Project
-				name="Cricket Bat Company"
-				description="Empowering you to buy the right cricket bat by analysing your play style."
-				img="/projects/cbc.png"
-				link="/projects/archive#cricket-bat-company"
-				inactive
+				name="Spotivity"
+				description="View your Spotify friend activity from your phone."
+				link="https://spotivity.me"
+				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
 			/>
 
 			<Project
@@ -97,7 +81,7 @@ fi
 				img="/img/projects/vipriya/banner.webp"
 				intlink
 			/>
-			
+
 			<Project
 				name="PAYOUT."
 				description="An equity-based crowdfunding platform for investing in Startups. <i>Get funded, quick.</i>"
@@ -116,14 +100,6 @@ fi
 			/>
 
 			<Project
-				name="Delhi Design Foundry"
-				description="A design collective based in New Delhi, India."
-				link="/projects/archive#delhi-design-foundry"
-				inactive
-				img="/img/projects/archive/delhidesignfoundry.png"
-			/>
-
-			<Project
 				name="Link+AI"
 				description="A mobile app to help you improve your LinkedIn profile and view beautiful stats."
 				img="https://res.cloudinary.com/arhaanb/image/upload/linkplus.png"
@@ -136,6 +112,29 @@ fi
 				description="A consolidated bug bounty platform for Indian startups and projects."
 				link="https://www.behance.net/gallery/112423317/BugBase-an-Indian-Bug-Bounty-Program"
 				img="https://res.cloudinary.com/arhaanb/image/upload/bugbase.png"
+			/>
+
+			<Project
+				name="The First Draft"
+				description="Newsletter platform for Jindal Global University."
+				link="https://thefirstdraft.vercel.app"
+				img="/projects/wide/thefirstdraft.webp"
+			/>
+
+			<Project
+				name="Cricket Bat Company"
+				description="Empowering you to buy the right cricket bat by analysing your play style."
+				img="/projects/cbc.png"
+				link="/projects/archive#cricket-bat-company"
+				inactive
+			/>
+
+			<Project
+				name="Delhi Design Foundry"
+				description="A design collective based in New Delhi, India."
+				link="/projects/archive#delhi-design-foundry"
+				inactive
+				img="/img/projects/archive/delhidesignfoundry.png"
 			/>
 
 			<Project

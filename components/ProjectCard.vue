@@ -1,11 +1,10 @@
 <template>
 	<nuxt-link
 		:to="item?.link || '#'"
+		:external="item?.external"
 		class="project"
 		:target="
-			item?.link && item?.link.startsWith('/')
-				? '_self'
-				: item?.link && item?.link.startsWith('http')
+			item?.external || (item?.link && item?.link.startsWith('http'))
 				? '_blank'
 				: '_self'
 		"
