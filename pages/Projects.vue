@@ -10,6 +10,63 @@ fi
 		</p>
 		<div class="bigproj">
 			<Project
+				name="The Gaj"
+				description="A luxury wilderness resort in the foothills of Uttarakhand."
+				link="https://thegaj.in"
+				img="/projects/wide/gaj.webp"
+			/>
+
+			<Project
+				name="Vayura"
+				description="A fresh-air purification brand, bringing homes healthier air."
+				link="https://vayurapure.in"
+				img="/projects/wide/vayura.webp"
+			/>
+
+			<Project
+				name="Liquid Carbon"
+				description="An industrial sustainability company providing advanced water recovery."
+				link="https://liquidcarbon.ai"
+				img="/projects/wide/liquidcarbon.webp"
+			/>
+
+			<Project
+				name="Equitree Capital"
+				description="A financial investment firm specializing in private equity and PMS for high net worth individuals."
+				link="https://equitreecapital.com"
+				img="/projects/wide/equitree.webp"
+			/>
+
+			<Project
+				name="Taneja Companies"
+				description="Dunkin' franchise owner website, showcasing locations, franchise info, and brand identity."
+				link="https://tanejacompanies.com"
+				img="/projects/wide/tanejacompanies.webp"
+			/>
+
+			<Project
+				name="Times Foundation"
+				description="Times Foundation (Times of India) — Product & UX work."
+				link="/times-foundation"
+				img="/projects/wide/times-foundation.webp"
+				intlink
+			/>
+
+			<Project
+				name="ABA"
+				description="Applebury Behavior Associates — autism therapy services website."
+				link="https://appleburybehaviorassociates.com"
+				img="/projects/wide/applebury.webp"
+			/>
+
+			<Project
+				name="The First Draft"
+				description="Newsletter platform for Jindal Global University."
+				link="https://thefirstdraft.vercel.app"
+				img="/projects/wide/thefirstdraft.webp"
+			/>
+
+			<Project
 				name="Spotivity"
 				description="View your Spotify friend activity from your phone."
 				link="https://spotivity.me"

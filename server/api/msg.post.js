@@ -1,7 +1,8 @@
 // contact form → cloudflare email routing (send_email binding, see wrangler.jsonc).
 // on the free plan this can only deliver to a verified destination address,
 // which is exactly what a "message me" form needs.
-import { EmailMessage } from 'cloudflare:email'
+// `cloudflare:email` only exists in the workers runtime, so it's imported lazily
+// inside the handler: a top-level import crashes `nuxt dev` (node) on every route.
 
 const FROM = 'web@arhaanb.com'
 const TO = 'arhaanb+web@gmail.com'
@@ -88,6 +89,7 @@ export default defineEventHandler(async (event) => {
 	}
 
 	try {
+		const { EmailMessage } = await import('cloudflare:email')
 		await sender.send(new EmailMessage(FROM, TO, buildMime({ name, email, message })))
 		return { body, message: 'Success', error: false }
 	} catch (error) {

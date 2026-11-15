@@ -26,3 +26,6 @@ logs
 # Cloudflare
 .wrangler
 .dev.vars
+
+# thumbnail design source assets (large)
+design/thumbnails/
