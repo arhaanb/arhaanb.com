@@ -51,7 +51,7 @@ const props = defineProps({
 		overflow: hidden; /* Hide overflowed text */
 		text-overflow: ellipsis; /* Add ellipsis (...) at the end */
 		line-height: 1.5; /* Set line height for the text */
-		min-height: 3em; /* Ensure the height is 2 lines high */
+		height: 3em; /* Ensure the height is 2 lines high */
 	}
 	// height: 32em;
 

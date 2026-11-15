@@ -10,56 +10,6 @@ fi
 		</p>
 		<div class="bigproj">
 			<Project
-				name="The Gaj"
-				description="A luxury wilderness resort in the foothills of Uttarakhand."
-				link="https://thegaj.in"
-				img="/projects/gaj.webp"
-			/>
-
-			<Project
-				name="Liquid Carbon"
-				description="An industrial sustainability company providing advanced water recovery."
-				link="https://liquidcarbon.ai"
-				img="/projects/liquidcarbon.webp"
-			/>
-
-			<Project
-				name="Equitree Capital"
-				description="A financial investment firm specializing in private equity and PMS for high net worth individuals."
-				link="https://equitreecapital.com"
-				img="/projects/equitree.webp"
-			/>
-
-			<Project
-				name="Taneja Companies"
-				description="Dunkin' franchise owner website, showcasing locations, franchise info, and brand identity."
-				link="https://tanejacompanies.com"
-				img="/projects/tanejacompanies.webp"
-			/>
-
-			<Project
-				name="Times Foundation"
-				description="Times Foundation (Times of India) — Product & UX work."
-				link="/times-foundation"
-				img="/projects/times-foundation.webp"
-				intlink
-			/>
-
-			<Project
-				name="ABA"
-				description="Applebury Behavior Associates — autism therapy services website."
-				link="https://appleburybehaviorassociates.com"
-				img="/projects/applebury.webp"
-			/>
-
-			<Project
-				name="The First Draft"
-				description="Newsletter platform for Jindal Global University."
-				link="https://thefirstdraft.vercel.app"
-				img="/projects/thefirstdraft.webp"
-			/>
-
-			<Project
 				name="Spotivity"
 				description="View your Spotify friend activity from your phone."
 				link="https://spotivity.me"
