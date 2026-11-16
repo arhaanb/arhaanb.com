@@ -21,22 +21,10 @@ const items = [
 		img: 'https://res.cloudinary.com/arhaanb/image/upload/spotivity.png'
 	},
 	{
-		name: 'Equitree Capital',
-		desc: 'A financial investment firm specializing in private equity and PMS for high net worth individuals.',
-		link: 'https://equitreecapital.com',
-		img: '/projects/equitree.webp'
-	},
-	{
-		name: 'Liquid Carbon',
-		desc: 'An industrial sustainability company providing advanced water recovery.',
-		link: 'https://liquidcarbon.ai',
-		img: '/projects/liquidcarbon.webp'
-	},
-	{
-		name: 'Taneja Companies',
-		desc: "Dunkin' franchise owner website, showcasing locations, franchise info, and brand identity.",
-		link: 'https://tanejacompanies.com',
-		img: '/projects/tanejacompanies.webp'
+		name: 'Sparsh',
+		desc: 'An accessible tap to pay network for UPI in India. 1st prize, Redbrick Hacks at Ashoka University.',
+		img: '/projects/sparsh.png',
+		link: 'https://sparsh.arhaanb.com'
 	},
 	{
 		name: 'Vayura',
@@ -45,16 +33,28 @@ const items = [
 		img: '/projects/vayura.webp'
 	},
 	{
+		name: 'Liquid Carbon',
+		desc: 'An industrial sustainability company providing advanced water recovery.',
+		link: 'https://liquidcarbon.ai',
+		img: '/projects/liquidcarbon.webp'
+	},
+	{
+		name: 'Equitree Capital',
+		desc: 'A financial investment firm specializing in private equity and PMS for high net worth individuals.',
+		link: 'https://equitreecapital.com',
+		img: '/projects/equitree.webp'
+	},
+	{
 		name: 'ABA',
 		desc: 'Applebury Behavior Associates — autism therapy services website.',
 		link: 'https://appleburybehaviorassociates.com',
 		img: '/projects/applebury.webp'
 	},
 	{
-		name: 'Sparsh',
-		desc: 'An accessible tap to pay network for UPI in India. 1st prize, Redbrick Hacks at Ashoka University.',
-		img: '/projects/sparsh.png',
-		link: '/projects/sparsh'
+		name: 'Taneja Companies',
+		desc: "Dunkin' franchise owner website, showcasing locations, franchise info, and brand identity.",
+		link: 'https://tanejacompanies.com',
+		img: '/projects/tanejacompanies.webp'
 	},
 	{
 		name: 'Vipriya',
