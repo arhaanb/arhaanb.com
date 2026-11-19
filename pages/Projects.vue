@@ -10,6 +10,13 @@ fi
 		</p>
 		<div class="bigproj">
 			<Project
+				name="Spotivity"
+				description="View your Spotify friend activity from your phone."
+				link="https://spotivity.me"
+				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
+			/>
+
+			<Project
 				name="Times Foundation"
 				description="Times Foundation (Times of India) — Product & UX work."
 				link="/times-foundation"
@@ -17,17 +24,60 @@ fi
 			/>
 
 			<Project
+				name="Sparsh"
+				description="An accessible tap to pay network for UPI in India."
+				link="/projects/sparsh"
+				img="/projects/sparsh.png"
+				data-aos-delay="200"
+				intlink
+			/>
+
+			<Project
+				name="PAYOUT."
+				description="An equity-based crowdfunding platform for investing in Startups. <i>Get funded, quick.</i>"
+				img="https://res.cloudinary.com/arhaanb/image/upload/v1656856077/payout.png"
+				link="/projects/payout"
+				intlink
+				data-aos-delay="100"
+			/>
+
+			<Project
+				name="Cricket Bat Company"
+				description="Empowering you to buy the right cricket bat by analysing your play style."
+				img="/projects/cbc.png"
+				link="/projects/archive#cricket-bat-company"
+				inactive
+			/>
+
+			<Project
+				name="Vipriya"
+				description="A dating app that matches you based on your music taste."
+				link="/projects/vipriya"
+				img="/img/projects/vipriya/banner.webp"
+				intlink
+			/>
+
+			<Project
+				name="Sahay"
+				description="A collaborative experience for hospital management."
+				link="/projects/sahay"
+				intlink
+				img="https://res.cloudinary.com/arhaanb/image/upload/smlsahay.png"
+			/>
+
+			<Project
+				name="Link+AI"
+				description="A mobile app to help you improve your LinkedIn profile and view beautiful stats."
+				img="https://res.cloudinary.com/arhaanb/image/upload/linkplus.png"
+				link="/projects/linkplusai"
+				intlink
+			/>
+
+			<Project
 				name="The Gaj"
 				description="A luxury wilderness resort in the foothills of Uttarakhand."
 				link="https://thegaj.in"
 				img="/projects/wide/gaj.webp"
-			/>
-
-			<Project
-				name="Spotivity"
-				description="View your Spotify friend activity from your phone."
-				link="https://spotivity.me"
-				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
 			/>
 
 			<Project
@@ -66,48 +116,6 @@ fi
 			/>
 
 			<Project
-				name="Sparsh"
-				description="An accessible tap to pay network for UPI in India."
-				link="/projects/sparsh"
-				img="/projects/sparsh.png"
-				data-aos-delay="200"
-				intlink
-			/>
-
-			<Project
-				name="Vipriya"
-				description="A dating app that matches you based on your music taste."
-				link="/projects/vipriya"
-				img="/img/projects/vipriya/banner.webp"
-				intlink
-			/>
-
-			<Project
-				name="PAYOUT."
-				description="An equity-based crowdfunding platform for investing in Startups. <i>Get funded, quick.</i>"
-				img="https://res.cloudinary.com/arhaanb/image/upload/v1656856077/payout.png"
-				link="/projects/payout"
-				intlink
-				data-aos-delay="100"
-			/>
-
-			<Project
-				name="Sahay"
-				description="A collaborative experience for hospital management."
-				link="/projects/sahay"
-				intlink
-				img="https://res.cloudinary.com/arhaanb/image/upload/smlsahay.png"
-			/>
-
-			<Project
-				name="Link+AI"
-				description="A mobile app to help you improve your LinkedIn profile and view beautiful stats."
-				img="https://res.cloudinary.com/arhaanb/image/upload/linkplus.png"
-				link="/projects/linkplusai"
-				intlink
-			/>
-
-			<Project
 				name="BugBase"
 				description="A consolidated bug bounty platform for Indian startups and projects."
 				link="https://www.behance.net/gallery/112423317/BugBase-an-Indian-Bug-Bounty-Program"
@@ -119,14 +127,6 @@ fi
 				description="Newsletter platform for Jindal Global University."
 				link="https://thefirstdraft.vercel.app"
 				img="/projects/wide/thefirstdraft.webp"
-			/>
-
-			<Project
-				name="Cricket Bat Company"
-				description="Empowering you to buy the right cricket bat by analysing your play style."
-				img="/projects/cbc.png"
-				link="/projects/archive#cricket-bat-company"
-				inactive
 			/>
 
 			<Project
