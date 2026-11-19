@@ -10,20 +10,6 @@ fi
 		</p>
 		<div class="bigproj">
 			<Project
-				name="Spotivity"
-				description="View your Spotify friend activity from your phone."
-				link="https://spotivity.me"
-				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
-			/>
-
-			<Project
-				name="Times Foundation"
-				description="Times Foundation (Times of India) — Product & UX work."
-				link="/times-foundation"
-				img="/projects/wide/times-foundation.webp"
-			/>
-
-			<Project
 				name="Sparsh"
 				description="An accessible tap to pay network for UPI in India."
 				link="/projects/sparsh"
@@ -71,6 +57,20 @@ fi
 				img="https://res.cloudinary.com/arhaanb/image/upload/linkplus.png"
 				link="/projects/linkplusai"
 				intlink
+			/>
+
+			<Project
+				name="Spotivity"
+				description="View your Spotify friend activity from your phone."
+				link="https://spotivity.me"
+				img="https://res.cloudinary.com/arhaanb/image/upload/spotivity.png"
+			/>
+
+			<Project
+				name="Times Foundation"
+				description="Times Foundation (Times of India) — Product & UX work."
+				link="/times-foundation"
+				img="/projects/wide/times-foundation.webp"
 			/>
 
 			<Project
